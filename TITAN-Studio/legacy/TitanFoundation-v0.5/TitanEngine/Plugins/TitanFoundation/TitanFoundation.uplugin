@@ -1,0 +1,33 @@
+{
+  "FileVersion": 3,
+  "Version": 5,
+  "VersionName": "0.5.0",
+  "FriendlyName": "TITAN Foundation",
+  "Description": "TITAN original ECS, CPU visibility, fixed simulation, streaming telemetry and graph scheduling for UE4.27.",
+  "Category": "TITAN",
+  "CreatedBy": "TITAN Engine",
+  "CanContainContent": false,
+  "EnabledByDefault": false,
+  "Modules": [
+    {
+      "Name": "TitanSpatialCore",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "TitanOrchestrationCore",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "TitanDataCore",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "TitanFoundationRuntime",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

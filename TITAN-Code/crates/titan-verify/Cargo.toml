@@ -1,0 +1,22 @@
+[package]
+name = "titan-verify"
+description = "TITAN Code controlled verification pipeline: typed cargo checks on a candidate change and its baseline in isolated git worktrees, with a trust policy, scrubbed environment, timeouts and bounded logs."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tempfile.workspace = true
+toml.workspace = true
+blake3.workspace = true
+
+[target.'cfg(unix)'.dependencies]
+# kill(-pgid, SIGKILL) for the process group of a check (no unsafe libc calls).
+rustix = { workspace = true, features = ["process"] }
+
+[lints]
+workspace = true

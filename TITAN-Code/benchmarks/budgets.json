@@ -1,0 +1,25 @@
+{
+  "note": "Absolute, user-facing latency budgets checked on every CI run (2-vCPU shared runner). They are deliberately generous: a violation means editing became perceptibly slow, not that a microbenchmark drifted. Baseline ratios are reported as warnings only.",
+  "budgets": [
+    { "dataset": "titand_stdio_1mb", "scenario": "rpc_apply_edit_roundtrip", "metric": "p99", "maxNs": 20000000,
+      "why": "a keystroke on a 1 MB document must stay well under one 60 Hz frame (16.7 ms) end to end; 20 ms allows runner noise" },
+    { "dataset": "ws_150x60kb", "scenario": "edit_idle", "metric": "p99", "maxNs": 20000000,
+      "why": "same keystroke budget with a 150-file workspace indexed" },
+    { "dataset": "ws_150x60kb", "scenario": "edit_during_scan", "metric": "p99", "maxNs": 50000000,
+      "why": "edits run on the event loop, scans on workers: a full re-index must not make typing lag noticeably (50 ms)" },
+    { "dataset": "ws_150x60kb", "scenario": "edit_during_search_storm", "metric": "p99", "maxNs": 50000000,
+      "why": "16 concurrent workspace searches, half cancelled, must not delay edits beyond 50 ms" },
+    { "dataset": "ws_150x60kb", "scenario": "cancel_search_latency", "metric": "p95", "maxNs": 250000000,
+      "why": "a cancelled search must stop and answer within a quarter second" },
+    { "dataset": "single_file_write", "scenario": "watcher_event_latency", "metric": "median", "maxNs": 1000000000,
+      "why": "external changes must be noticed within a second (50 ms debounce + backend latency)" },
+    { "dataset": "titand_stdio", "scenario": "rpc_health_roundtrip", "metric": "p99", "maxNs": 10000000,
+      "why": "the request loop must never stall" },
+    { "dataset": "cargo_ws_150x60kb", "scenario": "edit_during_lsp_indexing", "metric": "p99", "maxNs": 100000000, "required": false,
+      "why": "rust-analyzer loading the workspace (another process) must not block editing; 100 ms allows CPU contention on 2 vCPUs" },
+    { "dataset": "cargo_ws_150x60kb", "scenario": "edit_with_lsp_active", "metric": "p99", "maxNs": 50000000, "required": false,
+      "why": "didChange is queued, never awaited: edits must stay interactive while rust-analyzer analyses each change" },
+    { "dataset": "cargo_ws_150x60kb", "scenario": "semantic_definition_query", "metric": "p95", "maxNs": 2000000000, "required": false,
+      "why": "go-to-definition through rust-analyzer should answer within 2 s on a warm server" }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+    "capabilities": [
+        "project",
+        "scene",
+        "selection",
+        "undo",
+        "pick",
+        "extensions",
+        "worldbuilder.preview",
+        "assets",
+        "prefabs",
+        "edit.duplicate",
+        "edit.group",
+        "recovery",
+        "templates",
+        "extensions.manage",
+        "edit.multi",
+        "edit.reparent",
+        "edit.lock",
+        "camera.bookmarks",
+        "edit.clipboard",
+        "edit.history"
+    ],
+    "engine": "reference",
+    "machine": {
+        "cpu": "arm64",
+        "kernel": "25.5.0",
+        "os": "macOS Tahoe (26.5.1)",
+        "qt": "6.12.0"
+    },
+    "metrics": {
+        "avgGuiDeliveryMs": 9.695622297872353,
+        "avgRoundTripMs": 0.8430098085106383,
+        "drawCalls": 11,
+        "engineConnectMs": 26,
+        "engineFps": 0,
+        "engineFrameLatencyMs": 0,
+        "engineFrameSize": "0×0",
+        "engineFrames": 0,
+        "engineGpuMs": 0,
+        "liveRenderGuiDeliveryAvgMs": 0.29763461666666674,
+        "liveRenderGuiDeliveryMaxMs": 10.0925,
+        "liveRenderRoundTripAvgMs": 0.09604868333333334,
+        "liveRenderRoundTripMaxMs": 0.315083,
+        "liveRenderSamples": 60,
+        "projectOpenMs": 0.703542,
+        "rhiBackend": "Metal",
+        "sceneSaveMs": 1.765417,
+        "totalMs": 12730,
+        "viewportCpuRenderMs": 0.151208,
+        "viewportFps": 60.20257352463361,
+        "viewportFrameMs": 16.610585585528522,
+        "viewportGpuMs": 1.5178749745246023
+    },
+    "ok": true,
+    "skipped": [
+        "viewport displays engine-rendered frames"
+    ],
+    "steps": [
+        {
+            "ms": 3200.532875,
+            "pass": true,
+            "step": "engine process starts and negotiates protocol"
+        },
+        {
+            "ms": 139.640833,
+            "pass": true,
+            "step": "unsupported operations are refused locally with a clear error"
+        },
+        {
+            "ms": 318.972292,
+            "pass": true,
+            "step": "launcher screenshot"
+        },
+        {
+            "ms": 89.736708,
+            "pass": true,
+            "step": "create project through engine"
+        },
+        {
+            "ms": 28.793291,
+            "pass": true,
+            "step": "editor shell + viewport render real frames"
+        },
+        {
+            "ms": 28.662625,
+            "pass": true,
+            "step": "click in viewport selects Hero Cube via engine pick"
+        },
+        {
+            "ms": 21.182792,
+            "pass": true,
+            "step": "inspector shows the selected object"
+        },
+        {
+            "ms": 28.725416,
+            "pass": true,
+            "step": "inspector number field accepts typed numbers"
+        },
+        {
+            "ms": 21.867042,
+            "pass": true,
+            "step": "edit position X through the Inspector field"
+        },
+        {
+            "ms": 27.480083,
+            "pass": true,
+            "step": "edit position Z through the engine API"
+        },
+        {
+            "ms": 21.19225,
+            "pass": true,
+            "step": "inspector shows mixed values for a multi-selection"
+        },
+        {
+            "ms": 45.49575,
+            "pass": true,
+            "step": "one inspector edit moves every selected object; one undo restores them"
+        },
+        {
+            "ms": 21.1915,
+            "pass": true,
+            "step": "hierarchy rows show their type glyphs"
+        },
+        {
+            "ms": 45.621125,
+            "pass": true,
+            "step": "dragging a hierarchy row onto a group parents it, keeping its world position; undo restores"
+        },
+        {
+            "ms": 44.250959,
+            "pass": true,
+            "step": "type filter shows only lights and keeps the selection"
+        },
+        {
+            "ms": 21.012041,
+            "pass": true,
+            "step": "Select all selects every filtered match"
+        },
+        {
+            "ms": 163.606791,
+            "pass": true,
+            "step": "search applies once typing pauses"
+        },
+        {
+            "ms": 23.318666,
+            "pass": true,
+            "step": "clear the outliner filters"
+        },
+        {
+            "ms": 241.714041,
+            "pass": true,
+            "step": "Lock on a multi-selection locks every object, disables the transform fields, one undo"
+        },
+        {
+            "ms": 21.14725,
+            "pass": true,
+            "step": "restore single selection"
+        },
+        {
+            "ms": 102.144833,
+            "pass": true,
+            "step": "Frame Selection with an empty selection leaves the camera alone"
+        },
+        {
+            "ms": 381.524,
+            "pass": true,
+            "step": "Frame Selection flies to the selected object"
+        },
+        {
+            "ms": 325.813458,
+            "pass": true,
+            "step": "camera bookmark saves, persists in the engine, recalls and deletes"
+        },
+        {
+            "ms": 161.760292,
+            "pass": true,
+            "step": "copy and paste a group keeps its children with fresh ids; one undo removes the paste"
+        },
+        {
+            "ms": 141.574167,
+            "pass": true,
+            "step": "a cut whose delete fails reports an error and keeps the clipboard"
+        },
+        {
+            "ms": 202.061458,
+            "pass": true,
+            "step": "history panel lists edits and jumps several steps back and forward"
+        },
+        {
+            "ms": 21.484458,
+            "pass": true,
+            "step": "close the history panel and return to the earlier position"
+        },
+        {
+            "ms": 1964.093833,
+            "pass": true,
+            "step": "continuous rendering, light theme screenshot"
+        },
+        {
+            "ms": 313.18125,
+            "pass": true,
+            "step": "record frame metrics"
+        },
+        {
+            "ms": 42.038334,
+            "pass": true,
+            "step": "engine round trips during continuous rendering"
+        },
+        {
+            "ms": 24.999125,
+            "pass": true,
+            "step": "record live round-trip metrics"
+        },
+        {
+            "detail": "engine does not advertise capability viewport.frames (Studio renders)",
+            "pass": false,
+            "skipped": true,
+            "step": "viewport displays engine-rendered frames"
+        },
+        {
+            "ms": 27.61025,
+            "pass": true,
+            "step": "record engine frame metrics"
+        },
+        {
+            "ms": 83.886416,
+            "pass": true,
+            "step": "drag in the viewport orbits the camera and new frames arrive"
+        },
+        {
+            "ms": 467.521083,
+            "pass": true,
+            "step": "orbit screenshot"
+        },
+        {
+            "ms": 29.706917,
+            "pass": true,
+            "step": "create a cube through the engine"
+        },
+        {
+            "ms": 21.087292,
+            "pass": true,
+            "step": "undo removes the created cube"
+        },
+        {
+            "ms": 503.195083,
+            "pass": true,
+            "step": "dark theme renders"
+        },
+        {
+            "ms": 280.622042,
+            "pass": true,
+            "step": "dark screenshot"
+        },
+        {
+            "ms": 30.196333,
+            "pass": true,
+            "step": "undo reverts last edit (engine-side)"
+        },
+        {
+            "ms": 22.093291,
+            "pass": true,
+            "step": "redo re-applies it"
+        },
+        {
+            "ms": 27.42975,
+            "pass": true,
+            "step": "world builder preview renders ghosts"
+        },
+        {
+            "ms": 335.3195,
+            "pass": true,
+            "step": "preview screenshot"
+        },
+        {
+            "ms": 21.260042,
+            "pass": true,
+            "step": "approve commits one undoable transaction"
+        },
+        {
+            "ms": 232.023417,
+            "pass": true,
+            "step": "assets workspace imports and lists project assets"
+        },
+        {
+            "ms": 28.412875,
+            "pass": true,
+            "step": "texture filter shows a loaded thumbnail"
+        },
+        {
+            "ms": 266.143875,
+            "pass": true,
+            "step": "assets screenshot"
+        },
+        {
+            "ms": 221.543125,
+            "pass": true,
+            "step": "prefab created from the selection and placed from the Assets workspace"
+        },
+        {
+            "ms": 28.7475,
+            "pass": true,
+            "step": "undo removes the placed prefab instance"
+        },
+        {
+            "ms": 221.198292,
+            "pass": true,
+            "step": "duplicate command copies the selection and selects the copy"
+        },
+        {
+            "ms": 62.27925,
+            "pass": true,
+            "step": "group command wraps the copy; undo twice restores the scene"
+        },
+        {
+            "ms": 21.598583,
+            "pass": true,
+            "step": "save project"
+        },
+        {
+            "ms": 27.989917,
+            "pass": true,
+            "step": "close project"
+        },
+        {
+            "ms": 20.329292,
+            "pass": true,
+            "step": "reopen restores edited transform and recipe"
+        },
+        {
+            "ms": 31.299333,
+            "pass": true,
+            "step": "disconnect and reconnect restores the project"
+        },
+        {
+            "ms": 419.34825,
+            "pass": true,
+            "step": "recovery banner restores unsaved work after an engine restart"
+        },
+        {
+            "ms": 33.149375,
+            "pass": true,
+            "step": "undo reverts the recovered edit"
+        },
+        {
+            "ms": 214.867167,
+            "pass": true,
+            "step": "final screenshot"
+        },
+        {
+            "ms": 462.499375,
+            "pass": true,
+            "step": "final capture"
+        },
+        {
+            "ms": 33.919833,
+            "pass": true,
+            "step": "new project dialog lists the engine's templates"
+        },
+        {
+            "ms": 37.63375,
+            "pass": true,
+            "step": "dialog creates a project from the Ground and Light template"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "",
+	"Category": "TITAN",
+	"Description": "TITAN Studio host project: the Unreal Engine 5.8.4 runtime driven by TITAN Studio through TitanStudioBridge.",
+	"Modules": [
+		{
+			"Name": "TitanHost",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"DisableEnginePluginsByDefault": true,
+	"Plugins": [
+		{
+			"Name": "TitanStudioBridge",
+			"Enabled": true
+		}
+	]
+}

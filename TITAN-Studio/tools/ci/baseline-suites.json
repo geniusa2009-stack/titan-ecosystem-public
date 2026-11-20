@@ -1,0 +1,26 @@
+{
+  "_comment": "The 16 CTest suites of the TITAN baseline (docs/TEST_REPORT.md) and the CI jobs that must account for each one. 'requires' names an input GitHub-hosted CI never has; such suites are reported in their own category and never counted as passed. Original TITAN data.",
+  "suites": {
+    "core.unit":                 {"jobs": ["core", "studio"]},
+    "extensions.unit":           {"jobs": ["core", "studio"]},
+    "host.integration":          {"jobs": ["core", "studio"]},
+    "host.protocol-conformance": {"jobs": ["core", "studio"]},
+    "ue.coordinates":            {"jobs": ["core", "studio"]},
+    "titan_unit":                {"jobs": ["core", "studio"]},
+    "titan_legacy_planner":      {"jobs": ["core", "studio"]},
+    "titan_data":                {"jobs": ["core", "studio"]},
+    "titan_telemetry":           {"jobs": ["core", "studio"]},
+    "tools.preflight":           {"jobs": ["core", "studio"]},
+    "ue.source-contract":        {"jobs": ["core", "studio"], "requires": "unreal-source",
+                                  "why": "needs the private Unreal Engine 5.8.4 source tree"},
+    "ue.plugin-sync":            {"jobs": ["core", "studio"], "requires": "unreal-source",
+                                  "why": "needs the local Unreal fork (branch titan/engine)"},
+    "ue.bridge-conformance":     {"jobs": ["core", "studio"], "requires": "unreal-editor",
+                                  "why": "needs a built Unreal Editor"},
+    "ue.automation":             {"jobs": ["core", "studio"], "requires": "unreal-editor",
+                                  "why": "needs a built Unreal Editor"},
+    "studio.frame-channel":      {"jobs": ["studio"]},
+    "studio.ui-smoke":           {"jobs": ["studio"], "requires": "gpu-session",
+                                  "why": "needs a Metal device and a window-server session"}
+  }
+}

@@ -1,0 +1,124 @@
+[smoke] engine process starts and negotiates protocol
+[ PASS ] engine process starts and negotiates protocol             3200.53 ms 
+[smoke] unsupported operations are refused locally with a clear error
+[ PASS ] unsupported operations are refused locally with a clear error    139.64 ms 
+[smoke] launcher screenshot
+[ PASS ] launcher screenshot                                        318.97 ms 
+[smoke] create project through engine
+[ PASS ] create project through engine                               89.74 ms 
+[smoke] editor shell + viewport render real frames
+[ PASS ] editor shell + viewport render real frames                  28.79 ms 
+[smoke] click in viewport selects Hero Cube via engine pick
+[ PASS ] click in viewport selects Hero Cube via engine pick         28.66 ms 
+[smoke] inspector shows the selected object
+[ PASS ] inspector shows the selected object                         21.18 ms 
+[smoke] inspector number field accepts typed numbers
+[ PASS ] inspector number field accepts typed numbers                28.73 ms 
+[smoke] edit position X through the Inspector field
+[ PASS ] edit position X through the Inspector field                 21.87 ms 
+[smoke] edit position Z through the engine API
+[ PASS ] edit position Z through the engine API                      27.48 ms 
+[smoke] inspector shows mixed values for a multi-selection
+[ PASS ] inspector shows mixed values for a multi-selection          21.19 ms 
+[smoke] one inspector edit moves every selected object; one undo restores them
+[ PASS ] one inspector edit moves every selected object; one undo restores them     45.50 ms 
+[smoke] hierarchy rows show their type glyphs
+[ PASS ] hierarchy rows show their type glyphs                       21.19 ms 
+[smoke] dragging a hierarchy row onto a group parents it, keeping its world position; undo restores
+[ PASS ] dragging a hierarchy row onto a group parents it, keeping its world position; undo restores     45.62 ms 
+[smoke] type filter shows only lights and keeps the selection
+[ PASS ] type filter shows only lights and keeps the selection       44.25 ms 
+[smoke] Select all selects every filtered match
+[ PASS ] Select all selects every filtered match                     21.01 ms 
+[smoke] search applies once typing pauses
+[ PASS ] search applies once typing pauses                          163.61 ms 
+[smoke] clear the outliner filters
+[ PASS ] clear the outliner filters                                  23.32 ms 
+[smoke] Lock on a multi-selection locks every object, disables the transform fields, one undo
+[ PASS ] Lock on a multi-selection locks every object, disables the transform fields, one undo    241.71 ms 
+[smoke] restore single selection
+[ PASS ] restore single selection                                    21.15 ms 
+[smoke] Frame Selection with an empty selection leaves the camera alone
+[ PASS ] Frame Selection with an empty selection leaves the camera alone    102.14 ms 
+[smoke] Frame Selection flies to the selected object
+[ PASS ] Frame Selection flies to the selected object               381.52 ms 
+[smoke] camera bookmark saves, persists in the engine, recalls and deletes
+[ PASS ] camera bookmark saves, persists in the engine, recalls and deletes    325.81 ms 
+[smoke] copy and paste a group keeps its children with fresh ids; one undo removes the paste
+[ PASS ] copy and paste a group keeps its children with fresh ids; one undo removes the paste    161.76 ms 
+[smoke] a cut whose delete fails reports an error and keeps the clipboard
+[ PASS ] a cut whose delete fails reports an error and keeps the clipboard    141.57 ms 
+[smoke] history panel lists edits and jumps several steps back and forward
+[ PASS ] history panel lists edits and jumps several steps back and forward    202.06 ms 
+[smoke] close the history panel and return to the earlier position
+[ PASS ] close the history panel and return to the earlier position     21.48 ms 
+[smoke] continuous rendering, light theme screenshot
+[ PASS ] continuous rendering, light theme screenshot              1964.09 ms 
+[smoke] record frame metrics
+[ PASS ] record frame metrics                                       313.18 ms 
+[smoke] engine round trips during continuous rendering
+[ PASS ] engine round trips during continuous rendering              42.04 ms 
+[smoke] record live round-trip metrics
+[ PASS ] record live round-trip metrics                              25.00 ms 
+[smoke] viewport displays engine-rendered frames
+[ SKIP ] viewport displays engine-rendered frames                engine does not advertise capability viewport.frames (Studio renders)
+[smoke] record engine frame metrics
+[ PASS ] record engine frame metrics                                 27.61 ms 
+[smoke] drag in the viewport orbits the camera and new frames arrive
+[ PASS ] drag in the viewport orbits the camera and new frames arrive     83.89 ms 
+[smoke] orbit screenshot
+[ PASS ] orbit screenshot                                           467.52 ms 
+[smoke] create a cube through the engine
+[ PASS ] create a cube through the engine                            29.71 ms 
+[smoke] undo removes the created cube
+[ PASS ] undo removes the created cube                               21.09 ms 
+[smoke] dark theme renders
+[ PASS ] dark theme renders                                         503.20 ms 
+[smoke] dark screenshot
+[ PASS ] dark screenshot                                            280.62 ms 
+[smoke] undo reverts last edit (engine-side)
+[ PASS ] undo reverts last edit (engine-side)                        30.20 ms 
+[smoke] redo re-applies it
+[ PASS ] redo re-applies it                                          22.09 ms 
+[smoke] world builder preview renders ghosts
+[ PASS ] world builder preview renders ghosts                        27.43 ms 
+[smoke] preview screenshot
+[ PASS ] preview screenshot                                         335.32 ms 
+[smoke] approve commits one undoable transaction
+[ PASS ] approve commits one undoable transaction                    21.26 ms 
+[smoke] assets workspace imports and lists project assets
+[ PASS ] assets workspace imports and lists project assets          232.02 ms 
+[smoke] texture filter shows a loaded thumbnail
+[ PASS ] texture filter shows a loaded thumbnail                     28.41 ms 
+[smoke] assets screenshot
+[ PASS ] assets screenshot                                          266.14 ms 
+[smoke] prefab created from the selection and placed from the Assets workspace
+[ PASS ] prefab created from the selection and placed from the Assets workspace    221.54 ms 
+[smoke] undo removes the placed prefab instance
+[ PASS ] undo removes the placed prefab instance                     28.75 ms 
+[smoke] duplicate command copies the selection and selects the copy
+[ PASS ] duplicate command copies the selection and selects the copy    221.20 ms 
+[smoke] group command wraps the copy; undo twice restores the scene
+[ PASS ] group command wraps the copy; undo twice restores the scene     62.28 ms 
+[smoke] save project
+[ PASS ] save project                                                21.60 ms 
+[smoke] close project
+[ PASS ] close project                                               27.99 ms 
+[smoke] reopen restores edited transform and recipe
+[ PASS ] reopen restores edited transform and recipe                 20.33 ms 
+[smoke] disconnect and reconnect restores the project
+[ PASS ] disconnect and reconnect restores the project               31.30 ms 
+[smoke] recovery banner restores unsaved work after an engine restart
+[ PASS ] recovery banner restores unsaved work after an engine restart    419.35 ms 
+[smoke] undo reverts the recovered edit
+[ PASS ] undo reverts the recovered edit                             33.15 ms 
+[smoke] final screenshot
+[ PASS ] final screenshot                                           214.87 ms 
+[smoke] final capture
+[ PASS ] final capture                                              462.50 ms 
+[smoke] new project dialog lists the engine's templates
+[ PASS ] new project dialog lists the engine's templates             33.92 ms 
+[smoke] dialog creates a project from the Ground and Light template
+qrc:/qt/qml/TitanStudio/qml/AssetsWorkspace.qml:116:17: QML QQuickImage: Cannot open: file://<TASK_WORKSPACE>/build-workspace/studio-demo-project-template/Untitled World/Assets/Textures/brick wall.png
+[ PASS ] dialog creates a project from the Ground and Light template     37.63 ms 
+smoke test PASSED (12731 ms), 1 step(s) SKIPPED (not passed): viewport displays engine-rendered frames

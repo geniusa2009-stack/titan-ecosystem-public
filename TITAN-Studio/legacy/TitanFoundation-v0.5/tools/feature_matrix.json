@@ -1,0 +1,17 @@
+{
+  "created": "2026-11-05",
+  "goal": "Research-backed engineering direction, not an objective engine performance ranking",
+  "engine_adapters": [
+    {"engine":"Unreal Engine 4.27", "study":"Runtime/Engine, Render, CoreUObject, World", "titan":"UE427 integration adapter", "status":"implemented-uncompiled"},
+    {"engine":"Unreal Engine 5", "study":"Nanite, Lumen, World Partition", "titan":"R&D roadmap", "status":"research"},
+    {"engine":"O3DE", "study":"Atom RHI/RPI and frame scheduler", "titan":"FrameGraph compiler", "status":"implemented-cpu-only"},
+    {"engine":"Bevy", "study":"ECS schedule and change tracking", "titan":"TaskGraph scheduler", "status":"implemented-cpu-only"},
+    {"engine":"Godot", "study":"scene/server/driver boundaries", "titan":"component boundaries", "status":"design"},
+    {"engine":"Unity", "study":"workflow and ECS/DOTS docs", "titan":"design only", "status":"research-only"},
+    {"engine":"Wicked Engine", "study":"renderer source and shaders", "titan":"future RHI", "status":"research"},
+    {"engine":"Stride", "study":"render pipeline source", "titan":"render pass abstraction", "status":"design"},
+    {"engine":"CRYENGINE", "study":"terrain/vegetation systems", "titan":"future terrain", "status":"research"},
+    {"engine":"Flax", "study":"editor/tooling", "titan":"future editor", "status":"research"},
+    {"engine":"Panda3D", "study":"C++/Python module boundaries", "titan":"future tools SDK", "status":"research"}
+  ]
+}

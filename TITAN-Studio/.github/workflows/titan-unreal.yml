@@ -1,0 +1,98 @@
+# TITAN Unreal (gated): the real Unreal Engine 5.8.4 integration suites. Original TITAN workflow.
+#
+# Runs only when started by hand (workflow_dispatch: needs write access to this private repository) and
+# only on a self-hosted Mac that already holds the private engine locally. The runner is registered with
+# the label "titan-unreal" and provides, in its environment (runner .env file, never in this repository):
+#   TITAN_UE_WORKING_COPY  writable fork, branch titan/engine, with UnrealEditor built (scripts/ue_build.sh)
+#   TITAN_UE_SOURCE_ROOT   read-only supplied UE 5.8.4 tree (for the source-contract check)
+#   TITAN_XCODE_APP        optional; Xcode 26.1.1 bundle (default /Applications/Xcode_26.1.1.app, else Xcode.app)
+# Xcode 26.1.1 is UE 5.8.4's Apple_SDK.json MainVersion; the job fails if another Xcode would be used.
+# Nothing from the engine is cached or uploaded: artifacts are TITAN test reports and the PNG frames the
+# bridge rendered of TITAN's own test scene.
+name: TITAN Unreal (gated)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: titan-unreal
+  cancel-in-progress: false   # never kill a running Unreal editor mid-test
+
+jobs:
+  unreal:
+    name: Unreal 5.8.4 integration
+    runs-on: [self-hosted, macOS, ARM64, titan-unreal]
+    timeout-minutes: 240
+    env:
+      XCODE_VERSION: "26.1.1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Select and verify Xcode
+        run: |
+          : "${TITAN_UE_WORKING_COPY:?set TITAN_UE_WORKING_COPY in the runner environment}"
+          app="${TITAN_XCODE_APP:-/Applications/Xcode_26.1.1.app}"
+          [ -d "$app" ] || app=/Applications/Xcode.app
+          dev="$app/Contents/Developer"
+          active=$(DEVELOPER_DIR="$dev" xcodebuild -version | awk 'NR==1 {print $2}')
+          if [ "$active" != "$XCODE_VERSION" ]; then echo "::error::$app is Xcode $active, expected $XCODE_VERSION"; exit 1; fi
+          echo "DEVELOPER_DIR=$dev" >> "$GITHUB_ENV"
+          python3 -I - "$TITAN_UE_WORKING_COPY/Engine/Config/Apple/Apple_SDK.json" "$active" <<'PY'
+          import json, sys
+          sdk = json.load(open(sys.argv[1])); v = lambda s: tuple(int(x) for x in s.split("."))
+          ok = v(sdk["MinVersion"]) <= v(sys.argv[2]) <= v(sdk["MaxVersion"])
+          print(f"Xcode {sys.argv[2]}; UE range {sdk['MinVersion']}..{sdk['MaxVersion']}, main {sdk['MainVersion']}")
+          sys.exit(0 if ok else 1)
+          PY
+          echo "- Xcode $active ($dev), macOS $(sw_vers -productVersion)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Check the local engine
+        run: |
+          : "${TITAN_UE_WORKING_COPY:?set TITAN_UE_WORKING_COPY in the runner environment}"
+          : "${TITAN_UE_SOURCE_ROOT:?set TITAN_UE_SOURCE_ROOT in the runner environment}"
+          test -f "$TITAN_UE_WORKING_COPY/Engine/Build/Build.version"
+          test -f "$TITAN_UE_SOURCE_ROOT/Engine/Build/Build.version"
+          python3 -I tools/ue_build_preflight.py --engine "$TITAN_UE_WORKING_COPY" \
+            --exclude-file unreal/BuildConfig/gitdeps-macos.exclude --headroom-gb 35 \
+            --build-gb 0 --ddc-gb 10 --temp-gb 3 --out preflight.json
+
+      - name: Sync the bridge plugin into the engine fork
+        run: scripts/sync_ue_plugins.sh "$TITAN_UE_WORKING_COPY"
+
+      - name: Configure
+        run: |
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DTITAN_BUILD_STUDIO=OFF \
+            -DTITAN_UE_WORKING_COPY="$TITAN_UE_WORKING_COPY" -DTITAN_UE_ROOT="$TITAN_UE_SOURCE_ROOT"
+
+      - name: Build
+        run: cmake --build build -j 4
+
+      - name: Unreal suites
+        run: |
+          mkdir -p results
+          ctest --test-dir build --no-tests=error -R '^ue\.' --output-junit "$GITHUB_WORKSPACE/results/junit-core.xml"
+
+      - name: Report
+        if: always()
+        run: |
+          python3 -I tools/ci/ctest_report.py --baseline tools/ci/baseline-suites.json --results results \
+            --jobs core --label "core=self-hosted" --only '^ue\.' --allow-unreal --summary "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: unreal-results
+          path: |
+            results/
+            build/ue-contract.json
+            build/ue-conformance/conformance-report.json
+            build/ue-conformance/check/*.png
+            build/ue-automation/index.json
+          if-no-files-found: ignore
+          retention-days: 30

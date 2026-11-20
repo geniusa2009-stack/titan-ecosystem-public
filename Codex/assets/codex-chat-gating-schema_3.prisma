@@ -1,0 +1,142 @@
+// ============================================================
+// CodeX — Chat & Gating System
+// إضافات وتعديلات على الـ Prisma Schema الحالي فقط
+// (المفروض تدمجها في schema.prisma الأساسي بتاعك)
+// ============================================================
+
+// ============================================================
+// تعديلات على موديلات موجودة بالفعل
+// ============================================================
+
+model Lesson {
+  // ... كل الحقول الموجودة عندك حالياً تفضل زي ما هي
+
+  chatScenario           ChatScenario? // العلاقة الجديدة بالسيناريو (اختيارية، مش كل الدروس هتتحول)
+  requiresChatCompletion Boolean       @default(true) // سويتش عشان تقدر تستثني دروس معينة من الـ Gating
+}
+
+model Progress {
+  // ... كل الحقول الموجودة عندك حالياً تفضل زي ما هي
+
+  videoUnlocked   Boolean   @default(false) // ده اللي بيتحكم فعلياً في ظهور تاب الفيديو
+  chatCompletedAt DateTime?
+  chatBestScore   Int?
+}
+
+model User {
+  // ... كل الحقول الموجودة عندك حالياً تفضل زي ما هي
+
+  chatSessions ChatSession[] // العلاقة العكسية المطلوبة لـ Prisma
+}
+
+// ============================================================
+// CHAT & GATING SYSTEM
+// (mirrors the existing Quiz / Question / Choice / QuizAttempt / Answer
+// pattern already in this schema — same doc-comment convention)
+// ============================================================
+
+enum ChatMessageType {
+  BOT_INTRO   // شرح نصي عادي من البوت، مفيش سؤال فيه
+  MCQ         // اختيار من متعدد
+  CODE_FILL   // إكمال جزء ناقص من كود
+  TRUE_FALSE  // صح / غلط
+  MILESTONE   // رسالة تتويج نهائية (مفيهاش سؤال، بس بتسجل نهاية السيناريو)
+}
+
+enum ChatSessionStatus {
+  IN_PROGRESS
+  COMPLETED   // خلص بنجاح ووصل للـ passScore
+  FAILED      // خلصت قلوبه قبل ما يوصل للنهاية
+}
+
+/// A chat-based learning scenario attached to a single Lesson.
+/// Plays the same structural role Quiz does for the quiz system,
+/// but drives the interactive chat/gating flow instead.
+model ChatScenario {
+  id       String @id @default(cuid())
+  lessonId String @unique
+  lesson   Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  maxHearts   Int @default(3)   // عدد القلوب المسموح بيها قبل الفشل
+  passScore   Int @default(100) // % الدرجة المطلوبة عشان يتفتح الفيديو (Perfect = 100)
+  xpReward    Int @default(50)
+  coinsReward Int @default(10)
+
+  messages ChatMessage[]
+  sessions ChatSession[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+/// A single step within a ChatScenario — either a plain bot explanation
+/// or an inline question (MCQ / code-fill / true-false). Plays the same
+/// role Question does for the quiz system.
+model ChatMessage {
+  id         String       @id @default(cuid())
+  scenarioId String
+  scenario   ChatScenario @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  order Int              // ترتيب ظهور الرسالة جوه السيناريو
+  type  ChatMessageType
+
+  content String @db.Text // نص الشرح، أو نص السؤال
+
+  // بتتملى بس لو النوع MCQ أو CODE_FILL أو TRUE_FALSE
+  options       Json?    // [{ "id": "a", "text": "..." }, { "id": "b", "text": "..." }]
+  correctAnswer String?  // الـ id الصح، أو النص الصح في حالة CODE_FILL
+  explanation   String?  @db.Text // شرح بيظهر بعد ما الطالب يجاوب (صح أو غلط)
+
+  hasTypingDelay Boolean @default(true) // عشان تأثير "بيكتب..." في الواجهة
+
+  responses ChatResponse[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([scenarioId, order])
+}
+
+/// One student's attempt at a ChatScenario. Plays the same role
+/// QuizAttempt does for the quiz system. Failed attempts are never
+/// deleted or reused — a retry always creates a new ChatSession row,
+/// so past attempts remain available for analytics.
+model ChatSession {
+  id         String       @id @default(cuid())
+  userId     String
+  user       User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scenarioId String
+  scenario   ChatScenario @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  status              ChatSessionStatus @default(IN_PROGRESS)
+  currentMessageIndex Int               @default(0) // فين واقف الطالب دلوقتي
+  heartsRemaining     Int                            // بتتنسخ من maxHearts وقت الإنشاء
+  correctAnswers      Int               @default(0)
+  wrongAnswers        Int               @default(0)
+  finalScore          Int?                           // % بعد الانتهاء (COMPLETED أو FAILED)
+
+  responses ChatResponse[]
+
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+
+  @@index([userId, scenarioId])
+}
+
+/// A student's answer to a single ChatMessage within a ChatSession.
+/// Plays the same role Answer does for the quiz system.
+model ChatResponse {
+  id        String      @id @default(cuid())
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  messageId String
+  message   ChatMessage @relation(fields: [messageId], references: [id], onDelete: Cascade)
+
+  userAnswer    String
+  isCorrect     Boolean
+  attemptNumber Int     @default(1) // لو سمحنا للطالب يحاول تاني على نفس السؤال قبل ما يفقد قلب
+
+  answeredAt DateTime @default(now())
+
+  @@index([sessionId])
+}

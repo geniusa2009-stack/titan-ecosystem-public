@@ -1,0 +1,19 @@
+[package]
+name = "titan-recovery"
+description = "TITAN Code crash-recovery journal for unsaved edits: append-only, CRC-checked records, checkpoints, compaction, retention."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+titan-text.workspace = true
+titan-doc.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+crc32fast.workspace = true
+tempfile.workspace = true
+
+[lints]
+workspace = true

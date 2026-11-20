@@ -1,0 +1,1 @@
+TITAN brings together a Rust editor core, a native scene editor, and a programming-learning frontend. These team-developed projects explore a shared workflow for learning concepts, writing code, and building interactive scenes.

@@ -1,0 +1,3730 @@
+[
+  {
+    "project": "TITAN-Code",
+    "path": ".github/workflows/ci.yml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e0a544bae2cc3b9a005a09a1c3fc9443b9071a61",
+    "sha256": "8cd5b28697dd6bee118b8f17db49b1bc59ff5df5a4fb90bc1c7f5ff2cbb484c8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": ".gitignore",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "92e4f95626f7ded6b1429df48f231ec0f129407b",
+    "sha256": "e30ed0a4bd30df4efafc6e64db1fe0d14413772511f93edda886871ec509cf54",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "CLAUDE.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "a4a572110ebd44f3c38e19395e35f1e0b13f2b7a",
+    "sha256": "d5f359e1070cc0be969b78978464577411323f26b8c0aeacd8ef88b4e60e4807",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "8f90967f668aaf66c5da588d4dfffe09731f6a06",
+    "sha256": "7b1db8be725aa305cf25b3899ff13d5a3e956a1e56407e5594484ca08f48d1cd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "README.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "8266532162dea6f9d9cde9f8bc9653d8c3e3437a",
+    "sha256": "5d6dbb921d50a2eb831c129ed92d6b3627507b6f7fce49d3c39efceaea764e31",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/budgets.json",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "2ad16343a870870fd875ee2f964d775918cc1233",
+    "sha256": "6c52713aa2ee526d9f13ad20815ee9e6355681f06d7f0d0a604cbc7f58be31b5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/compare.py",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "250b58cfe532e3abd1ea77ad02e42a4ed639b7f2",
+    "sha256": "392fbb62f648d2b4f964fd6b61ddb3e3f9e81a318499ae7ee1fb2aaff8f4fff0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-09-comparison.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "1265d52532e112e48ff1ee1827a0c2a54929227c",
+    "sha256": "1d506ecfda820cfa053877b803c7b155707988f885281fbdf8c0f21bc3b2431d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-09-phase1-baseline-ci.json",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "9b7d9a6e1906aee8db87a860178e29dcc2e8a2bc",
+    "sha256": "80d17675c24c07d51a57e6f73100dafe06f881c64d9f7724fabd9b449c673667",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-09-phase2-ci.json",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "dd7267f3a7092af0a90f85d438aa685ef9c0089d",
+    "sha256": "f0e9ea29b849ac9e7b53ca6f25060a6e5d7187b9192304abce7f6f96323b4060",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-10-phase2-baseline-ci.json",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c6c0a55480acbdc3594a547a3b15de200284b330",
+    "sha256": "69dbaee81bf89096aed4b29c310670194de73bedd79c816b3dc3d59a33ab4cb0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-10-phase3-baseline-ci.json",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "5b2dbb49e7b7787edbdf1432c0812ef06b4a4c63",
+    "sha256": "bff0141b75d16c3fa304b327118560cdfc72e90ac090e2da1f4e49d53c7488b1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-10-phase3-ci.json",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c945205dad503f5d2e006ceff24421b1115aeb35",
+    "sha256": "c3d1624e13691655ce1d85f3ef175969c4a3cc617d0314410a187125bb3fd5b5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-10-phase3-comparison.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "daf3d1b97c74c4300e24586db5f9ceabbdf5611a",
+    "sha256": "c9444e98aa13b016ea2323398e6b6089eeb974e5a435027583e54f9cd10c76ac",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-10-phase4-ci.json",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "ce3cc98e6d9ef2e8a88c3937f7604d6b4f9383bb",
+    "sha256": "3f848728d00dc165d48d6290e4007a0bfac7c1f962e99c8876c1e4d9c6a7d23a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "benchmarks/results/2026-11-10-phase4-comparison.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "5362200200063fffeea72da05d18152eb2c6bbfc",
+    "sha256": "32c178ddb9bbe1c05f9aa1b68785d1aaf262e9c47c88daa51557011bb82dc8d2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-bench/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "cd78027d89372d12286cd4a861a9a8d0aebca2ab",
+    "sha256": "830942177a54c806ad571c6fc98f33529014a84f649d2b53c8da2b7b3ad40b84",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-bench/src/load.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "f4288f66854905c41193ef97e16b2a0b8b8aa7be",
+    "sha256": "082fca0edb06c2366398be53a0df1441535675cae2071ca8ac0b7d1a2a005c73",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-bench/src/main.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "aa552fbb32025942da779a973165c4a1fcfa3979",
+    "sha256": "4f2f1c5648cca9f35e00b8b83108f64739056c7254f97dd91ea55bf4fc9c92b3",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-bench/src/profile.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "4058928196e1dba7f2cd288d2303020946ca2dae",
+    "sha256": "73231076fe830103d9c1ae3ce252c72aaa0b0de8f82b262a8d56872687c8e68e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "01de97fc9a08f371614da0c42f38e25fe500c507",
+    "sha256": "729b72c70f10aa0f98f6869ea18bd25d1063e6007d286527d5729db59ae800cf",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/apply.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "51ec3b9551a07d0acb578c9f77b68ddb2bc3a71c",
+    "sha256": "a29ce68805cfb3b80765cd2c3c908bcacfbec70079f10ca83030b6b1f4172ffb",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/diff.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "9eb1e895005d7c54154cafd27143aa5e6e663431",
+    "sha256": "6f526fc92fee3d27188181a823ce68d2950cd416e4a36d085f9736e03358ce90",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/evidence.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "13c21f033e849f673454c27208c1995f859700c8",
+    "sha256": "d3b12829d8b977afc48721007394980ac6de906171ebaeba2855010c016ecf1b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/journal.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "149c6b822a74ab82c342c95197753062622b4736",
+    "sha256": "cd57a28acf357f327f503d2407ff9c82cb0d9285c6778c6d9c3ad0a2eaf5159d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "cbd2b1c4de19d256ffe7dbda73e0bb8121851674",
+    "sha256": "1ee60498d4a3981344aa6ed7ca8526840e5e810b7b10ff14dce9cfbdb79cceb7",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/model.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "512065b114181b43e90a0412f35d7bf6f39c4c86",
+    "sha256": "fa39c0fa66fb23e379e78fc5e9cc46c9babb3ad224fc0628840cb25934fbad59",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/util.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "f373bae7a03965a88176474aabb5da52eb35cc35",
+    "sha256": "cc3b85db8606fd2196be23d6ad7674011efef2b2e4d97b34e05e5aa73f947493",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/validate.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "398de98826659084ab4422e15c1eb8c67025f81b",
+    "sha256": "75dce820fd4b5891a1915d0dbfe3a162bfb5e0555a80da4b63f28a0790650be8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/src/view.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "8114c2ea2b0d05a4d4f429577fe9332ed86af90f",
+    "sha256": "348845206f3eab9499d54ad50eda3f6f23181cd66e4c9bec8a189e50c8cf6d3f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/tests/apply.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "0d5b179aabef9e4a13f1aab17159fd2f5ae6cabf",
+    "sha256": "e6a80e51f8fa7d08dc684b44b20fd2cdebd935e514d2a89bcee75358219a0c7c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/tests/common/mod.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "3396a4345cebad6ebd0de8a6d3ec99e720f83833",
+    "sha256": "deb0211077bd6ad88b1c4880137d365d2227d536c7b9438864d3b51e5a802746",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/tests/random.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "1151cd341e63a48e52f94934448372bb3fe5d46d",
+    "sha256": "c1d66a261479fb1ebe5033e34e57f4115743e61ee6044a8b85b879f822320916",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-changes/tests/validate.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "382cbd3513f1c3a712c2ee24942fe71e9de26ec3",
+    "sha256": "9a3f53605d32bd68fe9f15ebe288d52211f936b484387e35d9c570a2c68aed82",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-doc/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "85e45df9a3cb39cc3f79771ddd37cff4dc6c2ea5",
+    "sha256": "4ed26e88014444403e1b26c4832d0831f5d0ed134ece1bb433298a2448015efc",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-doc/src/hash.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "2525b4b3b94bb1e1dbe513061300e002ff9f22d5",
+    "sha256": "463c4ee85bb9f6ba1ef4fdc6f6a1a2e2e0d8c3d1e5208e41f9e65036c0271284",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-doc/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c8f05ca26e49447fc57740aa7a7b618fa4074c3b",
+    "sha256": "4108035f1a220003389e190a787c4903270ddeef147093723894cb9b3e4e05a2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-doc/src/save.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "11e18f51c37b599876e19623b7d463d2d9261b97",
+    "sha256": "e6216669faee2f066a6d2382d048d2d1bde154e8cd74de250d13cf37f3417fa2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-doc/src/tests.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "1a9727601c436dd1a3536a08e0231d81345b0566",
+    "sha256": "7f048c1c7c97f5f436edd0ed0b62c2f150b7aebb5dbaf72dbcb70e6d15500565",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-index/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "45890bc4c63c44deac6d6d56c72ffcd47d869338",
+    "sha256": "ab35a1c79aec49a2f61b3e7ebb3164c3e4b861f6707765150245b2c0bd42c547",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-index/src/graph/facts.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e56955e61c6e5fd6bffe6f46e67d8f55c0ec1f4f",
+    "sha256": "23a4c738a31d0e683f6ca78fb84e2e62974551acaa17faa3e29085d54bb02eef",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-index/src/graph/mod.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c651daddf7a729b5c9a1be0b8db918dadc2aa5c8",
+    "sha256": "938107e7046159741ade3c5b5ded527e3f130e53efbca48e87685bf04a5e715b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-index/src/graph/tests.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "35121fa598678f09044060ee316a93ad6274d7c0",
+    "sha256": "b2c3999f758712dee71b0cc68db2618b90160c9b2cb61940cbd8d017e7cb89c8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-index/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "b3b340b0364a0d7c417de61468f179a029c991be",
+    "sha256": "87d592b9a6fec4931ae7bfc7ddf0aac43faee301981cb32f26a35ccebaca451f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "b83b6622a9bf81fdcbb0dbb29eb483980842cd1e",
+    "sha256": "e892bf7913748f8e8036cf2467d567dadec7af836629515d665afacf5372fa87",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/bin/titan-fake-lsp.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "eb45b424073420476950fd08595142a1276b93ec",
+    "sha256": "11a0d995ac21b10b4ace244a1dabd8a7bf4cc7d3c0f5f62abd8314bcee287ae3",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/config.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "39ce5bb237ccde5338eaa44ecce9cba6f58012a7",
+    "sha256": "e855c9baf5ecdb92a327567d8e9a3240c693e25dcd504423800d0a065b05071e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "3e96d8fe727c0b702a0131a3b07b250283046b75",
+    "sha256": "9ca4150e2d280181e3b234770186139dd9f1cb0d5730565fb65f2e254a57552f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/message.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "6d5f473e03195e6a8f618091323adbcc569a3e4f",
+    "sha256": "6e91b5e2bfd4b634b48cb07c19a9af0270c6df9e9274bc16a2ec390968453023",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/supervisor.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "88d0ab79392bf47d6e7989508c50f15c07d817c5",
+    "sha256": "ba85c023ea213cf2a37813d74f954a61f9480151fee2e1d63c958c869bc72756",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/transport.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "15e71bbe5b1858102a41c473ea92146f23c0804a",
+    "sha256": "8de055384acb2fb833c085613711ad44d24b7de6df4f5a8b4c52d028015eb7bf",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/types.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "035eef6048108df071d03d7aaf17f3409c05ac55",
+    "sha256": "eb2b1185d777df5c69d82385f220fe951f5214ddbc53051c65a70affbbfbe28e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/src/uri.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "87939018322445421f852f436ac1cbd0ed425dd8",
+    "sha256": "58b6533006969b84e1928bb68bc4b915dfd6eef42ffbf0c04ddf4dbfc72590f5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/tests/common/mod.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d90fdfc81bf00dfdf68e5962adc4e9f6635a0375",
+    "sha256": "eb5bc043c35f64e7a1458883946d273d56f811b6daa3d97a2041c24996baf7dd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/tests/fake_server.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d746b316f808b05ec6d0980a2b34b19b4bae023b",
+    "sha256": "885c5555d7b7d46c7413baf9a8886129ea26c1e47c5aeb59fb5cb1395be3d9a0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-lsp/tests/rust_analyzer.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "ab322ce90b131b8a1f474b059edb9d6f8de90ff9",
+    "sha256": "254f29a31a16d708c7919eb66bad41604c18ae70157100e03d40e75299ce6a98",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-protocol/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "959dc0d31651f19e96a57f8ce21c363203f779d7",
+    "sha256": "6ee1129c06bd7176b1c2f67a55959bc68887229d2537180d3be63ff473cbe5f6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-protocol/src/framing.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "0fdddda6ade68cbffe5da148f3a6ba84a4f6dffc",
+    "sha256": "fed279fe683f287ff0f5a9d82f427958af1430c19a70866028722571c4b98348",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-protocol/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "979f8be90448072614d110288dcba5ac2ed55e97",
+    "sha256": "7648c1d1242f07ac58b976a2c52ea6488f3a122297faac03e619bf2f9035a893",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-protocol/src/messages.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "fb71fc7c5426c2c1203da0f5bfeb5dd932689be4",
+    "sha256": "a380aa276da5a69a1e9e6ee8f99d75c035e83c7485584c96aa0707f59442927f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-protocol/src/rpc.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "6d569b2a4d70b01fa574c0a9f4e8746c96cce8ba",
+    "sha256": "bf0dfadc69468c6a62c769f21a9547f41321792554aa70a5804b31b1f1d15da5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-recovery/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "47e8b8f0469fdef61b3d51209acef400ca83e255",
+    "sha256": "6a4fae18ab6bf5e37ac1290acfdb199852a2153ce89412ff9bde2ea480438600",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-recovery/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "9b82070cb97d4fed5233e9a52115f26c2ac0dfa2",
+    "sha256": "fe988f0f238b3f714d6e31d7435b8f7fa0d946401c36b7c15498986cf28b63d2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "f626a0e689936fdf535f53d691faeefe03d5e380",
+    "sha256": "a4d6d76f266c636443dcaf5a6c124c437ba983e9ea53e7429389e16329de230b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/bin/titan-probe.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d0a72da03143b354042fb2cf0a9e6e43b5531136",
+    "sha256": "d295347233875264e05681eec9ca298c6a4f70976d9c88b52c1f0998cf149697",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/bin/titand.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "0f3229cec9ea559c1211566057d1247d171d325f",
+    "sha256": "c844ba8fb33ad0093bc79c8d7c1e83fef09adc13ffbc292d9c84afbcf8d548fd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/client.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "f29af8e79779e769ed0ae5fd60fcff7882f36b0b",
+    "sha256": "197966d85641ac13cc1c35fc63b84539a0a1dbb478460980c50a1195666d842b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "7bee6f83db420be47bbc42279bb78dd1fdca39e0",
+    "sha256": "1748aac81dc4d3980e09b26b963c4e33e2de8f614301da905a0d9cda0c303cf3",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/probe.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "9efe997fde7b20d18eb916c429e176bbff62afb8",
+    "sha256": "a6ef23a81f36a220d5f424386f8f3273e81254914f72e905b107215e42e5b5b2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "3a67a5db39672464c4ce445180429aff65be3d49",
+    "sha256": "6f670d0567cb5d1569dfdde2f4a71440c3afaced32ddfae847229d654410c00b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/changes.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "dffce10ce2e3dea6ac6ba792204193fd360e55ce",
+    "sha256": "6c19540ac7a31d60bcd35b98202bad4ee92eb45485343f9913760cba25484622",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/disk.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "574714ec3f6cdc388335c9e231ce98741d907690",
+    "sha256": "5e95cb58cd12db9ec537fdc2d7527a0e5b2bc3048499ef0cbcda5c52d3294036",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/displaced.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "ed5e34a2dfe93ff077ab9976f9916fa0133f4f6e",
+    "sha256": "539ae8be97fd4749066be2a1d84fbede0f57a3c237d037c422a31432c00d0aef",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/graph.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "ea2588430b1ec0c8c4b7daec5abf6dad9b62454a",
+    "sha256": "6a93dbfc8836dcf7d9d17ea8cf7a9e02399d4249b3dc337eab4dc71b4f053458",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/impact.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d7cff4bd936f2639ff671daaf20fe890f064235e",
+    "sha256": "3b7abe9c95df2a78f7ee2a14f47900e52606f61986146d8f89bb66b713f91b0d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/intel.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e94741e60a6be1fa21a49fe48f8e202e2eeb9c5f",
+    "sha256": "ab699f8634bb383496b32ba7853feb10fe4f1e1f528e35b4d75489cfd93d87c7",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/lsp.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d10fab666e63e11596c0c3a6ec0a20b9717ab00b",
+    "sha256": "e30097eb5a37d6ffed99cfc630e5dba03d7915034c91cda75791c072c3381a55",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/memory.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "3df2ff5221150d8de1bccc870052decfdf5a1b74",
+    "sha256": "cd5cfff4a19adaa3bb813ae856c7273aab11927b2fbd05fa746233625911caee",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/refactor.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "1041571dcf6df4b7a9a4dd7440c9ca74c58f900d",
+    "sha256": "bd074da65a3e263319b5b24ddf7c3881e6e1a8e6fa213545150c21df68f36cb0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/resources.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "30e759cf2b5206be01a9d03938b94b8d4f9ed1d0",
+    "sha256": "977eaa47ca5d80ece25db653f2b81a568f14df85062cf4ae590c48718c432f0b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/src/session/watch.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "48e8ad6d1b6e448627005c939cd33e9cbabba293",
+    "sha256": "e974cbabc2fa34f4f43d8bc3b37be11827e2be6a3a72d36efd27c3c51ceb3c85",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/tests/changes.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "f5602af588ff8884233ade2c5a8d6fa0468f0ca8",
+    "sha256": "b34831f2be30c22c343a6d9bc78e0f7362959cc5d9f47bc53fd9e370bf9bcad2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/tests/disk.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "9aa5fb1d451432ed28163d6a77a80f243a86efca",
+    "sha256": "56daf201c8be4b149826bbd9644dac30d89cde0c95493178d2aacf2219647bd2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/tests/e2e.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "532242ef386aaef763c2c53bae8faebbee97131f",
+    "sha256": "a2037ffb07894a877ade1ce01b4beea3ef2e34f3e10d9f8c7789cfde1ce48d4a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/tests/semantic.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "0604f41c905c04023c6592e4680c600f9bf99c8e",
+    "sha256": "8b91fe7d1cc8a33a7160a8a0bcfb56cf415c6777e202efa2a0f8d5adffa99129",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-server/tests/watch.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "17335c9b4055604f98e432063f6ad385cfdf5876",
+    "sha256": "ce3b2f48c0a940e7e96b13c51d1a0195e4cc1870ab70610f977548b07544e2c1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-tasks/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c3ea99ba7dd154df8d9b2e3784077374b4f1c73e",
+    "sha256": "c971c0ac5c54dd88d124cd469bbe6be5ee02372da3d8f181519d25b3ac03b152",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-tasks/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d04c2c73d1e407014b199c2809cf680336a71765",
+    "sha256": "4d4924d385eed16b730ee07bacf0241f0599330074d840d605a196e6c6987da1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e8020fbc7464d6b5496d568f48d7cb0dd5af1aea",
+    "sha256": "0c2785ac67670c3c3aab6b472e409159134f17a6b1c8e2f0350918b3546c3c2e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/src/buffer.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "73ebb9588e922b5f54c097186b377728523f2b35",
+    "sha256": "bb53dfc6ff6c8cfbf0ac6077d88e0c040790c2db9ccb05f19a74a1f9ba0b4472",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/src/coords.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "986d364a3d00e90d9af6b0868ed871da65c718bf",
+    "sha256": "99093e601832f9f1f1e2cb38ea5234265468b6afa1e65ca156d4b66e6b3ad6e0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/src/document.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "f0093091a74d814aedb585aba892acb8e4a0eb7c",
+    "sha256": "f59f8f702ef0ea334f14413f334e0d1c15734319cde72bdbd3c8e84cbb7c665d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/src/edit.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "8946134f2f7d51c2f3bbed03da594d6754f12b2c",
+    "sha256": "942831ce4585d10d0f07ed1e4538f8aa76cce86d7591053683ff790ddd5df78d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/src/error.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "76625c5bae8b56e4e43fad981b9c0ab8c2b37544",
+    "sha256": "dbc70ce7d5c946af1b7ffef38985d47f269f35246b71c5b56e6f6c170de85dce",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d0876dbc7f808f92ea03d84ac598e79f59b314ec",
+    "sha256": "344b463dec656b9e63d9a05600a137a0e61d96ab2e6609c199a2a79bf22c802e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-text/tests/differential.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "b8a59533bcc1e2ac5d4af0665debea3c11fabbba",
+    "sha256": "c10ed76cb22fe7e8c438ad84115db1909c954d8b2e7072f785576812918e284e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c6d88ebc34bcfe019b9abc0c5cb0b827914831c0",
+    "sha256": "013f98f03d1f7e5b96bf12c972f083d02ca898d8b99d4c65d7761bcb53e54256",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/check.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "efe6ffdbcb77878e1e57b7347b91b98bb95fe203",
+    "sha256": "406bed0825faf725f074bd8f0525a0188a8fadc4f6891793afe69559eeba377b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/env.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "57ea706d829494009110e54156f2af1feaffe28b",
+    "sha256": "0a0fa58f5d3b667db1e0d8d9ccbd6bc9b1c7a7f99f00efcb69726b6ca9837f0c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/error.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e2236ca9c5f8bfb1b24ffe1f722f62458f69e1f8",
+    "sha256": "4f72e23219c3d72b22d9da4719749dfed9467494e9e8cdc4134c9dc451f234ae",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "493e1281651250265761b596e8d1a77e6a46f0d6",
+    "sha256": "634e425e8abbeca49edf30869c8e497926d6ea2d7403ba1815d9219e29a7b6d9",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/libtest.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "27e70c535a26a1a7b105f4f9677de54376dfc41e",
+    "sha256": "a16e7a0bd1cf34210a9bec862d9faaacde6a839fda1c965a85777a64f2908a60",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/log.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "6d90f59c2bf1c424b49627b59c954ca3993bb237",
+    "sha256": "b42b052b98359b4d9f76802064ea132ce45e3922fd7eb040191bd2e0c5057464",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/patch.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e28be27a2118b4fa8bf29ab4ba80861603146d9f",
+    "sha256": "0db34d34a2295f0f93d307551edc9b36a66f9f2732d09f209109ca2c76f3e637",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/process.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "70771f7bdff4b5f52850a266a527083c9024940c",
+    "sha256": "e63218ad7ae2008122a097e8670739724933d121cc2f566b2a3da429c88b00ea",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/report.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "88eeaee588fb71576bd953e3e8bf7211a7b79159",
+    "sha256": "ee499a496c7bbed122620ebb05a9cf34783c5f41ea4a21937372e30d27cf178d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/trust.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "2eed0b08137841b0c45bb55093abcc17bb5b8f18",
+    "sha256": "ef0bd3c38fce8d0445953cd07644d988dbb4b6cfb5537ede417800ac25db654c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/src/workspace.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e4b5a34c568b93ee4bd02e5a82acf2484c1377d8",
+    "sha256": "6c413a2876afa723bba7986615cbe8474058bf3fca3569fe98200f9c67b2cb0f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/tests/common/mod.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "76959170d31e7c013f80bc73041ff7209da022e9",
+    "sha256": "3d6796e234c4079561c3f6d6b6c179d104cd1dbca73ca4bd3791d24854c254ee",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-verify/tests/pipeline.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "a4ae3ae4cba4de1a4f06483e0d2b96e3f6822ae3",
+    "sha256": "95786b50d418d81298a55680b5af57370721f02719cf8d8c284f2e7cd462db5a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-watch/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e1a50cb0b9d94eac1be32caf4e9afb3ea7f9c21c",
+    "sha256": "99863888b0b11123e5dc032d0eaa4ac96c032eef144f6361a27752d3c61e98e6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-watch/src/coalesce.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "46ddbabf6c06c76f1dcacb2d7cd31ed31b826707",
+    "sha256": "1a0e1f1250cde0480b4374e0766e665c5a41d72ac47fcf50273d6c5ca9f8bf39",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-watch/src/filter.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "b05b5e1257edc5369572d8423c9110fb4063f1fa",
+    "sha256": "38cf336c8dc22399fd620e49aa15fd3a6a705ed5d500fbbd30f4913e1e8328d2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-watch/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "4862b36cf994407ba917cdbaa72ae01afb7c6288",
+    "sha256": "e62a205bbb6d1612f31623e5c30f453cd70c3769a5257740446badf5b02bf3d6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-watch/tests/common/mod.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "44dd2cbb2f9375fcaf63c1b543d4b4391c4e4400",
+    "sha256": "58dddc8f9191584b67f0bc071a55313203011bd516a5257c9ce35ec7ccab7d94",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-watch/tests/stop_threads.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "117a6f7f88337e3bc0b400bea461f8cad6bf3d27",
+    "sha256": "09ebaae7f82209615b377eae5377a2c5afc61836e621a3cf95fdea26cea64cd6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-watch/tests/watch.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "0c44eefd29db0c685ad08f2d34bdfe2b082d55ed",
+    "sha256": "1895135dbf989bd30bc545ec2e1bae5139128ee865719b63d776c05f52ec571f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-workspace/Cargo.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c9d7f614be79be13b5fb4e8978de71c70930c93a",
+    "sha256": "e0b0194aa0f3711266128ac129f4ef06315329699347b6b41e14476056409e6e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "crates/titan-workspace/src/lib.rs",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "401768751a1dcc637ccec7a798da4cc1b8a67758",
+    "sha256": "f61f8b645b54551dfbe7c37224e2df3c7fb5b48c1d2e3e8ae60da8814108412f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "deny.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "12d2ecd77c888f06620c481c78ad1c45c5449a60",
+    "sha256": "d7b32c21d44fe8ab78c574e07aee7ff5ce0f29eb97bdf887c8425d43bb55463a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/STATUS.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "6490077ecaf482d67bf3bc9792a71d5255f63eff",
+    "sha256": "e181605cf5eff5ffe928a7e5bd3791293f516fe9d80917c7dc3ab127c343a733",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/architecture/state-model.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "1d653f6c3b3436476ad29e26a03e6c25b2b2f2f7",
+    "sha256": "36824cbfc4550c737f211cca026636555dda1eda7f5765d075aa9f4ea49bae91",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/audit/2026-11-phase2-audit.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "5792c9af60bd30b8ac05bfa341fdb714fb9b0041",
+    "sha256": "fa1fbdce47b6ea70dcb2c8ffcb8830fc668a17a25158963ce5a9e6f53b131cd0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0001-text-buffer-and-transactions.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "8658de3619fd6a2575968d016fdf2f774e3e7b46",
+    "sha256": "e85e9c4de29b3c7c9debb8d89bcd41fe612c21abbdd4a8361a862e24bb821cfa",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0002-headless-protocol.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "191e357169dfa7e573f4f4d8fd0c1d08c2ee7fd9",
+    "sha256": "a9f186f5cdab519514c27bffb3621509527074f7654b5bfc2fa0a7d8a4f4e459",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0003-runtime-tasks-and-recovery.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "7d1109a6a64a0ef8bd2eec0a144ed4fe77395db3",
+    "sha256": "04e39cc7cb7485d5f0d9fe9a0a024f936b01ee36fc7708fc5b8ca005eaba0057",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0004-lsp-supervisor.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "21b055c12264a0506288b9cc647aaabb0a87ccef",
+    "sha256": "e432d7af5be9c91da4657dabeaf4c2fef42778fc68ed6ea3d0c719344433785d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0005-file-watching.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "e6666ef817296eea293d29d5eaf2c0de93fe80d3",
+    "sha256": "a84c72f3def9eb97232ca464dbcdff7ce4fde3478e2a63faa87819298d78080a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0006-content-hashes-and-conflict-safe-saves.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "364d832971dcd81c8049716c41f339bc5a72fe3b",
+    "sha256": "2ab59b3d0aa4de4d91da4caf3d3c9d4bcf30919b5cafb98614d91235522578e4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0007-semantic-evidence-and-project-graph.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "c20c8a14d5edcfb9e66c3a5af04d919005f9e27f",
+    "sha256": "f8fd525e5f873ba7404639d7702e63a7a57991b82a585550a7c9e7de004a8c1a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0008-verified-changes.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "5a6022f67189a60e0d068c995f681b550a455ca1",
+    "sha256": "f052b501c24008f7de4d3583dee56a5589223d22a09a7d3483528dfee4e0769c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0009-verification-pipeline.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "dcf4b08cf207cafeb7b6ecf4c45544aca65ebe94",
+    "sha256": "c33c547b5d0ab5deff97317e96a9e977d27ecef53e7195a35d8b358fcca2a7fd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0010-late-writers-and-save-guarantees.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "dd1383be6f242baf7928baecb0a09f831e964a9d",
+    "sha256": "3e8c7ea8ab5861ac630aafa955f9ffe424947e0ce7e20ace138e6f718e395902",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0011-project-twin-v1.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "4d246b539b9c95e61925e17fa9930b2c4f39e962",
+    "sha256": "1da7c7fa7b81741fe677e63e82291dd0b4d47ccdcd79a08ee129efdb9bed8b76",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/decisions/0012-resource-aware-execution-and-cold-start.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "6826cedf3637cd23f3b0c572be17da5563318d19",
+    "sha256": "991751885ad7630c825f36c86be2edcb8e1dad66de1b017ffa243291dd33f239",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/dependency-policy.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "79002e5b6b8f3ca426134df537a50d4d0fea96e1",
+    "sha256": "7ff9c6c976f258bb50cb161decbd1ab19dd40c8937b01899018295f14895030d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/protocol.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "08b37cadb92863f1086d8bdab642b15cec9402b4",
+    "sha256": "a2c4ec07eecc01b1862d18a28dc17f3b5c406c41f2269d5762c2ffc1db9d9cda",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "docs/source-analysis/REUSE_REGISTER.md",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "d6d164c849ab3918ae12dc3631706b6209addeed",
+    "sha256": "f854e33324dc999bb1f4c826c66a83af115e2752c5c64aa4751b3c663cbc69be",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Code",
+    "path": "rust-toolchain.toml",
+    "source_commit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+    "git_blob": "2e743f74840303e4c71c113310d6ac693363799d",
+    "sha256": "ec7fb9f9a8c1a8a88f590cb6bd427c90b521d37a20a35a0361a0e823218e7467",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": ".github/workflows/titan-ci.yml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a51401d32c44a73aef96ce5d401a36b141eaf439",
+    "sha256": "d2d88cfa792d49ab3c0183540118c90b7bcf2e2a6378844ed84205614bdb07c4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": ".github/workflows/titan-unreal.yml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "735b7b165ac406c59fb345d6c9a0c5d62354a7e9",
+    "sha256": "dcec5352cd4133d66c2abc8c3b6e7b06fdad7a335493667884556d2b04092cd1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": ".gitignore",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f3eb08b24efe850fa5cfb132b0109607ec56b117",
+    "sha256": "73d7a6cb9d4453ad9fa6fc67adeb801342efd4e9531224d80444453a72df3c3a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "CHANGELOG.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b82d7a1deb64aa6f7dc8cadfa576435c540ad309",
+    "sha256": "6a2382a7465d4aa0f94af236e5c6c7d6beba7db399eac3da22dcb0e9a7eee3bd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "CLAUDE.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c6e9b2b5f68061ad5eba2a3df5f433776ae55268",
+    "sha256": "0ff463f3b270b4176eddac523f6aedf44cb6408e6e1ccef81aa0c0cbb9b6e1de",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "CMakeLists.txt",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "97e60f3dd6c3ce77e0a2e90e1d0fffeeb53b3657",
+    "sha256": "8545de9790400f1a4662873ee98f481c2ca30ca4b7e7b5de24720e0a29c57a26",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "README.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5bf7dd1f04b1d20411a3327f841ed1ea868e08e7",
+    "sha256": "0e67e1602c3b47ac76d23dc7497d18d0d6bba7cbf07ba7f61609a44f2e20a577",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "README_AR.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a9364a3e148604f132bf0f34f4de90ef9bbe0501",
+    "sha256": "ff3a4d9cefee1e4cd91542c739d6b78800ef993db8499c0339fdc3d4e1c05f56",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/assets.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "56d8df8edc81bf025652031ccf5c09b72067db96",
+    "sha256": "ddfed1b722f227b27296735c22ab71cc1d2593f3dbd3e3f809e79a48894ccded",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/audio.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f0e8a0539e0c4b3c52aef3f5d60f3f50469e619b",
+    "sha256": "0a32501df7bb45513a3a8475803f4483b3bbf5c8ad243e2623c4cc800c78393f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/behavior_tree.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5fea86205de1f0c1e51820db634e40edf80a7ff0",
+    "sha256": "390320bc31eb0d7c8edfd374b801cf2565422e3d0d4998c86ce10f57eb088316",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/blackboard.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "3b353a85399b3e5190cf1acd1bdf4805b5f893d1",
+    "sha256": "493fa1a6a4982947e0b86415f30a3dc676049c2ff908600329f76483de9a9642",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/capabilities.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e21ffab391fec58cb48bd136e9ceae062bb975a3",
+    "sha256": "7a09d2d124c30023314963e21420cc98ee4e6ac3c4b159fe32bce59866ad89c8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/clipboard.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6ea4c6af6fe60d02cac0ae0b177e2ddeeb467720",
+    "sha256": "bba050923899b51ee0f5f84d4bd8dd2d2f1fe901e778050f9c49b2199348e00a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/components.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9d9d477a2076a66448ce8264773524a037f78c5c",
+    "sha256": "759f46592cb2ab0dd97253e1d338896751e99339c55f3a2b4dd7aa9e72d74f05",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/detail/json_number.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "1002f129be66b018509073fd587f44e528cb2c40",
+    "sha256": "2adc6425934745ee105939a335d87f104db17db6746e97c92d6ba2ec44559151",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/edit.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "2afdfd6d3c1f6b1e4ffb410c267a2737bccada4a",
+    "sha256": "ae25809e9a162a8f710b122b26d5fa0bf41e2a1c1d4b6f99ace8aad6e03e7ad9",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/event_bus.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "cc55a12d172775f591f46b8051fe95ebc0464844",
+    "sha256": "3138b8f403c238c496ba4eda30b36635f2d421b70583d734fda7e74a98b0ef69",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/input_map.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6e161c0e3e9b49da6a4cd1c7a40598bd28f33388",
+    "sha256": "cda2ed2a3a2441d9ac6a9db631eb71cfa914837ff41ffad149a8a852dbd8bf57",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/ipc.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d9dcf819d4136bc3615b725b1a3457fd181fd5eb",
+    "sha256": "a58651aebfd1da04af34182911956d6fad655fa3c31f7f04942901379b6bd734",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/json.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "12f4c6ca345041279432466a53712a487aad3b5e",
+    "sha256": "0451c4cfb4d84b94d1a1130701552ed714ac9c36cd7f1446890440761e94435c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/material.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "2958105e36755cd124455c5ce178fc107c827ddb",
+    "sha256": "f8bc7b1f30d1e71db88f9dd27b8dbfcd24b8341ee478c2ad58fe745c12257590",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/math.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "aa5e02d45fdda73d6d1eb5dbf3ace24949973b26",
+    "sha256": "ccb88757bd59c95e47069d8d8648ba155068f3bbfed5266df1d0df1ebe5d0866",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/mesh.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "45221aee7a69c3ea30673630caa3d4de79a63bff",
+    "sha256": "f19976d09a32f47138dc0996326ec9a493007a13e4fc907a9e69aa8e021e8b4b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/navigation.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "601b1dbd6c9c949cb8ca91c37955d5cd10b42dc8",
+    "sha256": "25f582ce7682df191572f7f972e271fbb5921360534091eaf72f29b18723719a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/perception.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8bac365091332ce6d4f7f04103693a46e1ad35ba",
+    "sha256": "944d4d0a419d61e1d710ab24e5ebb2f658377f8516adc0e14958a426710afde4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/physics.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "7602187b828d238e277ba31c82f169140fa379fa",
+    "sha256": "75d1437138bd515b4111bcb00682a23927ee6f531aa1b8cac5b728d4687a10aa",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/physics_geometry.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "1256e410b6cb814575f239fd363573bfc89c598c",
+    "sha256": "2894487c1335f88bb544b04ff2b9532fcdfe6759ea236bc1488b27157e7e6af7",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/play_session.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "cc48efa47f14f1eac6806fdaa855ee52b552e970",
+    "sha256": "d73578ec9d310ad58990e98394b943a428bc191b3ed35988399c88b17ddce4ab",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/prefab.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "be2f0816497baf9c5ec466ffd65aa19ecff0439a",
+    "sha256": "2699e2dbda9f096cc711976e97ab0c4d42e0fd174cb39ab38dfd72e3c6f637ba",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/project.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "77584519fa3c5ba092d6b5fa17188656b4692cd3",
+    "sha256": "2a42d8d776562dd6f33c9df0d847babf3dfe62e179625d45527001a557de6b57",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/protocol.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "acf9f75440afcd6944c7ea0c05f80e977b642549",
+    "sha256": "1367d7d2f841bd6c106d1ace0abd577113ec36956966fb29e4d9ac8d5662e3e0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/scene.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "39944c5c015a6533153ffefbc5e19d1759e98d32",
+    "sha256": "66ebec4b8454239525bf61cf370eae1f58d0e496ff62c9ad2494de205b8884c8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/scene_template.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e6f959ea66b54f158cad853db74004b5ea8432b4",
+    "sha256": "76be446bdc4113775271ca9d3ee84f0a763e43310cbc36ffb3a26f28ffa28159",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/script_graph.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "27e334b15ffd4d0a1116a2d15b914d89f8b5cf89",
+    "sha256": "8532d40d00dd866973ff95a6eef7a897a73788c7556a227079c612d2e2789a5c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/sha256.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "43ad475c275ff56ba8bdb8df2e707a4b81b26189",
+    "sha256": "0819364b7aaecd4695e46b5da6dba9c1ed08ff77b7bf931031a19942b9af218e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/spatial.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "09c6dcca53b60e1e19037e3018936f8eb7baac02",
+    "sha256": "ce5ab905d414736f1ac54df27af0c8096dc5fd3ba6aae88f54e72746599202ed",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/timeline.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "33efdf83ac2842386484559d40a37cb3ac385b86",
+    "sha256": "8ecbe1eeeaecccc5fc21460eaa21b14167688854996bbc4f35773e3a49fc4942",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/utility_ai.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8ce7c1b240b94ffc9f76f74d8edd64862f5b5c2a",
+    "sha256": "3fefb472c511448ef705387f99fbea916194be3d34be9be4b949f9ae13759096",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/include/titan/version.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "36e04edc40e7126fca7c0e2654b2a0580c3d0891",
+    "sha256": "6619414633ca515ae622778118c8a1fc64ad36defbc18ef90efb3eb7d076e1e8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/asset_importers.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b3f146b43f47f1b70fd6e6b2f8c9ec9a0633b97f",
+    "sha256": "ed49b862a28d827d0c893c99e21d0e3da03893b87c0e22b57d09b8d9d7a9f0b3",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/assets.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "7a709c61ffb67350d4933ff5d448ed90e4172348",
+    "sha256": "b6017a79e66414dd71daaee6910a84b8e239ab4a6716dd26e68a8e9cc7acd579",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/audio.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "deedc1a56e5d62d284f85527c6111d5703243672",
+    "sha256": "5f2940c8f800271e311c7e3512e98e8a5c83cf9d68020048c7c45302fecdd506",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/behavior_tree.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "81bd2ef8afe0f215e804e42b2ba1b82a0a4f94f5",
+    "sha256": "6e49d85c1412a549b3a19530013f9aafb5fbd634b8b2d0ba21ceedd34a89e7a2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/blackboard.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d00ed2f51722f604fc52e18791c71558f6bdbe20",
+    "sha256": "1b88c9e5027b89a20173b63b2591712161f7deb967d31146f3632f4f2fe3ec88",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/capabilities.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "28db15000025f0ec1d80cd5c65999e34ed5e44b0",
+    "sha256": "50e076b1a1957acfed475cb4cb09dfdfd32fcff5efbd740abf340bdbfbf8d909",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/clipboard.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6250a2603efb348536fdd850d07b3d79eac78757",
+    "sha256": "bf63e84ce574924206f684ecac9ec5b1b9f864238583d76832dcd34b5a96ecab",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/components.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9ab7416d4127da31b14f57ad981e4343e6dd2d54",
+    "sha256": "e72129921bb1f8274c52faf8d0bcb5b399389dcacd9d30c7b30f2eea4b402aac",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/edit.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5791412c5a12875c2e7e053a335b8e1d9cba8a06",
+    "sha256": "e06f20035ec4f8248b3ee730168fbe8b8d01a4d4e4ef6c6f5418e459f648151d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/event_bus.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "db51f90c49367dcfbdd8e6c8ea9f8d8d8713ab71",
+    "sha256": "dee67ab7600d994b8a65aff1195463fe070b8b04a9a33b4e035d5dea8416859e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/input_map.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6224f6908811184df88eaa0678ec80abe5df17e0",
+    "sha256": "2b6df10b1c3330200dabf7ab5fc6eab636f1eaac56b84e13abc2432b83bf1376",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/ipc_posix.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b873326e4d4bd3c226d777c72a2ba8f4193ec580",
+    "sha256": "87a1f77646be587845d6a5c967c15229fdb62beb353741907a29d40b3ff622df",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/json.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0236becc057455bbb398075290615a8e819cb1ca",
+    "sha256": "2d3ae25ff64733ad072440a48b9176c9ec0e377e757bde889904bbf25d1cb468",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/json_number.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c0b9f8afb9714e26253226f14f65c6b05053bb54",
+    "sha256": "c6ac5804fc888686149464b47e7d8fa3a6cdf614ec70954cc6e1250eeb86e70d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/material.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9ffce96ed0cc3515ca48d8e3cce2a8c548b3a4db",
+    "sha256": "b2652878cc0d6d20d37ddce5b8c5d6814e4612aacb2a32764e5f622f62c79660",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/math.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ab6e943ebc10303ccfb2998ae459bedf31e1c19c",
+    "sha256": "c64809b29c50c25a1cd805c9e0bbbeb314b0b57e8295a00636f5852b700736d9",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/mesh.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "3d306dd0e1040ebdcaea9fc61072d22331fb8729",
+    "sha256": "986a3551fdf9c50d3880dac74aa9fbe171f63839c62cb88af77ac0d40170d030",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/navigation.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "76666b3c8f7865a16b0bd903696d5480f8b070e6",
+    "sha256": "2c084e6f48078b2add5ef77be273aeae3e81ea776c9da25ec678677c9eede449",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/perception.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6af4e27409b64e437fb483e2b901a973866dae39",
+    "sha256": "dd6bb834129ff39af23b7e416d93205f334fce0288f8512a2e97f1200a5fdb94",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/physics.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "787afeddcc1c8921e817741c58376447b4380945",
+    "sha256": "ebc4e70c725a3636a40228fba5ad55024e751689f81cc04ec3e04a911f713e6f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/physics_geometry.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d6f6973f168c5b6a3e7c396e5771b902e64f94b3",
+    "sha256": "e811172ad995b466d8c3d1ceef92274a5fabb67ccfe0e2ca1f1671ad56caf767",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/play_session.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d26921d43b1bff5ab3507a7af0a61f8b48cf23fa",
+    "sha256": "1af10b487fddb4052fe4ac7de78ef3363c76b267e75f1a1c0684c1c4caedb877",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/prefab.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "27443ffd70000395a8245b61f34a8bba11faba79",
+    "sha256": "5ece9592e85ff018f7f795ca27820a5c60317249dcbbfbccae3463ba7dca7250",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/project.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fed4c9d72969c7fa293a33182db1ea148e9a72c6",
+    "sha256": "583622de6799dde7a197246aedf01f79845fe13345c5e0f36adeaead138a9117",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/protocol.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "397cfe20c1583c47f53b5e8416002c33ea2a56fd",
+    "sha256": "fb2715a07a875d7503b7a56d2e9b658ac842131a917ec469f1fe6f0d5e299388",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/scene.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8ec7f3641223d360eab18e2c69102cd93c80599c",
+    "sha256": "534500c668bb259288384039ca717d4ee6f562bc9ee0195b74c63c14bc18603a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/scene_template.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d82da7a22c371af67e7a45880baf07a2fff884e7",
+    "sha256": "c847b5991c0672295e43dc1f157a1d438ec752dda69fe4b7aba81ea7806c00fd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/script_graph.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6d7f7a5cea7b2ad670537fb4442e988ba9461d1e",
+    "sha256": "618804fda48c73710d566f495cdf0df3ba37462bda093bd0d62f7296e1efb478",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/sha256.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f3dfaf523498c1eda7a9e6fa63800a1caf165265",
+    "sha256": "3ec1225a417e4581fe16562cc0db99e6673e8d4b1f1c0a17690442e3e883ee54",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/spatial.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "533240b8e067a12740caf761c592495bc4f7deaa",
+    "sha256": "193c356faeb3e3585709ba3ce8a69dd052e15a77480faa69091943baeffc4436",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/timeline.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "bc169cdd2cdeaa78969ac9f8c976bae84328ff43",
+    "sha256": "a70972f5ce729b0cd252c74b84c952ab173edee752d9bf6ad93dd70fe000010c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "core/src/utility_ai.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "cf2be98e89a928dbe1aacd579533fc545b8a4ed9",
+    "sha256": "1ee11a83f806b6a610e1a0179a5372ad07c3e0cbc7945a899e71044a64cd2246",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/ARCHITECTURE.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "295f4bdd3155c40bf7b5b50b550c3323d3199589",
+    "sha256": "ae1ec352858c93122acb18f37562bf3c4d5eb786c697180d9d29624120c96152",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/ARCHITECTURE_DECISIONS.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "60877a50f8e1e4ee7f978a8d31efb48b22efe3a9",
+    "sha256": "a188803651ff0fd2928e2e3adc52a53c357fb311d5433660a3d96bede90cfac5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/ASSET_PIPELINE.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a2558240a6eb72149a07ab2b627ff485161ebeec",
+    "sha256": "2268f82ce48eb30570bd656ba18956fd8a86e54e3da94f1728ee8ec51b151a5f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/BUILD_INSTRUCTIONS.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f14ad026d81e89b27fda25c17ed1394de11ef476",
+    "sha256": "1fb8b139aad4a2d3b1acc0fa9269698d5039114aeb1f1a2cf50e0239edd0f165",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/EDITOR_INTEGRATION.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8f52625255aef97b081542b41401d7551e418c4e",
+    "sha256": "5529186eee7c1a68066407ad1d5254aaf0935eae3388892c8bf583a606fb8c2d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/IMPLEMENTATION_REPORT.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ded5b7e142b61280b929bc550f27868f5c1cd9af",
+    "sha256": "874871da026a4b89a160ee0ea0797300d4694d2d5ee473e94a51f4dcfce81e7e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/KNOWN_LIMITATIONS.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "4de33025032c6b283e6e2663d9c12eccfc7971e9",
+    "sha256": "227e07a55b968f77d24c357871071c888b5dc703d706b87ecedf79b8d166b81c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/LICENSE_AND_RIGHTS_MATRIX.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ebbf778e378e5b1410937dafa0d98fc93b26e465",
+    "sha256": "a02eba5bd5c2e44bcc2f4ff0b70fc959d4de4440b6fd89bc8a4803ea9c4c893d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/NEXT_MILESTONES.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "049ef3a4b0805a5a184206d3ef17de4db3005acf",
+    "sha256": "da96e064779d189af9d6b7a0b56b559a8899b85ea1a218cf958b2da5d809ab69",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/PERFORMANCE_REPORT.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "1e7bb216fdddd36bf62bb61fbef09923654832e5",
+    "sha256": "71ac3b905503a8afc053db40f35f87b3f41005619d80d2275b72c9fee7b63f2d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/PLATFORM_COMPATIBILITY.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c2057c7b0fd357a73b972da1f5454a2ababe7a87",
+    "sha256": "d55df04706d410eb6188b2d2ba1a6dc462c72a691339be88b50ea86cf3b13672",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/RENDERER_BASELINE.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0c64778b625fa869d960118b1f22d0c79279b47e",
+    "sha256": "adc7125505f78d033b8922f6a5bdfa0175a9e4302cb0833ad26b71378279acac",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/SOURCE_INTEGRATION_DECISIONS.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8d84e8a8abb5e5177b2634fc76501c05fd5ac7a9",
+    "sha256": "e5d88facf4ae82e756b56812437d3e9a481bda6b939f133f517c5efb2f1727e4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/SOURCE_INVENTORY.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "36c8eb44dfaa64e265cd706d2f34302c9c336f61",
+    "sha256": "a6bd65ad85fec19acbfffc35065303a179a87303ea79a2c9c34cc2e334b84cb8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/SOURCE_PROVENANCE.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "24b501e5ccb5b760e4569897b88082f884bfd111",
+    "sha256": "12f421dbb8991748861decb428fbcd5afd9fc5ba74e45ebf3ddfba7d5ebfee14",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/TEST_REPORT.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "22df71bb1a4d4cd0b21fcb39575c62f482854f01",
+    "sha256": "a2b7b44498d2d906592410e796aa7b76ec130d7df31cec299554070a4bfe0157",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/THIRD_PARTY_DEPENDENCIES.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9da5030f108b7d1419badd913b2c909b3c5c40ed",
+    "sha256": "e30f97ce3606b74376b7a08abb0472567354d18d6e46dcfceed831395827050e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/engineering/TITAN_EXECUTION_STATE.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e2f18fa6c8c0dd25ae32d243f5076c8c5a598592",
+    "sha256": "52196fa3a0df2403cb4192ba43190a8f978846e86d96f60e0f484d4c812cfb64",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/engineering/TITAN_VERIFICATION_LEDGER.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d84c5a1ff63cf024f6f7d85fd334d088fcec6572",
+    "sha256": "0f3ee96d4e875934e614ef812d1a52c528dd63fa1b3b1f6280de0ee6132e1d37",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/engineering/benchmarks/core_systems.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fdaf16eb0784f15aa199ecbe4907dbe3201863bf",
+    "sha256": "925d957b2329c98b61f673cd42c7191b9459f12b42b41eb3eb25a7cc407dcdb5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/assets-workspace.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f8629a3728f938ef0d8b9cf49d8b1dff721fb449",
+    "sha256": "d1d776d46842c0e4c4c12e1d468ca00744c5210874843bc164c8c3e444f1aa3c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/smoke-report.json",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5f6f4c938268b2dc743e2bc12bd13b346e37fe49",
+    "sha256": "c4cb052b90a502dd39e02231bf2d86fbdeeaadbf0a4ef5040e68d32922c0dd95",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/unreal/frame-camera-a.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "48376a722b02bdc6fc96cb482fd293944fdb3369",
+    "sha256": "66a3ed3c8fcac071e448298f9d8d547bfc458e26cdbd1fd1a3f532c97267102f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/unreal/frame-camera-b.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ff5c6f0bba597b6c5652fbc09e71f4461422d858",
+    "sha256": "f264032ab47fdbc38a68913308310a064dbf87efcf3d0c6bfab55cb9c4f7599e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/unreal/frame-edit-after.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "7444496a214315c45bad223a4a1f6c9d1f6287a6",
+    "sha256": "9104a4bc6bf3b5f0bce1226e52832695ff7dcd572f5d5994268f6133296b18fa",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/unreal/studio-unreal-smoke-report.json",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ac385af141462a4556b01d490370eeac85b5736d",
+    "sha256": "4647a80f2241aa338c66b61dc270dd1bedd7c54a1f22122f27ab9c5c9ef30ee0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/unreal/studio-world-light.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "7f02884f2cba4c84a1382d4091fb3e51b5ded59e",
+    "sha256": "13512f3b83cc92d49c64c73096e18e2fbdab4768e8c9d4a79de4a759ae022eba",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/unreal/studio-world-orbit.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "1eeb1202b958c47d044cb78452aa05ee2952f26a",
+    "sha256": "4b7e4ee9166158fae12da6259405581f62b1bcffe15515fecbd02b01bab3b994",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/unreal/studio-world-reopened.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "2b9f89c413fed7ee13edd15f51bdef0bc717ed95",
+    "sha256": "b4d61d73f008d1e0170737cd27cd22467852dfedc1a4a5df0fc8f50d87eb0b28",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/world-dark.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "2246e2632eea62c009f666f4ab6e13d4b6acf50e",
+    "sha256": "31673f42e3382d37a0c1f153a205b3b230d8fe1eb3b71f03dd230f8033c280fd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/world-light.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "3094a94c2764ea9326b1eb6a2fbc1f6582fb068c",
+    "sha256": "5609a114745189a388823e14e66249dc330b1858732ea445b5f4dbb0f85b4f8d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/world-preview.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "73b6557a0502eefc2b8f7e8f90d62133dc65a89c",
+    "sha256": "a9ded6fa9522fc49c933acd5fcddac5878b143261b87c8883a1578749dffe817",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "docs/screenshots/world-reopened.png",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fb7ac2b2e5493058ffe21fbefcd4ee37eec1d290",
+    "sha256": "f9ce6ddfe9fced7e8f340b437c89515652e2e728e49784028da9fef5c3cf6fcc",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "engine/host/engine_session.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fefb269fea4b1d5c0cf79beb5c3cc785a96e2883",
+    "sha256": "87a9b567eee641428f899257f7d978498c3fa59d705be49f763ea85f8a1c7e1d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "engine/host/engine_session.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e7cda9551a2d5041032d72db13173b66374bb376",
+    "sha256": "66b226e1044ba588679bd2bb5701bd46b7003227605c4f3186df9572cf42672d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "engine/host/extension_host.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "edba7ce5b9596f3dc87e339396321693a596dffe",
+    "sha256": "23c48d15cc8a270265b621f9305ac5ab48d7ff5688db3bd4ea84379966176f01",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "engine/host/extension_host.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c6c8783f49df32027020138b4a6e6d0f7e8c5188",
+    "sha256": "1a0daedf48ae26fdbb94fd37e3b2027a5fa7ce3cff653f19f320fd3f29d7b05c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "engine/host/main.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0fe7a4e5daf4ddd046585fd71b13fd6096b457a9",
+    "sha256": "d2bfc7fc5d5d9525977f47b2a5ff0f3b2ae14532e2bd13b860f8cbc13962d18a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "extensions/procedural-scatter/scatter.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f349e9e343470af61dd264bff0043de89efe7589",
+    "sha256": "25ad030e5f4f08c2d25a14d02bfa7f41992c4b1a77f4ccbebab321d80ed065eb",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "extensions/procedural-scatter/titan-extension.json",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "82501cd4a949713577424f51d2876e35a7da84be",
+    "sha256": "39e84ea6040675acf951bb9df10f76a6911bed4599aa8f70aaddb11cceb39009",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/.gitignore",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0b7446b5b33cb7b2a1e0004d89e9be50377a9c56",
+    "sha256": "34ff198a7cc7f24a159114586fc2f93cdbfb108672effef77c4cfb3f0f5dca4e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/CMakeLists.txt",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "603fbb54851b35e2cf0b8c919142015621696dd9",
+    "sha256": "ecb613ef41d235d5dd4c0c5690627690679a455a35350baa5b302bc94b124bb1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/MANIFEST.sha256.json",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b2ed71808357dc721db05e039ece754b3c6de694",
+    "sha256": "220eb2bfcc445d6c03c80aeec3cba0263455703e76bd6668120ddd2ad1c44137",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/README.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a7e6d9644729037222acc176e840743b3bf0f152",
+    "sha256": "672b30518ce134077516b16cf5d092f8a6f76d61eba7a5185fddefa2c3475cec",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/README_AR.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0a9cd933c85d77efe110bc3aa40230eb873313a5",
+    "sha256": "ff98d24a716e15ca57d9ebd85631af3c62477612282d4691e311c00c5fd65d81",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/README_AR_V05.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "31cf5edf5a6f73bdf4d82eddb0b4ade5db6ee3a7",
+    "sha256": "70b29e1edc26f5bc60af691cdb92781af4f7589f26c194e1ac8f7307520170eb",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Private/TitanDataCoreModule.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f3e86fd6372a4ee4ac74ad69dd2ef4a9002e7fdd",
+    "sha256": "13b2c751313022f58ec1ed1cb57cab3fb0562744d1c1feeee408772d94c997f0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Private/TitanECS.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8e7a33bf659c46fcd6d897bbc2570028323d9678",
+    "sha256": "6c204016f16a551a2d5c47cedf1732892413a08ce766a15ab7863ef02af36f88",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Private/TitanVisibility.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e8e9304639f8d81ba54bb748cc371a9bcbd012b4",
+    "sha256": "160cf43acf01ff07011c3a51cecaf34af56648f950238f4eef633ea35d37c922",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Public/TitanECS.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "7cfd61e29f66495d697b5e3b945a1f7306304055",
+    "sha256": "d4eaf1fc584f57db2f34705ad4abd48a81c148af9356058a839b9c6c6a75d60d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Public/TitanFixedClock.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "7c0c02ed315dfd70318a8d13b97cb0dc3b961fc1",
+    "sha256": "372d874b4109d68ac79efbf3dd1bf6f8df2e3f89706199fedd7b3f2312220e70",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Public/TitanVisibility.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b6d6db1870b90efdfe4e1542daabec49a641703a",
+    "sha256": "8ec706861f7e5d58e947b1c23a0330328c9a63afa437c25d4728caab6f30a88d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/TitanDataCore.Build.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f7f95f24d96c25af3691de0e83eedbc5801abcea",
+    "sha256": "a057906722dfd115a1213af46df9259b61404f42e82c0a73c04ac613df21aa50",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Private/TitanAdaptiveQualityComponent.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "288aed06e7aef4029272a2ce253e8b6a4280feb5",
+    "sha256": "28e63f595808fd0a70a3d8bbc85f41b0a4086e7a1b29f436c9ede1067324ac1e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Private/TitanFoundationRuntimeModule.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "dc73ae38564a04902f021047c4ebce6ecb1446ba",
+    "sha256": "2cecb2bf9df041cec2a2cd19f446b7b787d1fd3fada8515a9d3670146ba1a867",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Private/TitanLevelStreamingBridgeComponent.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "1b62ddd9a0473d71f2834eca5310a63d85d06bd0",
+    "sha256": "25e10c150a4475f288beaf38177df1767280c9cee29d8b6e681406540d6631bb",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Private/TitanSimulationComponent.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d113437c77abcab58a4d536f9997e2188f34eeea",
+    "sha256": "c16a6e00a562b719af3741409b775e60a1be8f890e6fde6a1484506b93a7268e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Private/TitanTileStreamingComponent.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "369513a6ca2122b4497e8a352fed1e59fc911288",
+    "sha256": "0de5e94ff0e23da1fe81006abff331a4c11e53226d0b84b23e8532e0828c296c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Private/TitanWorldOrchestratorComponent.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d1d12615ff67a65ab3a2c2200ae27c7ea9f701e0",
+    "sha256": "3b9549c2eacf8fcdb7e9be628be1eae59d6256aec0e565c3ac113c3f4d327962",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Public/TitanAdaptiveQualityComponent.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "352eca6bddb870e96e57d56214e5fb7b1ff1ffac",
+    "sha256": "34117a268efd2ee95aa9fa27b34f19f8f201fe68c0d54142774112270b03df40",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Public/TitanLevelStreamingBridgeComponent.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "edda53550d120f1d8cebcbb03f86a0c37e393cc2",
+    "sha256": "5cbb9720c0664330974317e3352539f555f229a023cb1d5c4cab026bb46c801e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Public/TitanSimulationComponent.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "03a8d57254aff53f9717ed5cdda682598714c2ac",
+    "sha256": "1125525b0ff1007577155b5b6b9d6d498fb5b74b4cd62942d8ce5d4f1c6b4ac5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Public/TitanTileStreamingComponent.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f5b07d311a216679944cf48814d097e2c2f42fb1",
+    "sha256": "87776325e38ac27f60c11b3637e01e12b9bc6fcda7812442d67f70976086a77d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/Public/TitanWorldOrchestratorComponent.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "67710fb9b4be731412836573a9b3f95e02370364",
+    "sha256": "6343298903eedb6761b8a5cb240c4c47630a0dee1319b0a0d88bcc0f00242470",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanFoundationRuntime/TitanFoundationRuntime.Build.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "23788ab2813b045e0f99bb580d6b2d0995a6ddc9",
+    "sha256": "7fad7beace4a2f329803b1d76397a0bd158a1fb2d6782795fbb4fc20557abf86",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanFrameGraph.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d84e883959a4665d2b23f04800851a7f00af8d55",
+    "sha256": "658888e79a4054d3b7290424964e7adcb1bef378dba0c9e4c6fed85b1387b141",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanOrchestrationCoreModule.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "380b556810487a29607c661825f6986097fc1dde",
+    "sha256": "8b6e475fc138826d79739500e6878b3c126d6e46a1b029713cf8ad8a9b606064",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanStreamingTelemetry.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "94efa023a62b3f93886a2b98f4fe8778f9fcb954",
+    "sha256": "df9d3c5cc29d8fd676a016afd0ff8730950777949f9b1c7bfd0546c75a5572df",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanTaskGraph.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "af4ccb82a1e669e8eff18d1c629293f5d2a8e372",
+    "sha256": "1d32dbfe92fda9e1f8a7ce93b42f5ec9a00ef47a7ef391bcbece27987b9104c8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanWorldScheduler.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0e1233a59fda10964e58c2a604e5f7f75e11792b",
+    "sha256": "e385da5707ab2c4d1db540365f3abb52ef6fbc09c11a9cc671ddf235a78de1ae",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Public/TitanFrameGraph.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fc90daafc82d7ce584070b8f5ee3675a724b8dcc",
+    "sha256": "67fd3f167121a281ffa0a1d7bc9e199b59d8d207a5fca9dae6579d8ea1fa3388",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Public/TitanStreamingTelemetry.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "17c0bdbfa30191f2776e076fa34403fda882a24b",
+    "sha256": "2070a7f5de5f0ce36be040ce16c4fc1d91c502f324e4555a784187b3eef616ae",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Public/TitanTaskGraph.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a4f5ac0c4267d8f6e4f71d1ce4d34127f73b3523",
+    "sha256": "daa8b68d201a48d9df5ef34a242749ea857cfb0003ee931d25033ad2bcabe4a4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Public/TitanWorldScheduler.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "44ca99995ad0fcb366bf5b378fe07f33328a2d17",
+    "sha256": "6449571710f739a636541655564147de4a8814661f850931b7fddb8503ebbbe2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/TitanOrchestrationCore.Build.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d06ed7ae0ea44ede42be7827d05556e5995d44b2",
+    "sha256": "c4320d36b467773bae6826b52191c48e4211639a3e8e0af77b507b9a077a3df2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanSpatialCore/Private/TitanSpatialCoreModule.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e9a10854e7753717bfce82ba0d122062b99a02f2",
+    "sha256": "53ac8a314e8147d04081db3289d4abbded4c593d98bcbe69f37c9b3a6be8f17f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanSpatialCore/Public/TitanSpatialPlanner.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "2d7e1573f93430ea9679f0faf01e6639c81ba65a",
+    "sha256": "5c3e5c746d36636d60e6e9fddbb96b99535eaddc69c787df5dbdd9cc0dc7ba66",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/Source/TitanSpatialCore/TitanSpatialCore.Build.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "40e66bda99a1973abf2ec3a2554027ed75f61c6d",
+    "sha256": "498b23d5b233c5e7bcab9bc65d77f38546ca751326016093d113d94de5c812d8",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/TitanEngine/Plugins/TitanFoundation/TitanFoundation.uplugin",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "aa10a2c958e0bf62fe45798d3b6bc06fe3a64f1f",
+    "sha256": "cdbdb327a94f8ecd389588ee8e9e4f3c304e8103e0f7b7afd0f1574e4f251810",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/benchmarks/bench_data.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f681ed467ad92ecd231b670d0012008ff839c883",
+    "sha256": "f7ff9c48170727679a2bfef5f1ead8aebadacf6999f25d7d913bb976f6fa1714",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/benchmarks/bench_scheduler.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "299d93ec872bec97fc5512a6041f9422f0f99638",
+    "sha256": "a3714ad6218ab5bd5988599e222bc2fe5987a39b3f33d62dc897fbf74793c8ed",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/ARCHITECTURE_AND_NEXT_STEPS.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "98ae0fdccfc9e7cc2673882aae2c5a78d81cb23e",
+    "sha256": "4a7bf5fa1cd5c66c50abcb2844f297f5e7ed2bdfbe073d045acce44ec929ce70",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/CHANGELOG_V03.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "160d8915ab117d5d5b46a7fa2d4072df96fb2617",
+    "sha256": "5065918ac82412f5a31d8d4d569cf8c0dd187595320777f89285786c0d0cc7e4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/ENGINE_COMPARISON_2026_AR.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "72a3d46fe7a86e757b030c343442386cdcbb91c8",
+    "sha256": "5e8bd0df0e95dd253ec577bca1f85334b6b5d6d4594c163a9b728d2f8c56dbeb",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/ENGINE_COMPARISON_AR.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c905349cb8a42f985b87a022987e9bfb8cc91f59",
+    "sha256": "26ad2e0152f56fcef8189b2ec30f9386b225ae389e8cb92c6252ac0c2483085e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/ORIGINAL_CODE_MAP.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c4c4969b8842aae6645c3f2fd852f63421f3da9f",
+    "sha256": "8267287be7c785173c8de35e17d0a2c0425eccf2c6326a8eae1f95d50ccfc507",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/PROVENANCE_AND_LICENSING.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fac5e238a23dceae72b9c66bd0f6606a98191f57",
+    "sha256": "9fa2ce4b59484bda6264aad6cd8fb7c126d750959794071556b5cfd130612426",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/TEST_REPORT.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fb40e78cbe7988eb0468e78b7ddc6f33b4beed3b",
+    "sha256": "c85d7ff9fbff51aed14999901f0a70cfb3936e2936a5361d3858f744236eac50",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/USER_REPOSITORY_INTEGRATION_AR.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b0d71002c4561d441118a5310f3331b98a06605b",
+    "sha256": "8e67e673696db9269b2536b94d9cdd7b7343a5a3364743a6394257e61fe5b017",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/V05_SOURCE_ANALYSIS_AR.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ce47f518a9ee3de147135854969461883c1cc110",
+    "sha256": "cd69e261c44d1c5842f2de054f145ac36912266751387ee3a86e461e189469d1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/docs/VALIDATION_V04.md",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "1d93de3ea6a459766121554f0ff92b0b8c7f1692",
+    "sha256": "8a2b9263bb8070a40a1672a1a5fd3d9fc4606dcf5212207614206478f4dae40b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/reports/titan_source_inventory.json",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "7f8beb42090839cbafc5216b51ab8d41498c3a36",
+    "sha256": "b2fae6c3f6e7f2bc44bc9671ca29d27595638dde6fe1cc7800384163f026982e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/scripts/__init__.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/scripts/install_into_ue427.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8f6bab059ec05e7e3ddf3cbcb10fdef7bedcfb4b",
+    "sha256": "1f03e7c6309299b1bcfbac8313262148a263f75e1a8a12ea73b66bab80b07ff0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tests/test_engine.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "095045611f701afb19e05fec1744d1ddbf83f3ff",
+    "sha256": "d43a131888ce768db6a3ff2ee4dca4c02e01a03fb1bb5340c6ed838038e9d083",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tests/test_install_into_ue427.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ba271834fedcdb7d565ef2b8fe4a34b34a4d3d7a",
+    "sha256": "f07591cce039805d82d5199d452e425a848a36185f6fac1d936f1fa80e1b8b81",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tests/test_legacy_planner.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "2be7cc9e7d88cd970f0a8b0fde7f275480727df2",
+    "sha256": "ffd4dccae4bbbd29c83805fcc0edb40a42d70264d6eb33bf6022e63949708fe0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tests/test_titan_data.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "206a6a52ddef215eb42b991b9eb7d51504cddb0d",
+    "sha256": "b69fe7450444356484df1be28c559eb8585837160e1d05d63bbc11a72324bff9",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tests/test_titan_telemetry.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "bec010810f0499e96a000d4d7d8ab0c7b203e02f",
+    "sha256": "e36ce0d322a9ce657453e911a0daf6c992fb595e2dbb535f4d7980de77447716",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tests/test_verify_source_contract.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "202de31ca0e0e529a32819c2f88d740f9caaa0a1",
+    "sha256": "072b241be1c1d9e016907b24001046071a036dcb618f428fefdb77b4a6588c9b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tools/feature_matrix.json",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6d30eff2ac26d2ad1af92cfa1d7b700605638099",
+    "sha256": "36d6a2ebdb476a6a1dff84cc967557cb50f013f3deb9feea77ea36f5a9dcf153",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tools/source_inventory.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6fb1ec7c1dc13c53154eac56dc51bd3c80af5a0c",
+    "sha256": "7b69f83d70f1794c60b4c7a26678f3b2c301f008efd6bd62aa287c51ca724802",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "legacy/TitanFoundation-v0.5/tools/verify_ue427_source_contract.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "722e1c589b6b90e67a8693f6bfbd5510ce5bc462",
+    "sha256": "f380edbf0f4363a397435e0cffff6a1d461d93eceecf9db90081e5dd4808862b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "scripts/build_and_test.sh",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "4a8060aeb117b1aeecf7caf84486c70d75a75dc6",
+    "sha256": "df787ca5b3156ddca5c88aabe9a2f82dbc954d8c71f1c9a0cc463fe4e66c2ebe",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "scripts/sync_ue_plugins.sh",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5ae99bb7adba67fe908ab2f89be6e3e31021ea34",
+    "sha256": "f2d340ee5448d1e11e83fcb48697233664d4ecd7ed637330d49a9a4bc236e669",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "scripts/ue_build.sh",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9591afb8d4e9bf0ba5a95511a571d2e6e34a109c",
+    "sha256": "27082340f7e0c6e2c57af75f2e22350980b1a272c391aacb8ea8727861c05efd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "sdk/include/titan/extension_api.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d000d009050b06fc0baeeb3d3db0a938a1bd88b2",
+    "sha256": "c084cd89e830080751ada53da21fc73511b331d67bcc24e70fbf49713c332f12",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/CMakeLists.txt",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "672968f928666c64f4167d96938912b59e252c61",
+    "sha256": "6429610cce536997ef205ed8cf2b30e9856afd1a3da6c1a7264571da1f19c216",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/AssetsWorkspace.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "977d8a594a437af50978ae767d22d7b7c5aff75e",
+    "sha256": "75622d46acaa7cbf16289fa539e012f035e661ef6a59c665027d1a20d731f11f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/CommandPalette.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6fd69342b92b965f30a8ffebde2d0d2c33ce081d",
+    "sha256": "9e19dab9f6fa3f14916e6ac32d95bffbddbeba64a7758b4edeb5c94fe0eb9dba",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/EditorShell.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a2f7b474c5a367d355aa468d2bc34bd1b8c9a32d",
+    "sha256": "05d3a0b4bc5a313d66767bde38bb5ff32afbae871a1c7a93f1c26d0715de6d9b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/ExtensionsWorkspace.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6df983655e9c60c121762ce2ac08bc4bc074867a",
+    "sha256": "d98253120c61e052a324b0d9c74035ae89ded377b8eb1037273f670b8a03535b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/Hierarchy.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "dd028b3cf67163680025c2a3ab21c2911b90abed",
+    "sha256": "f98e7cf2bacc46e92f21d7fd7d78a2d93d8216dd594bc0e4675faf62820eba0a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/HistoryPopup.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b9e25eeef39b4063a31bd1c694ef7e0ef44b9cd0",
+    "sha256": "957b5674c23b8781670c9d8495652fff8369f7794de53014333d02cbb9a21ade",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/Inspector.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5f92ee2945b2186ae813872da35db8b328975ed1",
+    "sha256": "fa630e8fa86a2620e657bd61078b2d3433f97da9bbee51e33767243dc161ce68",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/Launcher.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9fd2ba461ecebae983fdc2504ab52ab55fd3b702",
+    "sha256": "247fcddb0502b05a9f28eef87a17c3a22db3739cea722d66756ead9cd6dcdea2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/Main.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "737ab646d00775f8bae7d0ca6c1d9851f586923a",
+    "sha256": "4f6b0925b487167e950de0a089ec4527e50b62730fef539be1e0f32cf92315ce",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/NewProjectDialog.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b9d07bfc8eb2efdac2e7044b50d406a7ae0c8cd7",
+    "sha256": "ef8e56a56c9ca8050024ef7be953727aba4ca4f1933980285662963c87d2f4f9",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/PerformanceWorkspace.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9e0a6f9ecb8fd51e985bc31a5600fa60e839e526",
+    "sha256": "b827aa24af01844ac57c29851c73088480cc470cf412cc14431ebb3b5efceb11",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/PlaceholderWorkspace.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "68634436acfc20f566edd7f8868a5ace91566d0a",
+    "sha256": "62ba12d66a4e49ede9ce8a2c001abed4dc59297df08b510e3f7753ddad8881e3",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/Strings.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f5b27a796813129746763344accdd2ef8a98f2f0",
+    "sha256": "45a3ab0c0067a0e5f934e2c9ba1d77f0e91f21ccac8c8f9e5e6dd72ac3aafe71",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/Theme.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5f857f3335aa4a9a62aed5c7fd1eee0627b8c9d1",
+    "sha256": "6fde6bbef3ef02576cddf8737a1bd8a24d60345a08e2689be9db2af04ea2b67a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/WorldBuilderPanel.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d0bb285cec1a43371a26ff81c05e33e96ff17367",
+    "sha256": "eb32894b1e61b218d9154719d06ac275f47d2392e8889516372049d35a99a16b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/Glyph.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9dd23e38c411859263a24628ce0dfe6da15f2f47",
+    "sha256": "6af85a1c149b8d0454d2e9dad49d285667bbc9ecac44e127f47cd6416b5ab27d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/NumberField.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "345ad2b29bc7740140256bfe478b32ec6519acf4",
+    "sha256": "27a7e984d199ff017e0399bab20d21425f06d4bd8ffc1fec07d0b3c43ab37b5e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/SectionHeader.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "433bdf80d307c4f13d1d0904638f46160e3fa11d",
+    "sha256": "6c31c71cc98016ad9d1cc5c70ec1559124f1ac1143b952e59f16bf36da282249",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/Segmented.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0c2fd0716a1760511c2e9084e8a20a202b74dcd1",
+    "sha256": "c2ed20eb2c6f5fc30a25d455754c814c0d3d93032480e1638b053f80ea830560",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/TButton.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0e274b42152400b6e503daf22cf39cf3c06da955",
+    "sha256": "098be1e03649ae06cf0574afa8f5e35c6e9c54d89f500d74b0571250af78b15d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/TIconButton.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "503b6208443cb800cb20cae69037bfe858a1e9a7",
+    "sha256": "21c71ec254091726e8b123ff309be189cb8a441d747f5e1699544cad84eec782",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/TTextField.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a941f56fcdd39af2e5431f8fbaa833cec234749e",
+    "sha256": "8f7897ed987523d3eb19c38f6c980175b0e47c3054c02603c1820e250397b5b1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/qml/components/Vec3Editor.qml",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5d9fe80a7eed300eb31784d83d828110c2fb2f1e",
+    "sha256": "7c9e6c9054b74909a2a0f1ad4ae304d2d475e5a8255d496664beead83f2b65bf",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/shaders/frame.frag",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "32d85024fa104ccecbce43b3f2d1a2e870228826",
+    "sha256": "98f048fc4b04204766e343c2c7c2e9aff095a7365af88cedc29c51e0f72f4ca6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/shaders/frame.vert",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "dd896a88292682046a8cdd463f99e5e56fd7f503",
+    "sha256": "b5d33a4e13596ff56f1604f026c871d100e06e081982475fdf54e26a9258fbb7",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/shaders/mesh.frag",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5eaee77e479b12eb46f19b94c76709abe8891764",
+    "sha256": "4094350b923c72800c0757d8c1024524592f10f2c99e69a51a266465c5edd2b4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/shaders/mesh.vert",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ce08975f5e52e79dea36610b4d56c41013414675",
+    "sha256": "54cb3b768506178da3d77f3703df07f22f48f5b194717c166291ad44f7b2ea60",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/AppSettings.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "3f73c40ab94a522fe4840d10c33894ac69a2ce03",
+    "sha256": "835df4868bed4adf2b92ed7d41332d4030ad76621ead167413e95f985c6ec09e",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/AppSettings.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "95c3b581812bf540c61be92e0b1e3a027fc4b4fc",
+    "sha256": "74c8f8753655e80af0b99561cdbe77888be69c2b7ed88b876f101a9be227ad02",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/EngineClient.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b1bb3186a0cdc62f2aec6b5388382833674d9efb",
+    "sha256": "cfeb6b6511f1ecae079599a4e7d6eaa053f58a5e2a3ea73a0a18d552cbde71cd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/EngineClient.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "4d35f5f640703ff5a83369463a5a78e891ea0db4",
+    "sha256": "d577d2c9b27214d7abd6411abaa2e2b092616f6f6d546d7c371d46275b971ba7",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/EngineConnection.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d2e4868cde320801fc153a1ffcc5481b6349bd77",
+    "sha256": "9b77bac45aa3c78d0cb48cda55fcf4ab5c87c939fe0e31d92ede4df918f44ff1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/EngineConnection.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9a8e5d7a5c646f4ec5d768460f269293e3252417",
+    "sha256": "ddcc04a8bd84ecb0faa8aba894621642b5c0bb2f18f2f33d029247a5c7070b3f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/RemoteFrameSource.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b2d1ab0933c9a6ca5cea4c9bd322f3c0e3dd1adc",
+    "sha256": "bb5ca18ee7c4918fcc2d9d1479ff1d8525f210029a6f86dbc7279aad082dff30",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/RemoteFrameSource.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e912b94f96a44fa91f46cbf9b26185e24893a6f0",
+    "sha256": "463f717e0901cc2473f95ff28134ac2970f87936ea28280e1e5cf83c0743b54c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/SceneModel.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a3b070bf681416652afb3b02e06fdc379c1c6eb8",
+    "sha256": "095480b793c2386cae19e10b1f174ec90a6bc0ff97d32b6d8677cc1186c89a4a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/SceneModel.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c78873e0ee71c2577e52a63e41a6712e42834d26",
+    "sha256": "26e9c50716884af22a2988ccabea204328c96953ce757d3629837cb626ec48b2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/SmokeTest.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a07fee77d08802eac9b0b4eacf67b82853e126ba",
+    "sha256": "8e3387da6c7474fffc9575964964d9b66728537463e69af94219dc77033eb801",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/SmokeTest.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ecc4bf29e35f2d5cbf60d3963fe8f242f09dbd2a",
+    "sha256": "b93d9f7af86400cb5f3e44c9a029218faa2ca230c18848235a8fac07a01ab2c2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/ViewportItem.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "83644d154a8fb6e21d2412eae9e51ec5fd53a082",
+    "sha256": "f4a0c88846ab47761f0175a8afd3691478027fe1b4b82a075ff420880743ac33",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/ViewportItem.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "5466e9b8f309a045b2dd0784aa568e298891dd7e",
+    "sha256": "35846c6e299caf47e8482d2b9f13c54349386aba3945b3661afdd2008e6f88db",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "studio/src/main.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "918719114c06b0fa9b2b7709f15a7c79f1fa61dc",
+    "sha256": "9c1eaa689b0de02301bfd25a44fbbf394e9352ad3eeabec7bdc84f6231cbb5b4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/run_conformance.cmake",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9e41411bba0783ee3ac0f328e25a6c14ab782e0d",
+    "sha256": "d3c46757e976de2e354c1712d84f07d427682d07274d3bad9b0dbfc61c93dd8a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/run_ue_bridge.sh",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "95c3794451b60cd1ab5e8791d86a49815fd5b6d5",
+    "sha256": "128894a90728d56cfa5027e121afe02cfb18b2ddf41e6cdd65564994715b1c00",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_assets.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f2093be446aeaad017c8226f74d3f3fef3d6c14c",
+    "sha256": "58a665ebaa56fdf2de6f47f0acff0e1c2b3daf1929748b026134680c6ebaf2e9",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_audio.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "128dc4b4ee0efd7d64af6825433a3530f8611170",
+    "sha256": "1babbfcf3fefd34e84e824ed4918b0cee8c71a8a9cfacf2cead2f04cccfe6ecf",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_behavior_tree.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6944555b8cf53e7ef771c811e5833593747a2f31",
+    "sha256": "2a0d296c1cc70b963252814e9efa244bc8471e9e49f49b6cbe9ea1e675ee8482",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_core.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "206215d4f99857824f4f5410e211c9246565985d",
+    "sha256": "718a67d212bf2e80e84ede82275b28396051648317781b16d55fa33fc112c664",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_event_bus.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8121c953986166ecc1c0c9407e21b18018e04acb",
+    "sha256": "81a228c1d3a6a3afb6129e6bed85e996a9e4da6b395a3b5cb8eac191d0e8a79b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_extensions.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f0d2b0ef4c154a44a0eab321c4cc780de518476b",
+    "sha256": "d8a8a5c0b0b83d8a5f16cad83ef3bac75c7bfc76e352c194ce064985226f6227",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_frame_channel.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "788e5b631cd819c45251ba3079b51cabe4194618",
+    "sha256": "de7e5b5588d03b63440881c0c6040cc06bf83a70ba1be413035f84a1e372c4d0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_host_integration.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d6de49a1d3f071e6357248946e1e65fe41fa16b1",
+    "sha256": "2ab9ea1d5053486275791e03ba3432a885fdece99232ab83d6de08aa12cfd274",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_input.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "41acc33a0947fca9ac6f64e75e5aa92200d8df98",
+    "sha256": "1d25f7291d8c7a806756806bc72ca111d3cf9aa377b1adb52a77b880c5289725",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_material.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "79a39d659d983e892bd28f85ae2d645433b15c3c",
+    "sha256": "b589bfb41246515dd0f6b2ddbecc8fe20cf6f7fbeb1354d9a2befca2e363948c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_navigation.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8af4cfbd3b9f0b9d26536896a5556afdb881244d",
+    "sha256": "9dbb3dba242ceb580e220347d079fbab76bb5b213345e6502cd11e6b57202e0c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_perception.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fc80430da90b1a4a229efaedcc21bbdddc7bbfab",
+    "sha256": "84d339bf55a6bdbb0a76d8924b9a2993c6031784d99cc306dfbf7ee9c73137c7",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_physics.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8ff4851833fd01e9c3745b98184859f45c3f0b21",
+    "sha256": "8d39c7dcf103bd03dfff3a39a571845f3667c3ffa2b0d4229a8933b33ea17f7b",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_prefab.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "364d5ea4f2aff8ebe3f6de6e783bb1e4f361886d",
+    "sha256": "5de3d035d4f3a52e94c4906d2b76c76699b87641c71113edbf7e1c4596a1d172",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_script.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ee57b64aff92801c94869e8c73705882b809bcc2",
+    "sha256": "ecd0cebb857234bf275b681dd6e56e292996a3369dea4c15d9382efbe9ae65b6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_spatial.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "f6734263da6051074be0a3f0b38e1ea79410c36d",
+    "sha256": "e2cf7617f7a88c7586031868eabfa7c09754eae92dd19156c86a3b6ea9df8ef9",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_timeline.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "40246600ad71f19b46d0f9acd0d60db71ab7e20c",
+    "sha256": "b038daacb221223e2111f35a032edca7b46f6b8a94d7f59ff27500cc659bd3d6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_ue_build_preflight.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "c13a9b7d25b5c0740247ffa581c39edf62f62865",
+    "sha256": "df62b4b03ed90f0c908399eadd2e3b62f525785ed28ef5043c343a92cccf9f26",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_ue_coordinates.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "40847e3526840e6c519921f55920830591df4b82",
+    "sha256": "0488d13ad2defa4efa461739e394f712e74830fef9eab1fe5bfef6bdafc07ca5",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/test_utility_ai.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6a1b4d7933de6faa7a48345e57f7f102301163d9",
+    "sha256": "d3534dc66df61c607c87331bcf6f721fd9399fc4e5a75c17c27387a812ef00ca",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tests/titan_test.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "15a11b7b32758530c32b34df8391672178d64c49",
+    "sha256": "6c51b15fdff9ce6b321bec568d485c4a41d62f99ee7b9bb9e80eb9f2accb60fc",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/asset-bench/main.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "adc454d19d6a0e95e4c4858d2abe1fe3c301ac55",
+    "sha256": "8bfb47c11616a91d975d382fbd4ca1d6bb35e3f092096d968d14cafb80d40055",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/ci/baseline-suites.json",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "340218732c283c555de01b4b544c228248a5a176",
+    "sha256": "d1c2f67977f0dad602407e5f3b543aced2006d983732aa578421bc8b712171e1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/ci/ctest_report.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "853003abeff71b4449bc58172c3363f835893d29",
+    "sha256": "99ac653ee25801228881f357b7c765b6178ad303944a272702acb30253af32bb",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/ci/metal_probe.swift",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "526b3ded455e4284b938ab51f732336d7f03248f",
+    "sha256": "4a9244027e3d84ebbc607b6c3a4f7fc4b573c62adf4aa3b8c373d803a6cd9d95",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/ci/qmllint_summary.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "310f14539174c98b5708b9715e33e6c9d224093a",
+    "sha256": "f70cdb908e4476eae06a61cbc1afd3ba8da84172491017821d5d4536a18073d4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/protocol-check/main.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "32a65c3bb77ced75d77a5490b01163b353c80406",
+    "sha256": "79fd60f55b885f3d7c06dd38023d47efc3ec06ba38c9ffd9fec07a014a223fc0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/ue-bench/main.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "3aa27bb3d83ec389d9c0c49793b0106c0b63096b",
+    "sha256": "2e95feb8620f31b77df78c7797bcba3940e185d97ccce2c8291fb43f271da291",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/ue_build_preflight.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "084a9980bdab45ed5db99b411876c147b1e11786",
+    "sha256": "eb65be86e675c4d717734ae53381e0e64ea8aa10f2c13d3cba545a30ae63ff36",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "tools/verify_ue_source_contract.py",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "0d78a5f649f74c0d75b82f87df160ab4a2dba93e",
+    "sha256": "05f55004660a7af412dfcb023535386f59411cdbdaa91ea2691bc21b6ba2f5ef",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/BuildConfig/gitdeps-macos.exclude",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "9d748aac968a1b6a86762bc6d3ae1b421bc0909b",
+    "sha256": "64a2c0a138fe9f25ced1071f11f10546d85e2bd00c4d910ab451f4281056c066",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/Tests/TitanBridgeTests.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "3e525f0649b2276413bb8ca5e5dfe253741da4a6",
+    "sha256": "0d151df6032d6f1ed0acfdd7d3e58983ce4cadd0c74fc40f8491cb8f48f74207",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanBridgeFrames.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "8fd0b0ca15a693a7fffc4e40d70bed285639c6bf",
+    "sha256": "71835f95ed48bae27fb67b0ac97a34fffca78a9f5e93bad3cb7a76252dbf9ac2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanBridgeFrames.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "1387898cb086b4663b5cf9abba928e6fbeaceef3",
+    "sha256": "7afd79488e3ca8de3471c04562cf6dfc221a85247e477ed3a18a53be6f955fe1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanBridgeLog.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "757eb86cf4446daa6b87aee3b84401c1ec629efa",
+    "sha256": "3a65419b2ada0604f42681af87cbf54a2b1bab26b7189ccb0a48629c75d37e36",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanBridgeSession.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "6589ab3b8fcd419424a1e3d21f9b5600ef81cf52",
+    "sha256": "a87b625c9146b4a0b9996548fe5893adee6db72f21fad8ce792c1d56cb08f0dd",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanBridgeSession.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "495e25a47b7ebd65e9fbfe931d573213826eb415",
+    "sha256": "ed3789c2b0ca214fda7d1ed6335002014c7cf000602bd1cce6312407030b8be0",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanBridgeTransport.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "85a129ccf84c30a4566e9bdb85bea477d6530d76",
+    "sha256": "7f7429920baefba4a0f8e916be22fd64440d27e01481851c34b8e8f50be3661d",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanBridgeTransport.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "2c118c4eaa318f07a50ae98f0d240ebaeefecaa5",
+    "sha256": "f62cd6e6a362f0ba926715c2954aabaffb87a134656c6b45083b371b92fadead",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Private/TitanStudioBridgeModule.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "98d2edd7e8d406e337fcb95ebaf0f9a651b7f79b",
+    "sha256": "202e1a9e38f0bad3d110315ccd7892aabb013b5661e6641a8419c330572c8d9f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Public/TitanCoordinates.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b5bda32d2648ca7925c9f067eae36bd78c129824",
+    "sha256": "65cd69749b457eb812a54d2626e6c79655643063e760b8c7e1fdfa73c0f1769a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/Public/TitanFrameChannel.h",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "d5150494920e64d0dd334ba30c057b4b1c3399da",
+    "sha256": "d0043ba2b8c99015ea932fa89f2bd91dbe97d19f8443b217e1521cb91891125c",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/Source/TitanStudioBridge/TitanStudioBridge.Build.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a8a8051ac94e8a38ef91e8b01586da085500fe8f",
+    "sha256": "3af7d8765f40f713944d9b896c3c2e5c90599dbbcde15f4d1bd171c000ff0679",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/Plugins/TitanStudioBridge/TitanStudioBridge.uplugin",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "ef672a394f2b1786a71b197b330873026624065a",
+    "sha256": "c8b220e2fe53864b597eb8f94ea4ae10b0b01d4adac1feb3bd76be5e4fd16759",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Config/DefaultEditor.ini",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "97df132c554763bfb2e062ab1ef266cd0741ab0d",
+    "sha256": "8f61dbca4ccda640db60bb3d5fe30e158a6919c1186fe86c830b02183ee0d77a",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Config/DefaultEditorSettings.ini",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "dd21e44ec45630918bc10b459542bc8e8c5d2b61",
+    "sha256": "f7020e3db4b9b58cb9d2e6a0569c55bc9df1702305a371d3a5b7e7bbe36c3cb2",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Config/DefaultEngine.ini",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "be0e7ebe1eef8b09e2227e0d7ff489be498d4dbf",
+    "sha256": "57763d934d0a74834424c56a0c7a51db1c2df4f43ba15df7fdb5ac8b4a0d85e1",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Config/DefaultGame.ini",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "fc5dc87756c367e23b9c702b1ea9c8d4dcbe2020",
+    "sha256": "62f388a1981efc72a3c506a35711b1aa401969054bc2c1f4386bc9248402cd7f",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Source/TitanHost.Target.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "99110d777b6c2440486521ece14abd306ebbc6f0",
+    "sha256": "e641c5e438dcaa24a7368ce7946704e1218681965eafc10a1016576065a74cd4",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Source/TitanHost/TitanHost.Build.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "b5461c7fb68ddc486a2dc08121d155303d7bb16e",
+    "sha256": "41d97d73e5a912aad5f2d41ac9f3f9b930c9dc9b5d5535fee5219b056f473d05",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Source/TitanHost/TitanHost.cpp",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "a477f5abeba4bef22b94b8400feaa7a1a5825b05",
+    "sha256": "54fd2e15f83492f187db34bc10530b5dee404492c8c2e6c71eb8d8aff49aa8d6",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/Source/TitanHostEditor.Target.cs",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "10ce4fcb9ae5f1c9ceb6f4792db9ee8c08bfee82",
+    "sha256": "1fbf1a733920f752958b528c67ef975b072786ed5a0307dcbc690376c4fc0c69",
+    "matches_source": true
+  },
+  {
+    "project": "TITAN-Studio",
+    "path": "unreal/TitanHost/TitanHost.uproject",
+    "source_commit": "ca1d1a10904d1c542c018a5993a26507c383a287",
+    "git_blob": "e76a686fc136639e4861435db50e68eb2f79f293",
+    "sha256": "1ab10b9aba6ed46b9d70418995cd0e8b97a89fc3cafb2e016eaa9caab1ad6f51",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": ".gitignore",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "f9c229a2e3a7a59839e358feb9e7bcb6f0ce7cc2",
+    "sha256": "6575af53fbdba71f8dcf1fb1bef5cb47b7bb88e5212afecc1556a4bcd6b89e98",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "LOCAL_SNAPSHOT.json",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "1d44e996a23ebbeac306e467b7e038074c726d66",
+    "sha256": "6f3b72ebb070cba2768982b4544ce7168c9f4fc434fcd39ec2984f1268d8b62f",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "README.md",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "ccf5a4909165e3dfd47b4b20c44b5b4e92840516",
+    "sha256": "d85a135406be28b4907a995f31c8a1b6aed40194c889151eeef1bc740914719c",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "assets/codex-chat-gating-schema.prisma",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "cbe1d96c190462dc5daa684289b6b4f7638d3b40",
+    "sha256": "a91aec5dcc9754749c634b47e3ead1cccd98cf4096b258e664540975ebedbf1e",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "assets/codex-chat-gating-schema_1.prisma",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "cbe1d96c190462dc5daa684289b6b4f7638d3b40",
+    "sha256": "a91aec5dcc9754749c634b47e3ead1cccd98cf4096b258e664540975ebedbf1e",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "assets/codex-chat-gating-schema_2.prisma",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "cbe1d96c190462dc5daa684289b6b4f7638d3b40",
+    "sha256": "a91aec5dcc9754749c634b47e3ead1cccd98cf4096b258e664540975ebedbf1e",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "assets/codex-chat-gating-schema_3.prisma",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "cbe1d96c190462dc5daa684289b6b4f7638d3b40",
+    "sha256": "a91aec5dcc9754749c634b47e3ead1cccd98cf4096b258e664540975ebedbf1e",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/README.md",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "a5b0c7b230eff029a72f646511aaad2b6caab99e",
+    "sha256": "12778048e5801d078bfb52322ef8de70244e0a65d830d34152b3290e30039a09",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/courses/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "76d64e1f7bb95a5d4eacdea70097af8526d7ef2f",
+    "sha256": "ee27ee8be24fb255fcbcc1eb6333096d0408999fa2e1d441a56d5d3fd61635c8",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/dashboard/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "397d1c4390fec2d08b77f6905e8b3e1be97373da",
+    "sha256": "415ec3ec15b1e6232d86c1efa3ada0c78b40c3232f44fba58518e301ad65d81d",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/globals.css",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "55c757d0e7db5291a3d1f1f3bdfdd81e47c58310",
+    "sha256": "544310f873dc12fb87ef66b7d334f1b6d5febbe91b1a7f2927a4f8371b7c34df",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/layout.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "b682a175d9eb53899123a6395ad0da9ae9723200",
+    "sha256": "c5e64d15ff8399f3b3fbf3bdc0f9d9ab97cc7123ebd8540b2700b722ef0b44d7",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/lesson/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "bb4e53757c5c851df9d4c24830d4ffededfb8c33",
+    "sha256": "db3973684c75b836a6a718121f720f8088041aab60630b0aab299bdad852aef0",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/login/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "1e760b784601c97f2df9fb00288c10b3662be219",
+    "sha256": "625b5b8465812e9c05f803b255bc1df6e4a5c32bd1283ee708ae77c5b6e718ae",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/not-found.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "52f8757a7bf25a6a277545d95bb21819d8d09de4",
+    "sha256": "0c8e424bbc28817d7b2009d960694f066cb8989db303048806995fdca68c7ba6",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "a2de1959f5e7c8f44682ff5923a6df85264cd5bc",
+    "sha256": "9b2d2a5394545bc92011ec0fc577820ddca53ab1e6dd1d4f5b9c3568e8ecf20f",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/projects/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "380c331a694340abdc390a7d2067957325770a6f",
+    "sha256": "77a7edddc812c0f5de460e6a60e7c13420c9a95f31cccd6bc7c1039fd3e4d6b0",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/app/settings/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "677dd04ee0ca4389f81d936488037280ee0bcb1c",
+    "sha256": "e8b97d2cb0eb1987fdd9a261cc703bd9897081333dc391e869d3eb05e42c1d95",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/components/Heatmap.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "3a7c6160e34e42826e1f850e676f8560b861309a",
+    "sha256": "43a2074c0aec16f8db223c7998a068626428e81c894e70a0f6683d9076ecdcf7",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/components/Logo.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "658f6e1f776ccae9d12511e991fa9d03fc042ca1",
+    "sha256": "c9f25f088d76c5a48ddb2ba50fcf64d4c4944e4c545e97a12c0e337bdc3e3da8",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/components/Sidebar.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "df080318a7313ef6ad4e7e1408039a29c1513846",
+    "sha256": "284bcf09658bb3de819026ce7649409286662376fd515e205103006d41372f1b",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/components/StatCard.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "b0902fb07f60348fa12ad60a0c004c0b0812acca",
+    "sha256": "7a6cb64dad41c97a5a825efac44d8c956b2d7da424be390a82acea955163ab65",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/package.json",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "355f938b09b81a78b913afb7df5a5fa4ca9837c6",
+    "sha256": "58dc26c35545af788609bf105307070ca4aa485a779d08050fe356bd4ae66571",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/postcss.config.js",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "33ad091d26d8a9dc95ebdf616e217d985ec215b8",
+    "sha256": "251ecddd4672c9cf467547e3dc535de00ad2129df26e7e7ae728fa4e5ac45fc5",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/public/codex-logo.png",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "6119a71f53aa7e98ab2da789b04dc5c93c6e2e17",
+    "sha256": "27fede20f197dd0d8effed8b32264a4d278fe2ff9a2d90f1ee3b306f0943a05e",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/tailwind.config.ts",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "8b51a110f52c841dc28e133b00830c3a1e94f400",
+    "sha256": "6d5a6eb42d618f46fb7bb1fdf40dc06c940818341c15cbee19bd0b6358fc353c",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/كود من ZIP/codex-frontend/codex-frontend/tsconfig.json",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "8b1f37337866f5077bbbd5b9631f1c51d658cb89",
+    "sha256": "f9231e4c2e6c7857d2d307424c1c1116c49347fd4d43887f7ce509df7dcc7704",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codeX/CodeX_logo_transparent.png",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "6119a71f53aa7e98ab2da789b04dc5c93c6e2e17",
+    "sha256": "27fede20f197dd0d8effed8b32264a4d278fe2ff9a2d90f1ee3b306f0943a05e",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/README.md",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "a5b0c7b230eff029a72f646511aaad2b6caab99e",
+    "sha256": "12778048e5801d078bfb52322ef8de70244e0a65d830d34152b3290e30039a09",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/courses/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "76d64e1f7bb95a5d4eacdea70097af8526d7ef2f",
+    "sha256": "ee27ee8be24fb255fcbcc1eb6333096d0408999fa2e1d441a56d5d3fd61635c8",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/dashboard/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "397d1c4390fec2d08b77f6905e8b3e1be97373da",
+    "sha256": "415ec3ec15b1e6232d86c1efa3ada0c78b40c3232f44fba58518e301ad65d81d",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/globals.css",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "55c757d0e7db5291a3d1f1f3bdfdd81e47c58310",
+    "sha256": "544310f873dc12fb87ef66b7d334f1b6d5febbe91b1a7f2927a4f8371b7c34df",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/layout.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "b682a175d9eb53899123a6395ad0da9ae9723200",
+    "sha256": "c5e64d15ff8399f3b3fbf3bdc0f9d9ab97cc7123ebd8540b2700b722ef0b44d7",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/lesson/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "bb4e53757c5c851df9d4c24830d4ffededfb8c33",
+    "sha256": "db3973684c75b836a6a718121f720f8088041aab60630b0aab299bdad852aef0",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/login/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "1e760b784601c97f2df9fb00288c10b3662be219",
+    "sha256": "625b5b8465812e9c05f803b255bc1df6e4a5c32bd1283ee708ae77c5b6e718ae",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/not-found.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "52f8757a7bf25a6a277545d95bb21819d8d09de4",
+    "sha256": "0c8e424bbc28817d7b2009d960694f066cb8989db303048806995fdca68c7ba6",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "a2de1959f5e7c8f44682ff5923a6df85264cd5bc",
+    "sha256": "9b2d2a5394545bc92011ec0fc577820ddca53ab1e6dd1d4f5b9c3568e8ecf20f",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/projects/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "380c331a694340abdc390a7d2067957325770a6f",
+    "sha256": "77a7edddc812c0f5de460e6a60e7c13420c9a95f31cccd6bc7c1039fd3e4d6b0",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/app/settings/page.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "677dd04ee0ca4389f81d936488037280ee0bcb1c",
+    "sha256": "e8b97d2cb0eb1987fdd9a261cc703bd9897081333dc391e869d3eb05e42c1d95",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/components/Heatmap.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "3a7c6160e34e42826e1f850e676f8560b861309a",
+    "sha256": "43a2074c0aec16f8db223c7998a068626428e81c894e70a0f6683d9076ecdcf7",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/components/Logo.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "658f6e1f776ccae9d12511e991fa9d03fc042ca1",
+    "sha256": "c9f25f088d76c5a48ddb2ba50fcf64d4c4944e4c545e97a12c0e337bdc3e3da8",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/components/Sidebar.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "df080318a7313ef6ad4e7e1408039a29c1513846",
+    "sha256": "284bcf09658bb3de819026ce7649409286662376fd515e205103006d41372f1b",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/components/StatCard.tsx",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "b0902fb07f60348fa12ad60a0c004c0b0812acca",
+    "sha256": "7a6cb64dad41c97a5a825efac44d8c956b2d7da424be390a82acea955163ab65",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/next-env.d.ts",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "1b3be0840f3f6a2bc663b53f4b17d05d2d924df6",
+    "sha256": "f2b3bca04d1bfe583daae1e1f798c92ec24bb6693bd88d0a09ba6802dee362a8",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/package-lock.json",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "9e40f4ebed4468ef9e68640a3dc383f273514b11",
+    "sha256": "2a18ee21aaea8c692b0de3c537048fa83560087cc388f055e08a4f685d48818d",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/package.json",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "355f938b09b81a78b913afb7df5a5fa4ca9837c6",
+    "sha256": "58dc26c35545af788609bf105307070ca4aa485a779d08050fe356bd4ae66571",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/postcss.config.js",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "33ad091d26d8a9dc95ebdf616e217d985ec215b8",
+    "sha256": "251ecddd4672c9cf467547e3dc535de00ad2129df26e7e7ae728fa4e5ac45fc5",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/public/codex-logo.png",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "6119a71f53aa7e98ab2da789b04dc5c93c6e2e17",
+    "sha256": "27fede20f197dd0d8effed8b32264a4d278fe2ff9a2d90f1ee3b306f0943a05e",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/tailwind.config.ts",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "8b51a110f52c841dc28e133b00830c3a1e94f400",
+    "sha256": "6d5a6eb42d618f46fb7bb1fdf40dc06c940818341c15cbee19bd0b6358fc353c",
+    "matches_source": true
+  },
+  {
+    "project": "Codex",
+    "path": "current/مصادر العمل المحلية/codex-frontend/tsconfig.json",
+    "source_commit": "0deea1235bffd5fabf86bb99b5e12156186291e3",
+    "git_blob": "8b1f37337866f5077bbbd5b9631f1c51d658cb89",
+    "sha256": "f9231e4c2e6c7857d2d307424c1c1116c49347fd4d43887f7ce509df7dcc7704",
+    "matches_source": true
+  }
+]

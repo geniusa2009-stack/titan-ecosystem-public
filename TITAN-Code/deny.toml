@@ -1,0 +1,43 @@
+# cargo-deny policy for TITAN Code (see docs/dependency-policy.md).
+# Purpose: catch known vulnerabilities, yanked crates, unexpected licenses and unknown
+# sources. The license list is the set the current dependency tree uses; adding a crate
+# under a license not listed here needs a deliberate edit (and a reason in the PR).
+
+[graph]
+all-features = false
+
+[advisories]
+version = 2
+yanked = "deny"
+ignore = []
+
+[licenses]
+version = 2
+confidence-threshold = 0.9
+allow = [
+    "MIT",
+    "MIT-0",
+    "Apache-2.0",
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Zlib",
+    "CC0-1.0",
+    "Unicode-3.0",
+    "Unlicense",
+]
+
+[licenses.private]
+# Workspace crates are `publish = false` and carry no license field.
+ignore = true
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+allow-wildcard-paths = true
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]

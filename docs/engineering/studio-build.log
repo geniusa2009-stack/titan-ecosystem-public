@@ -1,0 +1,195 @@
+[1/188] Building CXX object CMakeFiles/titan_core.dir/core/src/json_number.cpp.o
+[2/188] Building CXX object CMakeFiles/titan_core.dir/core/src/json.cpp.o
+[3/188] Building CXX object CMakeFiles/titan_core.dir/core/src/math.cpp.o
+[4/188] Building CXX object CMakeFiles/titan_core.dir/core/src/edit.cpp.o
+[5/188] Building CXX object CMakeFiles/titan_core.dir/core/src/scene.cpp.o
+[6/188] Building CXX object CMakeFiles/titan_core.dir/core/src/protocol.cpp.o
+[7/188] Building CXX object CMakeFiles/titan_core.dir/core/src/project.cpp.o
+[8/188] Building CXX object CMakeFiles/titan_core.dir/core/src/mesh.cpp.o
+[9/188] Building CXX object CMakeFiles/titan_core.dir/core/src/sha256.cpp.o
+[10/188] Building CXX object CMakeFiles/titan_core.dir/core/src/asset_importers.cpp.o
+[11/188] Building CXX object CMakeFiles/titan_core.dir/core/src/assets.cpp.o
+[12/188] Building CXX object CMakeFiles/titan_core.dir/core/src/prefab.cpp.o
+[13/188] Building CXX object CMakeFiles/titan_core.dir/core/src/clipboard.cpp.o
+[14/188] Building CXX object CMakeFiles/titan_core.dir/core/src/components.cpp.o
+[15/188] Building CXX object CMakeFiles/titan_core.dir/core/src/play_session.cpp.o
+[16/188] Building CXX object CMakeFiles/titan_core.dir/core/src/timeline.cpp.o
+[17/188] Building CXX object CMakeFiles/titan_core.dir/core/src/script_graph.cpp.o
+[18/188] Building CXX object CMakeFiles/titan_core.dir/core/src/material.cpp.o
+[19/188] Building CXX object CMakeFiles/titan_core.dir/core/src/input_map.cpp.o
+[20/188] Building CXX object CMakeFiles/titan_core.dir/core/src/physics_geometry.cpp.o
+[21/188] Building CXX object CMakeFiles/titan_core.dir/core/src/event_bus.cpp.o
+[22/188] Building CXX object CMakeFiles/titan_core.dir/core/src/physics.cpp.o
+[23/188] Building CXX object CMakeFiles/titan_core.dir/core/src/audio.cpp.o
+[24/188] Building CXX object CMakeFiles/titan_core.dir/core/src/spatial.cpp.o
+[25/188] Building CXX object CMakeFiles/titan_core.dir/core/src/blackboard.cpp.o
+[26/188] Building CXX object CMakeFiles/titan_core.dir/core/src/navigation.cpp.o
+[27/188] Building CXX object CMakeFiles/titan_core.dir/core/src/behavior_tree.cpp.o
+[28/188] Building CXX object CMakeFiles/titan_core.dir/core/src/utility_ai.cpp.o
+[29/188] Building CXX object CMakeFiles/titan_core.dir/core/src/perception.cpp.o
+[30/188] Building CXX object CMakeFiles/titan_core.dir/core/src/scene_template.cpp.o
+[31/188] Building CXX object CMakeFiles/titan_core.dir/core/src/capabilities.cpp.o
+[32/188] Building CXX object CMakeFiles/titan_core.dir/core/src/ipc_posix.cpp.o
+[33/188] Building CXX object CMakeFiles/titan_engine.dir/engine/host/engine_session.cpp.o
+<TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/engine/host/engine_session.cpp:952:35: warning: declaration shadows a local variable [-Wshadow]
+  952 |             std::vector<ObjectId> roots, ids;
+      |                                   ^
+<TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/engine/host/engine_session.cpp:922:14: note: previous declaration is here
+  922 |         auto roots = [&](const std::vector<ObjectId>& in) {
+      |              ^
+1 warning generated.
+[34/188] Linking CXX static library libtitan_core.a
+[35/188] Running qmlimportscanner for titan-studio
+[36/188] Building CXX object CMakeFiles/titan_engine.dir/engine/host/extension_host.cpp.o
+[37/188] Linking CXX static library libtitan_engine.a
+[38/188] Building CXX object CMakeFiles/titan_ext_procedural_scatter.dir/extensions/procedural-scatter/scatter.cpp.o
+[39/188] Generating qt.conf part for titan-studio
+[40/188] Linking CXX shared module extensions/titan.procedural.scatter/titan_ext_procedural_scatter.so
+[41/188] Building CXX object CMakeFiles/titan-engine-host.dir/engine/host/main.cpp.o
+[42/188] Linking CXX executable bin/titan-engine-host
+[43/188] Populating .qmlls.build.ini file at <TASK_WORKSPACE>/build-workspace/studio-build/.qt/.qmlls.build.ini
+[44/188] Copying titan-studio qml sources into build dir
+[45/188] Copying titan-studio qml resources into build dir
+[46/188] Generating qt.conf file
+[47/188] Automatic MOC and UIC for target titan-studio
+[48/188] Running AUTOMOC file extraction for target titan-studio
+[49/188] Running moc --collect-json for target titan-studio
+[50/188] Building CXX object legacy-v0.5/CMakeFiles/titan_orchestration.dir/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanWorldScheduler.cpp.o
+[51/188] Automatic QML type registration for target titan-studio
+[52/188] Generating .qsb/shaders/mesh.vert.qsb
+[53/188] Generating .qsb/shaders/mesh.frag.qsb
+[54/188] Generating .qsb/shaders/frame.frag.qsb
+[55/188] Generating .qsb/shaders/frame.vert.qsb
+[56/188] Building CXX object legacy-v0.5/CMakeFiles/titan_orchestration.dir/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanTaskGraph.cpp.o
+[57/188] Building CXX object legacy-v0.5/CMakeFiles/titan_orchestration.dir/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanFrameGraph.cpp.o
+[58/188] Building CXX object legacy-v0.5/CMakeFiles/titan_orchestration.dir/TitanEngine/Plugins/TitanFoundation/Source/TitanOrchestrationCore/Private/TitanStreamingTelemetry.cpp.o
+[59/188] Building CXX object legacy-v0.5/CMakeFiles/titan_data.dir/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Private/TitanECS.cpp.o
+[60/188] Running rcc for resource qmake_TitanStudio
+[61/188] Generating .rcc/qmlcache/titan-studio_qmlcache_loader.cpp
+[62/188] Building CXX object legacy-v0.5/CMakeFiles/titan_data.dir/TitanEngine/Plugins/TitanFoundation/Source/TitanDataCore/Private/TitanVisibility.cpp.o
+[63/188] Generating .rcc/qmlcache/titan-studio_qml_Main_qml.cpp, .rcc/qmlcache/titan-studio_qml_Main_qml.cpp.aotstats
+[64/188] Generating .rcc/qmlcache/titan-studio_qml_Theme_qml.cpp, .rcc/qmlcache/titan-studio_qml_Theme_qml.cpp.aotstats
+[65/188] Generating .rcc/qmlcache/titan-studio_qml_Strings_qml.cpp, .rcc/qmlcache/titan-studio_qml_Strings_qml.cpp.aotstats
+[66/188] Generating .rcc/qmlcache/titan-studio_qml_Launcher_qml.cpp, .rcc/qmlcache/titan-studio_qml_Launcher_qml.cpp.aotstats
+[67/188] Generating .rcc/qmlcache/titan-studio_qml_EditorShell_qml.cpp, .rcc/qmlcache/titan-studio_qml_EditorShell_qml.cpp.aotstats
+[68/188] Generating .rcc/qmlcache/titan-studio_qml_Hierarchy_qml.cpp, .rcc/qmlcache/titan-studio_qml_Hierarchy_qml.cpp.aotstats
+[69/188] Generating .rcc/qmlcache/titan-studio_qml_HistoryPopup_qml.cpp, .rcc/qmlcache/titan-studio_qml_HistoryPopup_qml.cpp.aotstats
+[70/188] Generating .rcc/qmlcache/titan-studio_qml_Inspector_qml.cpp, .rcc/qmlcache/titan-studio_qml_Inspector_qml.cpp.aotstats
+[71/188] Generating .rcc/qmlcache/titan-studio_qml_WorldBuilderPanel_qml.cpp, .rcc/qmlcache/titan-studio_qml_WorldBuilderPanel_qml.cpp.aotstats
+[72/188] Generating .rcc/qmlcache/titan-studio_qml_PerformanceWorkspace_qml.cpp, .rcc/qmlcache/titan-studio_qml_PerformanceWorkspace_qml.cpp.aotstats
+[73/188] Generating .rcc/qmlcache/titan-studio_qml_ExtensionsWorkspace_qml.cpp, .rcc/qmlcache/titan-studio_qml_ExtensionsWorkspace_qml.cpp.aotstats
+[74/188] Generating .rcc/qmlcache/titan-studio_qml_AssetsWorkspace_qml.cpp, .rcc/qmlcache/titan-studio_qml_AssetsWorkspace_qml.cpp.aotstats
+[75/188] Generating .rcc/qmlcache/titan-studio_qml_PlaceholderWorkspace_qml.cpp, .rcc/qmlcache/titan-studio_qml_PlaceholderWorkspace_qml.cpp.aotstats
+[76/188] Generating .rcc/qmlcache/titan-studio_qml_CommandPalette_qml.cpp, .rcc/qmlcache/titan-studio_qml_CommandPalette_qml.cpp.aotstats
+[77/188] Generating .rcc/qmlcache/titan-studio_qml_NewProjectDialog_qml.cpp, .rcc/qmlcache/titan-studio_qml_NewProjectDialog_qml.cpp.aotstats
+[78/188] Generating .rcc/qmlcache/titan-studio_qml_components_TButton_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_TButton_qml.cpp.aotstats
+[79/188] Generating .rcc/qmlcache/titan-studio_qml_components_TIconButton_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_TIconButton_qml.cpp.aotstats
+[80/188] Generating .rcc/qmlcache/titan-studio_qml_components_TTextField_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_TTextField_qml.cpp.aotstats
+[81/188] Generating .rcc/qmlcache/titan-studio_qml_components_NumberField_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_NumberField_qml.cpp.aotstats
+[82/188] Generating .rcc/qmlcache/titan-studio_qml_components_Vec3Editor_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_Vec3Editor_qml.cpp.aotstats
+[83/188] Generating .rcc/qmlcache/titan-studio_qml_components_SectionHeader_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_SectionHeader_qml.cpp.aotstats
+[84/188] Generating .rcc/qmlcache/titan-studio_qml_components_Segmented_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_Segmented_qml.cpp.aotstats
+[85/188] Generating .rcc/qmlcache/titan-studio_qml_components_Glyph_qml.cpp, .rcc/qmlcache/titan-studio_qml_components_Glyph_qml.cpp.aotstats
+[86/188] Running rcc for resource titan-studio_raw_qml_0
+[87/188] Running rcc for resource titan-studio_raw_qml_0_extra_qmldirs
+[88/188] Running rcc for resource titan_shaders
+[89/188] Automatic MOC and UIC for target titan_frame_channel_tests
+[90/188] Building CXX object CMakeFiles/titan-asset-bench.dir/tools/asset-bench/main.cpp.o
+[91/188] Building CXX object CMakeFiles/titan-protocol-check.dir/tools/protocol-check/main.cpp.o
+[92/188] Building CXX object CMakeFiles/titan-ue-bench.dir/tools/ue-bench/main.cpp.o
+[93/188] Building CXX object CMakeFiles/titan_core_tests.dir/tests/test_core.cpp.o
+[94/188] Building CXX object CMakeFiles/titan_assets_tests.dir/tests/test_assets.cpp.o
+[95/188] Building CXX object CMakeFiles/titan_script_tests.dir/tests/test_script.cpp.o
+[96/188] Building CXX object CMakeFiles/titan_prefab_tests.dir/tests/test_prefab.cpp.o
+[97/188] Building CXX object CMakeFiles/titan_timeline_tests.dir/tests/test_timeline.cpp.o
+[98/188] Building CXX object CMakeFiles/titan_input_tests.dir/tests/test_input.cpp.o
+[99/188] Building CXX object CMakeFiles/titan_material_tests.dir/tests/test_material.cpp.o
+[100/188] Building CXX object CMakeFiles/titan_event_bus_tests.dir/tests/test_event_bus.cpp.o
+[101/188] Building CXX object CMakeFiles/titan_physics_tests.dir/tests/test_physics.cpp.o
+[102/188] Building CXX object CMakeFiles/titan_audio_tests.dir/tests/test_audio.cpp.o
+[103/188] Building CXX object CMakeFiles/titan_spatial_tests.dir/tests/test_spatial.cpp.o
+[104/188] Building CXX object CMakeFiles/titan_navigation_tests.dir/tests/test_navigation.cpp.o
+[105/188] Building CXX object CMakeFiles/titan_behavior_tree_tests.dir/tests/test_behavior_tree.cpp.o
+[106/188] Building CXX object CMakeFiles/titan_utility_ai_tests.dir/tests/test_utility_ai.cpp.o
+[107/188] Building CXX object CMakeFiles/titan_perception_tests.dir/tests/test_perception.cpp.o
+[108/188] Building CXX object CMakeFiles/titan_extension_tests.dir/tests/test_extensions.cpp.o
+[109/188] Building CXX object CMakeFiles/titan_ue_coordinates_tests.dir/tests/test_ue_coordinates.cpp.o
+[110/188] Linking CXX static library legacy-v0.5/libtitan_orchestration.a
+[111/188] Building CXX object legacy-v0.5/CMakeFiles/titan_tests.dir/tests/test_engine.cpp.o
+[112/188] Building CXX object legacy-v0.5/CMakeFiles/titan_benchmark.dir/benchmarks/bench_scheduler.cpp.o
+[113/188] Building CXX object legacy-v0.5/CMakeFiles/titan_legacy_planner_tests.dir/tests/test_legacy_planner.cpp.o
+[114/188] Linking CXX static library legacy-v0.5/libtitan_data.a
+[115/188] Building CXX object CMakeFiles/titan_host_integration_tests.dir/tests/test_host_integration.cpp.o
+[116/188] Building CXX object legacy-v0.5/CMakeFiles/titan_data_tests.dir/tests/test_titan_data.cpp.o
+[117/188] Building CXX object legacy-v0.5/CMakeFiles/titan_telemetry_tests.dir/tests/test_titan_telemetry.cpp.o
+[118/188] Building CXX object legacy-v0.5/CMakeFiles/titan_ecs_benchmark.dir/benchmarks/bench_data.cpp.o
+[119/188] Building CXX object studio/CMakeFiles/titan-studio.dir/titan-studio_autogen/mocs_compilation.cpp.o
+[120/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/main.cpp.o
+[121/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/AppSettings.cpp.o
+[122/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/EngineConnection.cpp.o
+[123/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/EngineClient.cpp.o
+[124/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/RemoteFrameSource.cpp.o
+[125/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/SceneModel.cpp.o
+[126/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/ViewportItem.cpp.o
+[127/188] Building CXX object studio/CMakeFiles/titan-studio.dir/titan-studio_qmltyperegistrations.cpp.o
+[128/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.qt/rcc/qrc_qmake_TitanStudio.cpp.o
+[129/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qmlcache_loader.cpp.o
+[130/188] Building CXX object studio/CMakeFiles/titan-studio.dir/src/SmokeTest.cpp.o
+[131/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_Main_qml.cpp.o
+[132/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_Theme_qml.cpp.o
+[133/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_Launcher_qml.cpp.o
+[134/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_Strings_qml.cpp.o
+[135/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_EditorShell_qml.cpp.o
+[136/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_Hierarchy_qml.cpp.o
+[137/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_HistoryPopup_qml.cpp.o
+[138/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_Inspector_qml.cpp.o
+[139/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_WorldBuilderPanel_qml.cpp.o
+[140/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_PerformanceWorkspace_qml.cpp.o
+[141/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_ExtensionsWorkspace_qml.cpp.o
+[142/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_AssetsWorkspace_qml.cpp.o
+[143/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_PlaceholderWorkspace_qml.cpp.o
+[144/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_CommandPalette_qml.cpp.o
+[145/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_NewProjectDialog_qml.cpp.o
+[146/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_TButton_qml.cpp.o
+[147/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_TIconButton_qml.cpp.o
+[148/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_TTextField_qml.cpp.o
+[149/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_NumberField_qml.cpp.o
+[150/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_Vec3Editor_qml.cpp.o
+[151/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_SectionHeader_qml.cpp.o
+[152/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_Segmented_qml.cpp.o
+[153/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.qt/rcc/qrc_titan-studio_raw_qml_0.cpp.o
+[154/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.qt/rcc/qrc_titan-studio_raw_qml_0_extra_qmldirs.cpp.o
+[155/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.qt/rcc/qrc_titan_shaders.cpp.o
+[156/188] Building CXX object studio/CMakeFiles/titan_frame_channel_tests.dir/titan_frame_channel_tests_autogen/mocs_compilation.cpp.o
+[157/188] Building CXX object studio/CMakeFiles/titan-studio.dir/.rcc/qmlcache/titan-studio_qml_components_Glyph_qml.cpp.o
+[158/188] Building CXX object studio/CMakeFiles/titan_frame_channel_tests.dir/__/tests/test_frame_channel.cpp.o
+[159/188] Linking CXX executable bin/titan-protocol-check
+[160/188] Linking CXX executable bin/titan-asset-bench
+[161/188] Linking CXX executable bin/titan-ue-bench
+[162/188] Linking CXX executable titan_core_tests
+[163/188] Building CXX object studio/CMakeFiles/titan_frame_channel_tests.dir/src/RemoteFrameSource.cpp.o
+[164/188] Linking CXX executable titan_assets_tests
+[165/188] Linking CXX executable titan_prefab_tests
+[166/188] Linking CXX executable titan_script_tests
+[167/188] Linking CXX executable titan_timeline_tests
+[168/188] Linking CXX executable titan_input_tests
+[169/188] Linking CXX executable titan_material_tests
+[170/188] Linking CXX executable titan_event_bus_tests
+[171/188] Linking CXX executable titan_physics_tests
+[172/188] Linking CXX executable titan_audio_tests
+[173/188] Linking CXX executable titan_spatial_tests
+[174/188] Linking CXX executable titan_navigation_tests
+[175/188] Linking CXX executable titan_behavior_tree_tests
+[176/188] Linking CXX executable titan_utility_ai_tests
+[177/188] Linking CXX executable titan_perception_tests
+[178/188] Linking CXX executable titan_extension_tests
+[179/188] Linking CXX executable titan_host_integration_tests
+[180/188] Linking CXX executable titan_ue_coordinates_tests
+[181/188] Linking CXX executable legacy-v0.5/titan_tests
+[182/188] Linking CXX executable legacy-v0.5/titan_benchmark
+[183/188] Linking CXX executable legacy-v0.5/titan_legacy_planner_tests
+[184/188] Linking CXX executable legacy-v0.5/titan_data_tests
+[185/188] Linking CXX executable legacy-v0.5/titan_ecs_benchmark
+[186/188] Linking CXX executable legacy-v0.5/titan_telemetry_tests
+[187/188] Linking CXX executable studio/titan_frame_channel_tests
+[188/188] Linking CXX executable "bin/TITAN Studio.app/Contents/MacOS/TITAN Studio"

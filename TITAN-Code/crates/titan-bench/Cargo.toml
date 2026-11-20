@@ -1,0 +1,22 @@
+[package]
+name = "titan-bench"
+description = "Reproducible benchmark harness for the TITAN Code text core (fixed seeds, JSON output)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+titan-text.workspace = true
+titan-index.workspace = true
+titan-workspace.workspace = true
+titan-doc.workspace = true
+titan-recovery.workspace = true
+titan-server = { path = "../titan-server" }
+serde_json.workspace = true
+tempfile.workspace = true
+tree-sitter.workspace = true
+stats_alloc = "0.1.10"
+
+[lints]
+workspace = true

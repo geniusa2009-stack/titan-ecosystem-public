@@ -1,0 +1,193 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "feat/**", "research/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+  RUST_TOOLCHAIN: "1.91.0"
+
+jobs:
+  fmt:
+    name: rustfmt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_TOOLCHAIN }}
+          components: rustfmt
+      - name: cargo fmt --all -- --check
+        run: |
+          if ! cargo fmt --all -- --check; then
+            cargo fmt --all
+            git diff > fmt.patch
+            echo "::error::rustfmt changes are required; apply the fmt-patch artifact"
+            exit 1
+          fi
+      - name: Upload formatting patch
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fmt-patch
+          path: fmt.patch
+
+  clippy:
+    name: clippy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_TOOLCHAIN }}
+          components: clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: clippy
+      - name: cargo clippy --workspace --all-targets -- -D warnings
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+  test:
+    name: test, release build, headless demo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_TOOLCHAIN }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: test
+      - name: Mount a tiny file system for storage-exhaustion tests
+        run: |
+          sudo mkdir -p /mnt/titan-tiny
+          sudo mount -t tmpfs -o size=256k,mode=1777 tmpfs /mnt/titan-tiny
+          df -h /mnt/titan-tiny
+          echo "TITAN_TINY_FS=/mnt/titan-tiny" >> "$GITHUB_ENV"
+      - name: Install rust-analyzer for the pinned toolchain
+        run: |
+          # rust-src gives rust-analyzer the standard library sources, as on a developer machine.
+          rustup component add rust-analyzer rust-src --toolchain "$RUST_TOOLCHAIN"
+          RA="$(rustup which --toolchain "$RUST_TOOLCHAIN" rust-analyzer)"
+          echo "TITAN_RUST_ANALYZER=$RA" >> "$GITHUB_ENV"
+          echo "rust-analyzer: $RA"
+          "$RA" --version
+      - name: cargo test --workspace
+        run: cargo test --workspace -- --include-ignored
+      - name: End-to-end evidence (watcher + semantic tests with their output)
+        run: |
+          cargo test -p titan-server --test watch --test semantic -- --include-ignored --nocapture 2>&1 | tee target/e2e-evidence.log
+          test "${PIPESTATUS[0]}" -eq 0
+      - name: cargo build --workspace --release
+        run: cargo build --workspace --release
+      - name: Headless vertical slice (titan-probe drives titand over JSON-RPC)
+        run: |
+          ./target/release/titan-probe --server ./target/release/titand --report target/probe-report.json
+          echo "----- probe report -----"
+          cat target/probe-report.json
+      - name: Upload probe report and lockfile
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe-report
+          path: |
+            target/probe-report.json
+            target/e2e-evidence.log
+            Cargo.lock
+          if-no-files-found: warn
+
+  macos:
+    name: macOS (FSEvents, APFS, process supervision)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_TOOLCHAIN }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: macos
+      - name: Install rust-analyzer for the pinned toolchain
+        run: |
+          rustup component add rust-analyzer rust-src --toolchain "$RUST_TOOLCHAIN"
+          RA="$(rustup which --toolchain "$RUST_TOOLCHAIN" rust-analyzer)"
+          echo "TITAN_RUST_ANALYZER=$RA" >> "$GITHUB_ENV"
+          "$RA" --version
+      - name: cargo test --workspace (all headless crates)
+        # The three storage-exhaustion tests need a tiny tmpfs, which only the Linux job mounts;
+        # they are skipped here by name, visibly.
+        run: >
+          cargo test --workspace -- --include-ignored
+          --skip storage_exhaustion_keeps_the_journal_valid
+          --skip creation_on_a_full_disk_leaves_no_file
+          --skip journal_storage_exhaustion_degrades_and_recovers
+      - name: titan-watch observations on FSEvents
+        # --nocapture prints the per-platform observations recorded by the tests.
+        run: cargo test -p titan-watch -- --include-ignored --nocapture
+      - name: Release build and headless vertical slice
+        run: |
+          cargo build --release -p titan-server
+          ./target/release/titan-probe --server ./target/release/titand --report target/probe-report-macos.json
+
+  deny:
+    name: cargo deny (advisories, licenses, bans, sources)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: EmbarkStudios/cargo-deny-action@v2
+        with:
+          command: check advisories licenses bans sources
+
+  bench:
+    name: benchmarks + baseline comparison
+    runs-on: ubuntu-latest
+    env:
+      # Phase 3 head: the same harness scenarios (text, parse, search, journal, protocol and
+      # the load scenarios with rust-analyzer) run for Phase 3 and the current code on one
+      # runner.
+      BASELINE_COMMIT: 47e312b1dd8bf5b539a5861304480f4adf40da96
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_TOOLCHAIN }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: bench
+      - name: Install rust-analyzer for the pinned toolchain
+        run: |
+          rustup component add rust-analyzer rust-src --toolchain "$RUST_TOOLCHAIN"
+          echo "TITAN_RUST_ANALYZER=$(rustup which --toolchain "$RUST_TOOLCHAIN" rust-analyzer)" >> "$GITHUB_ENV"
+      - name: Build current harness and server (release)
+        run: cargo build --release -p titan-bench -p titan-server
+      - name: Build the profiling titand (counting allocator)
+        run: cargo build --release -p titan-server --features alloc-stats --bin titand --target-dir target/alloc
+      - name: Build baseline harness (${{ env.BASELINE_COMMIT }})
+        run: |
+          git worktree add ../baseline "$BASELINE_COMMIT"
+          cd ../baseline && cargo build --release -p titan-bench -p titan-server
+      - name: Run baseline and current on the same runner
+        run: |
+          export TITAN_RUSTC_VERSION="$(rustc -V)"
+          echo "runner: $(uname -a)"; nproc; grep -m1 "model name" /proc/cpuinfo || true
+          ../baseline/target/release/titan-bench --server ../baseline/target/release/titand --rust-analyzer "$TITAN_RUST_ANALYZER" --out target/bench-baseline.json
+          ./target/release/titan-bench --server ./target/release/titand --rust-analyzer "$TITAN_RUST_ANALYZER" --profile-server ./target/alloc/release/titand --out target/bench-report.json
+      - name: Compare with baseline (warnings) and check latency budgets (failures)
+        run: python3 benchmarks/compare.py target/bench-baseline.json target/bench-report.json --threshold 1.5 --budgets benchmarks/budgets.json
+      - name: Upload benchmark reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bench-reports
+          path: |
+            target/bench-baseline.json
+            target/bench-report.json

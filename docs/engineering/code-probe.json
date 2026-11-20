@@ -1,0 +1,492 @@
+{
+  "protocolVersion": 1,
+  "server": "<TASK_WORKSPACE>/build-workspace/code-target/debug/titand",
+  "project": "/var/folders/q6/b65wvpl11_77j9z2ctvt1wdw0000gn/T/.tmpRMUIql",
+  "ok": true,
+  "steps": [
+    {
+      "name": "fixture",
+      "ok": true,
+      "detail": {
+        "files": [
+          "src/main.rs",
+          "src/lib.rs",
+          "target/generated.rs (ignored)"
+        ]
+      }
+    },
+    {
+      "name": "session.hello",
+      "ok": true,
+      "detail": {
+        "capabilities": {
+          "backgroundMethods": [
+            "workspace.search",
+            "workspace.listFiles",
+            "recovery.list",
+            "index.status",
+            "document.checkDisk",
+            "intel.documentSymbols",
+            "intel.workspaceSymbols",
+            "intel.definition",
+            "intel.references",
+            "intel.hover",
+            "intel.completion",
+            "twin.impact",
+            "changes.verify",
+            "refactor.rename"
+          ],
+          "cancellation": true,
+          "changeNotifications": true,
+          "fileWatching": true,
+          "indexProgress": true,
+          "languageServers": [],
+          "recovery": true,
+          "recoveryDurability": {
+            "powerLossWindowMs": 200,
+            "processCrash": true
+          },
+          "syntaxDiagnostics": true
+        },
+        "methods": [
+          "session.hello",
+          "session.shutdown",
+          "system.health",
+          "workspace.open",
+          "workspace.close",
+          "workspace.listFiles",
+          "workspace.search",
+          "document.open",
+          "document.read",
+          "document.applyEdits",
+          "document.undo",
+          "document.redo",
+          "document.save",
+          "document.checkDisk",
+          "document.close",
+          "document.resolveConflict",
+          "index.status",
+          "index.symbols",
+          "index.rescan",
+          "recovery.list",
+          "recovery.restore",
+          "recovery.discard",
+          "system.metrics",
+          "system.memory",
+          "$/cancelRequest",
+          "intel.status",
+          "intel.documentSymbols",
+          "intel.workspaceSymbols",
+          "intel.definition",
+          "intel.references",
+          "intel.hover",
+          "intel.completion",
+          "intel.diagnostics",
+          "intel.server",
+          "graph.summary",
+          "graph.node",
+          "graph.query",
+          "twin.impact",
+          "changes.propose",
+          "changes.preview",
+          "changes.approve",
+          "changes.apply",
+          "changes.verify",
+          "changes.restore",
+          "changes.get",
+          "changes.list",
+          "refactor.rename"
+        ],
+        "positionEncoding": "utf-16",
+        "protocolVersion": 1,
+        "serverName": "titand",
+        "serverVersion": "0.1.0"
+      }
+    },
+    {
+      "name": "system.health",
+      "ok": true,
+      "detail": {
+        "openDocuments": 0,
+        "status": "ok",
+        "uptimeMs": 12,
+        "workspaceRoot": null
+      }
+    },
+    {
+      "name": "workspace.open",
+      "ok": true,
+      "detail": {
+        "root": "/private/var/folders/q6/b65wvpl11_77j9z2ctvt1wdw0000gn/T/.tmpRMUIql"
+      }
+    },
+    {
+      "name": "workspace.listFiles",
+      "ok": true,
+      "detail": {
+        "files": [
+          "src/lib.rs",
+          "src/main.rs"
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "name": "document.open",
+      "ok": true,
+      "detail": {
+        "dirty": false,
+        "disk": "inSync",
+        "documentId": 1,
+        "hasBom": false,
+        "lenBytes": 62,
+        "lineCount": 5,
+        "lineEnding": "lf",
+        "path": "src/main.rs",
+        "pendingRecovery": [],
+        "recovery": "clean",
+        "revision": 0
+      }
+    },
+    {
+      "name": "document.read",
+      "ok": true,
+      "detail": {
+        "matchesDisk": true,
+        "revision": 0
+      }
+    },
+    {
+      "name": "document.applyEdits",
+      "ok": true,
+      "detail": {
+        "applied": true,
+        "changes": [
+          {
+            "range": {
+              "end": {
+                "character": 19,
+                "line": 1
+              },
+              "start": {
+                "character": 14,
+                "line": 1
+              }
+            },
+            "text": "hello, TITAN"
+          },
+          {
+            "range": {
+              "end": {
+                "character": 17,
+                "line": 3
+              },
+              "start": {
+                "character": 17,
+                "line": 3
+              }
+            },
+            "text": " ✓"
+          }
+        ],
+        "dirty": true,
+        "documentId": 1,
+        "previousRevision": 0,
+        "revision": 1
+      }
+    },
+    {
+      "name": "document.applyEdits (stale revision rejected)",
+      "ok": true,
+      "detail": {
+        "errorCode": -32001
+      }
+    },
+    {
+      "name": "document.undo",
+      "ok": true,
+      "detail": {
+        "applied": true,
+        "changes": [
+          {
+            "range": {
+              "end": {
+                "character": 26,
+                "line": 1
+              },
+              "start": {
+                "character": 14,
+                "line": 1
+              }
+            },
+            "text": "hello"
+          },
+          {
+            "range": {
+              "end": {
+                "character": 19,
+                "line": 3
+              },
+              "start": {
+                "character": 17,
+                "line": 3
+              }
+            },
+            "text": ""
+          }
+        ],
+        "dirty": false,
+        "documentId": 1,
+        "previousRevision": 1,
+        "revision": 2
+      }
+    },
+    {
+      "name": "document.redo",
+      "ok": true,
+      "detail": {
+        "applied": true,
+        "changes": [
+          {
+            "range": {
+              "end": {
+                "character": 19,
+                "line": 1
+              },
+              "start": {
+                "character": 14,
+                "line": 1
+              }
+            },
+            "text": "hello, TITAN"
+          },
+          {
+            "range": {
+              "end": {
+                "character": 17,
+                "line": 3
+              },
+              "start": {
+                "character": 17,
+                "line": 3
+              }
+            },
+            "text": " ✓"
+          }
+        ],
+        "dirty": true,
+        "documentId": 1,
+        "previousRevision": 2,
+        "revision": 3
+      }
+    },
+    {
+      "name": "document.save",
+      "ok": true,
+      "detail": {
+        "diskMatches": true,
+        "result": {
+          "bytesWritten": 73,
+          "dirty": false,
+          "documentId": 1,
+          "revision": 3,
+          "strategy": "exchange"
+        }
+      }
+    },
+    {
+      "name": "document.close + document.open (persistence)",
+      "ok": true,
+      "detail": {
+        "documentId": 2,
+        "revision": 0,
+        "textMatches": true
+      }
+    },
+    {
+      "name": "workspace.search (open buffer)",
+      "ok": true,
+      "detail": {
+        "filesSearched": 2,
+        "filesSkipped": 0,
+        "matches": [
+          {
+            "lineText": "    println!(\"hello, TITAN\");",
+            "path": "src/main.rs",
+            "range": {
+              "end": {
+                "character": 26,
+                "line": 1
+              },
+              "start": {
+                "character": 21,
+                "line": 1
+              }
+            },
+            "revision": 0,
+            "source": "buffer"
+          },
+          {
+            "lineText": "// مرحبا 👋 TITAN ✓",
+            "path": "src/main.rs",
+            "range": {
+              "end": {
+                "character": 17,
+                "line": 3
+              },
+              "start": {
+                "character": 12,
+                "line": 3
+              }
+            },
+            "revision": 0,
+            "source": "buffer"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "name": "workspace.search (disk)",
+      "ok": true,
+      "detail": {
+        "filesSearched": 2,
+        "filesSkipped": 0,
+        "matches": [
+          {
+            "lineText": "pub fn helper() -> u32 {",
+            "path": "src/lib.rs",
+            "range": {
+              "end": {
+                "character": 13,
+                "line": 0
+              },
+              "start": {
+                "character": 7,
+                "line": 0
+              }
+            },
+            "source": "disk"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "name": "index.status (wait for background indexing)",
+      "ok": true,
+      "detail": {
+        "evidence": "syntax:tree-sitter-rust",
+        "filesIndexed": 2,
+        "filesWithSyntaxErrors": 0,
+        "fullParses": 2,
+        "generation": 5,
+        "idle": true,
+        "incrementalParses": 2,
+        "pendingParses": 0,
+        "reindexed": 1,
+        "removed": 0,
+        "scanning": false,
+        "skipped": 0,
+        "staleResultsDropped": 0,
+        "symbols": 2,
+        "unchanged": 0
+      }
+    },
+    {
+      "name": "index.symbols (tree-sitter, syntax only)",
+      "ok": true,
+      "detail": {
+        "evidence": "syntax:tree-sitter-rust",
+        "generation": 5,
+        "indexing": false,
+        "matches": [
+          {
+            "kind": "function",
+            "name": "helper",
+            "path": "src/lib.rs",
+            "range": {
+              "end": {
+                "character": 13,
+                "line": 0
+              },
+              "start": {
+                "character": 7,
+                "line": 0
+              }
+            },
+            "source": "disk"
+          }
+        ]
+      }
+    },
+    {
+      "name": "session.shutdown",
+      "ok": true,
+      "detail": {
+        "exitCode": 0
+      }
+    },
+    {
+      "name": "recovery: 2 unsaved edits, then titand killed",
+      "ok": true,
+      "detail": {
+        "diskUnchanged": true,
+        "killed": true
+      }
+    },
+    {
+      "name": "recovery.list after restart",
+      "ok": true,
+      "detail": {
+        "enabled": true,
+        "journals": [
+          {
+            "corruption": null,
+            "createdUnixMs": 1795174123052,
+            "disk": "matchesBase",
+            "editRecords": 2,
+            "journalId": "2ddd1bd1bbee56d0-63117-18e9bd5a8a7d2180.tjournal",
+            "path": "src/lib.rs",
+            "reason": null,
+            "recoveredRevision": 2,
+            "state": "recoverable",
+            "truncatedTail": false
+          }
+        ],
+        "removedExpired": 0,
+        "removedOverBudget": 0
+      }
+    },
+    {
+      "name": "recovery.restore",
+      "ok": true,
+      "detail": {
+        "conflict": false,
+        "document": {
+          "dirty": true,
+          "disk": "inSync",
+          "documentId": 1,
+          "hasBom": false,
+          "lenBytes": 60,
+          "lineCount": 6,
+          "lineEnding": "lf",
+          "path": "src/lib.rs",
+          "pendingRecovery": [],
+          "recovery": "journaling",
+          "revision": 1
+        },
+        "partial": false,
+        "recoveredRevision": 2
+      }
+    },
+    {
+      "name": "recovery: saved restored text, journals cleaned up",
+      "ok": true,
+      "detail": {
+        "diskMatches": true,
+        "journalsLeft": 0
+      }
+    }
+  ]
+}

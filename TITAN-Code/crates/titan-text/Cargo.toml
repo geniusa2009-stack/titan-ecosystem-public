@@ -1,0 +1,15 @@
+[package]
+name = "titan-text"
+description = "TITAN Code text core: rope buffer, explicit coordinates, revision-checked transactions, undo/redo."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+ropey.workspace = true
+unicode-segmentation.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true

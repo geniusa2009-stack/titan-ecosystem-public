@@ -1,0 +1,33 @@
+[
+  {
+    "root": "/mnt/data/TITAN-Enterprise-Engine-Lab-v0.2/TitanEngine/Plugins/TitanFoundation",
+    "total_source_files": 19,
+    "files_by_extension": {
+      ".cpp": 9,
+      ".cs": 3,
+      ".h": 7
+    },
+    "identified_subsystem_paths": {},
+    "sample_paths": [
+      "Source/TitanOrchestrationCore/TitanOrchestrationCore.Build.cs",
+      "Source/TitanSpatialCore/TitanSpatialCore.Build.cs",
+      "Source/TitanFoundationRuntime/TitanFoundationRuntime.Build.cs",
+      "Source/TitanFoundationRuntime/Public/TitanWorldOrchestratorComponent.h",
+      "Source/TitanFoundationRuntime/Public/TitanAdaptiveQualityComponent.h",
+      "Source/TitanFoundationRuntime/Public/TitanTileStreamingComponent.h",
+      "Source/TitanFoundationRuntime/Private/TitanFoundationRuntimeModule.cpp",
+      "Source/TitanFoundationRuntime/Private/TitanAdaptiveQualityComponent.cpp",
+      "Source/TitanFoundationRuntime/Private/TitanTileStreamingComponent.cpp",
+      "Source/TitanFoundationRuntime/Private/TitanWorldOrchestratorComponent.cpp",
+      "Source/TitanSpatialCore/Public/TitanSpatialPlanner.h",
+      "Source/TitanSpatialCore/Private/TitanSpatialCoreModule.cpp",
+      "Source/TitanOrchestrationCore/Public/TitanTaskGraph.h",
+      "Source/TitanOrchestrationCore/Public/TitanFrameGraph.h",
+      "Source/TitanOrchestrationCore/Public/TitanWorldScheduler.h",
+      "Source/TitanOrchestrationCore/Private/TitanWorldScheduler.cpp",
+      "Source/TitanOrchestrationCore/Private/TitanTaskGraph.cpp",
+      "Source/TitanOrchestrationCore/Private/TitanOrchestrationCoreModule.cpp",
+      "Source/TitanOrchestrationCore/Private/TitanFrameGraph.cpp"
+    ]
+  }
+]

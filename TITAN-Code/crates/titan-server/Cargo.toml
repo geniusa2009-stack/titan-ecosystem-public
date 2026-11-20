@@ -1,0 +1,33 @@
+[package]
+name = "titan-server"
+description = "TITAN Code headless service (titand) and the titan-probe end-to-end client."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+titan-text.workspace = true
+titan-doc.workspace = true
+titan-workspace.workspace = true
+titan-protocol.workspace = true
+titan-index.workspace = true
+titan-tasks.workspace = true
+titan-recovery.workspace = true
+titan-watch.workspace = true
+titan-lsp.workspace = true
+titan-changes.workspace = true
+titan-verify.workspace = true
+tree-sitter.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tempfile.workspace = true
+stats_alloc = { version = "0.1.10", optional = true }
+
+[features]
+# Count allocations in titand (profiling builds): `system.memory` then reports live heap.
+alloc-stats = ["dep:stats_alloc"]
+
+[lints]
+workspace = true

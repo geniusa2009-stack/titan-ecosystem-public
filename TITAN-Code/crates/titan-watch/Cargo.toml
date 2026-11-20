@@ -1,0 +1,17 @@
+[package]
+name = "titan-watch"
+description = "TITAN Code workspace file watching: notify backends, bounded coalescing, rename pairing, temp-file and boundary filtering, rescan signalling."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+notify.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true

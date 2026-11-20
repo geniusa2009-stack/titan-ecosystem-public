@@ -1,0 +1,18 @@
+[package]
+name = "titan-changes"
+description = "TITAN Code verified changes: multi-file change proposals, validation, previews, journaled application with rollback and crash recovery, evidence records."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+titan-doc.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tempfile.workspace = true
+crc32fast.workspace = true
+
+[lints]
+workspace = true

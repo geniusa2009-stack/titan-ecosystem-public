@@ -1,0 +1,213 @@
+{
+    "capabilities": [
+        "project",
+        "scene",
+        "selection",
+        "undo",
+        "pick",
+        "viewport.frames",
+        "unreal.levels"
+    ],
+    "engine": "unreal",
+    "machine": {
+        "cpu": "arm64",
+        "kernel": "25.5.0",
+        "os": "macOS Tahoe (26.5.1)",
+        "qt": "6.12.0"
+    },
+    "metrics": {
+        "avgGuiDeliveryMs": 775.1238035604396,
+        "avgRoundTripMs": 751.2062042087912,
+        "drawCalls": 2,
+        "engineConnectMs": 12512,
+        "engineFps": 9.260984211893563,
+        "engineFrameLatencyMs": 680.456666,
+        "engineFrameSize": "802×828",
+        "engineFrames": 47,
+        "engineGpuMs": 321.48974609375,
+        "liveRenderGuiDeliveryAvgMs": 416.51372571666667,
+        "liveRenderGuiDeliveryMaxMs": 1590.869834,
+        "liveRenderRoundTripAvgMs": 401.5458534833334,
+        "liveRenderRoundTripMaxMs": 1582.668417,
+        "liveRenderSamples": 60,
+        "projectOpenMs": 1216.313000768423,
+        "rhiBackend": "Metal",
+        "sceneSaveMs": 840.4681235551834,
+        "totalMs": 95931,
+        "viewportCpuRenderMs": 0.141459,
+        "viewportFps": 60.31185477228142,
+        "viewportFrameMs": 16.580488260155242,
+        "viewportGpuMs": 0.7436249998136191
+    },
+    "ok": true,
+    "skipped": [
+        "world builder preview renders ghosts",
+        "preview screenshot",
+        "approve commits one undoable transaction"
+    ],
+    "steps": [
+        {
+            "ms": 13181.118583,
+            "pass": true,
+            "step": "engine process starts and negotiates protocol"
+        },
+        {
+            "ms": 431.653833,
+            "pass": true,
+            "step": "launcher screenshot"
+        },
+        {
+            "ms": 7383.797042,
+            "pass": true,
+            "step": "create project through engine"
+        },
+        {
+            "ms": 98.507875,
+            "pass": true,
+            "step": "editor shell + viewport render real frames"
+        },
+        {
+            "ms": 1792.1115,
+            "pass": true,
+            "step": "click in viewport selects Hero Cube via engine pick"
+        },
+        {
+            "ms": 21.259083,
+            "pass": true,
+            "step": "inspector shows the selected object"
+        },
+        {
+            "ms": 22.508708,
+            "pass": true,
+            "step": "inspector number field accepts typed numbers"
+        },
+        {
+            "ms": 1042.655625,
+            "pass": true,
+            "step": "edit position X through the Inspector field"
+        },
+        {
+            "ms": 101.747541,
+            "pass": true,
+            "step": "edit position Z through the engine API"
+        },
+        {
+            "ms": 2215.916833,
+            "pass": true,
+            "step": "continuous rendering, light theme screenshot"
+        },
+        {
+            "ms": 1684.190042,
+            "pass": true,
+            "step": "record frame metrics"
+        },
+        {
+            "ms": 25118.553541,
+            "pass": true,
+            "step": "engine round trips during continuous rendering"
+        },
+        {
+            "ms": 26.922584,
+            "pass": true,
+            "step": "record live round-trip metrics"
+        },
+        {
+            "ms": 31.56575,
+            "pass": true,
+            "step": "viewport displays engine-rendered frames"
+        },
+        {
+            "ms": 32.246625,
+            "pass": true,
+            "step": "record engine frame metrics"
+        },
+        {
+            "ms": 2224.405833,
+            "pass": true,
+            "step": "drag in the viewport orbits the camera and new frames arrive"
+        },
+        {
+            "ms": 1331.647833,
+            "pass": true,
+            "step": "orbit screenshot"
+        },
+        {
+            "ms": 1331.771375,
+            "pass": true,
+            "step": "create a cube through the engine"
+        },
+        {
+            "ms": 917.549625,
+            "pass": true,
+            "step": "undo removes the created cube"
+        },
+        {
+            "ms": 710.901042,
+            "pass": true,
+            "step": "dark theme renders"
+        },
+        {
+            "ms": 1531.314541,
+            "pass": true,
+            "step": "dark screenshot"
+        },
+        {
+            "ms": 681.692458,
+            "pass": true,
+            "step": "undo reverts last edit (engine-side)"
+        },
+        {
+            "ms": 833.771209,
+            "pass": true,
+            "step": "redo re-applies it"
+        },
+        {
+            "detail": "engine does not advertise capability worldbuilder.preview",
+            "pass": false,
+            "skipped": true,
+            "step": "world builder preview renders ghosts"
+        },
+        {
+            "detail": "engine does not advertise capability worldbuilder.preview",
+            "pass": false,
+            "skipped": true,
+            "step": "preview screenshot"
+        },
+        {
+            "detail": "engine does not advertise capability worldbuilder.preview",
+            "pass": false,
+            "skipped": true,
+            "step": "approve commits one undoable transaction"
+        },
+        {
+            "ms": 1535.838792,
+            "pass": true,
+            "step": "save project"
+        },
+        {
+            "ms": 3142.242792,
+            "pass": true,
+            "step": "close project"
+        },
+        {
+            "ms": 2767.636792,
+            "pass": true,
+            "step": "reopen restores edited transform (world builder skipped)"
+        },
+        {
+            "ms": 25118.343542,
+            "pass": true,
+            "step": "disconnect and reconnect restores the project"
+        },
+        {
+            "ms": 196.740458,
+            "pass": true,
+            "step": "final screenshot"
+        },
+        {
+            "ms": 334.16175,
+            "pass": true,
+            "step": "final capture"
+        }
+    ]
+}

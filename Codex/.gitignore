@@ -1,0 +1,13 @@
+node_modules/
+.git/
+.env
+.env.*
+!.env.example
+!.env.sample
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+__pycache__/
+.DS_Store

@@ -1,0 +1,28 @@
+titand 0.1.0 ready (protocol v1, stdio, 4 workers, recovery in <TASK_WORKSPACE>/build-workspace/code-demo-state)
+titand: error -32001: expected revision 0, but the document is at revision 1
+titand 0.1.0 ready (protocol v1, stdio, 4 workers, recovery in /var/folders/q6/b65wvpl11_77j9z2ctvt1wdw0000gn/T/.tmpvh0USI)
+titand 0.1.0 ready (protocol v1, stdio, 4 workers, recovery in /var/folders/q6/b65wvpl11_77j9z2ctvt1wdw0000gn/T/.tmpvh0USI)
+[ ok ] fixture
+[ ok ] session.hello
+[ ok ] system.health
+[ ok ] workspace.open
+[ ok ] workspace.listFiles
+[ ok ] document.open
+[ ok ] document.read
+[ ok ] document.applyEdits
+[ ok ] document.applyEdits (stale revision rejected)
+[ ok ] document.undo
+[ ok ] document.redo
+[ ok ] document.save
+[ ok ] document.close + document.open (persistence)
+[ ok ] workspace.search (open buffer)
+[ ok ] workspace.search (disk)
+[ ok ] index.status (wait for background indexing)
+[ ok ] index.symbols (tree-sitter, syntax only)
+[ ok ] session.shutdown
+[ ok ] recovery: 2 unsaved edits, then titand killed
+[ ok ] recovery.list after restart
+[ ok ] recovery.restore
+[ ok ] recovery: saved restored text, journals cleaned up
+report written to <TASK_WORKSPACE>/build-workspace/code-probe.json
+vertical slice: PASS

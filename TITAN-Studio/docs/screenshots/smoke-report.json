@@ -1,0 +1,129 @@
+{
+    "machine": {
+        "cpu": "arm64",
+        "kernel": "25.5.0",
+        "os": "macOS Tahoe (26.5.1)",
+        "qt": "6.12.0"
+    },
+    "metrics": {
+        "avgRoundTripMs": 12.839357214285714,
+        "drawCalls": 12,
+        "engineConnectMs": 1564,
+        "projectOpenMs": 0.341625,
+        "rhiBackend": "Metal",
+        "sceneSaveMs": 0.932042,
+        "totalMs": 5389,
+        "viewportCpuRenderMs": 0.153292,
+        "viewportFps": 60.047526824253765,
+        "viewportFrameMs": 16.653475220166612,
+        "viewportGpuMs": 1.3971250009490177
+    },
+    "ok": true,
+    "steps": [
+        {
+            "ms": 1171.500458,
+            "pass": true,
+            "step": "engine process starts and negotiates protocol"
+        },
+        {
+            "ms": 209.85875,
+            "pass": true,
+            "step": "create project through engine"
+        },
+        {
+            "ms": 20.370208,
+            "pass": true,
+            "step": "editor shell + viewport render real frames"
+        },
+        {
+            "ms": 66.228958,
+            "pass": true,
+            "step": "click in viewport selects Hero Cube via engine pick"
+        },
+        {
+            "ms": 31.726375,
+            "pass": true,
+            "step": "inspector shows the selected object"
+        },
+        {
+            "ms": 38.066959,
+            "pass": true,
+            "step": "edit position X through the Inspector field"
+        },
+        {
+            "ms": 45.206125,
+            "pass": true,
+            "step": "edit position Z through the engine API"
+        },
+        {
+            "ms": 2002.865917,
+            "pass": true,
+            "step": "continuous rendering, light theme screenshot"
+        },
+        {
+            "ms": 232.349375,
+            "pass": true,
+            "step": "record frame metrics"
+        },
+        {
+            "ms": 504.406041,
+            "pass": true,
+            "step": "dark theme renders"
+        },
+        {
+            "ms": 229.394209,
+            "pass": true,
+            "step": "dark screenshot"
+        },
+        {
+            "ms": 21.100708,
+            "pass": true,
+            "step": "undo reverts last edit (engine-side)"
+        },
+        {
+            "ms": 26.708333,
+            "pass": true,
+            "step": "redo re-applies it"
+        },
+        {
+            "ms": 20.6305,
+            "pass": true,
+            "step": "world builder preview renders ghosts"
+        },
+        {
+            "ms": 230.959667,
+            "pass": true,
+            "step": "preview screenshot"
+        },
+        {
+            "ms": 21.16925,
+            "pass": true,
+            "step": "approve commits one undoable transaction"
+        },
+        {
+            "ms": 27.078709,
+            "pass": true,
+            "step": "save project"
+        },
+        {
+            "ms": 20.720042,
+            "pass": true,
+            "step": "close project"
+        },
+        {
+            "ms": 29.4115,
+            "pass": true,
+            "step": "reopen restores edited transform and recipe"
+        },
+        {
+            "ms": 184.165834,
+            "pass": true,
+            "step": "final screenshot"
+        },
+        {
+            "ms": 254.925,
+            "pass": true,
+            "step": "final capture"
+        }
+    ]
+}

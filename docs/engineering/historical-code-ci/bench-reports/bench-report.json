@@ -1,0 +1,2957 @@
+{
+  "allocator": "stats_alloc instrumented System allocator",
+  "arch": "x86_64",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "cpus": 2,
+  "gitCommit": "55aeaa143ace4f1585eb13bb6badd27f0f67b9be",
+  "memory": [
+    {
+      "after": "start",
+      "memory": {
+        "peakRssKib": 16716,
+        "rssKib": 16716
+      }
+    },
+    {
+      "after": "code_1mb",
+      "memory": {
+        "peakRssKib": 21720,
+        "rssKib": 21252
+      }
+    },
+    {
+      "after": "code_10mb",
+      "memory": {
+        "peakRssKib": 44164,
+        "rssKib": 44164
+      }
+    },
+    {
+      "after": "single_line_1mb",
+      "memory": {
+        "peakRssKib": 44296,
+        "rssKib": 44296
+      }
+    },
+    {
+      "after": "unicode_mixed_1mb",
+      "memory": {
+        "peakRssKib": 44296,
+        "rssKib": 44296
+      }
+    },
+    {
+      "after": "parse",
+      "memory": {
+        "peakRssKib": 122616,
+        "rssKib": 122616
+      }
+    },
+    {
+      "after": "all",
+      "memory": {
+        "peakRssKib": 123080,
+        "rssKib": 123080
+      }
+    }
+  ],
+  "note": "Single-run wall-clock samples from std::time::Instant on one machine; they include timer and allocation-counting overhead and are not comparable across machines or with other editors.",
+  "opsPerScenario": 2000,
+  "os": "linux",
+  "profile": {
+    "coldStartPrimingOff": {
+      "cachePriming": false,
+      "dataset": "cargo_ws_150x60kb",
+      "definitionAfter500Edits": {
+        "status": "current",
+        "us": 2581994
+      },
+      "firstDefinition": {
+        "items": 1,
+        "status": "current",
+        "us": 8203568
+      },
+      "firstHover": {
+        "items": 1,
+        "status": "current",
+        "us": 91596
+      },
+      "ready": true,
+      "readyMs": 1765,
+      "serverTimeline": {
+        "firstAnswers": {
+          "textDocument/definition": {
+            "atMs": 9962,
+            "latencyMs": 8203
+          },
+          "textDocument/hover": {
+            "atMs": 10053,
+            "latencyMs": 89
+          }
+        },
+        "firstDiagnosticsMs": 1750,
+        "initializedMs": 31,
+        "readyMs": 1755
+      },
+      "titandSpawnedMs": 5,
+      "warmDefinitionUs": {
+        "max": 13075,
+        "median": 10620,
+        "p95": 12538
+      }
+    },
+    "coldStartPrimingOn": {
+      "cachePriming": true,
+      "dataset": "cargo_ws_150x60kb",
+      "definitionAfter500Edits": {
+        "status": "current",
+        "us": 3209408
+      },
+      "firstDefinition": {
+        "items": 1,
+        "status": "current",
+        "us": 24329
+      },
+      "firstHover": {
+        "items": 1,
+        "status": "current",
+        "us": 233608
+      },
+      "ready": true,
+      "readyMs": 8932,
+      "serverTimeline": {
+        "firstAnswers": {
+          "textDocument/definition": {
+            "atMs": 8953,
+            "latencyMs": 15
+          },
+          "textDocument/hover": {
+            "atMs": 9187,
+            "latencyMs": 233
+          }
+        },
+        "firstDiagnosticsMs": 1009,
+        "initializedMs": 18,
+        "readyMs": 8915
+      },
+      "titandSpawnedMs": 1,
+      "warmDefinitionUs": {
+        "max": 8569,
+        "median": 3929,
+        "p95": 6725
+      }
+    },
+    "heapMeasured": true,
+    "memoryWithLanguageServer": {
+      "phases": [
+        {
+          "atMs": 0,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 0,
+              "facts": {
+                "cachedFiles": 0,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 0,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 0,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 0
+            },
+            "index": {
+              "estimatedBytes": 0,
+              "files": 0,
+              "symbols": 0
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 555,
+            "bytesAllocatedTotal": 66177,
+            "deallocations": 439,
+            "liveBytes": 50830,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 91
+          },
+          "languageServerProcess": null,
+          "phase": "started",
+          "process": {
+            "RssAnon": 564,
+            "RssFile": 4788,
+            "RssShmem": 0,
+            "VmHWM": 5352,
+            "VmRSS": 5352,
+            "VmSize": 281040,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 2988,
+              "Private_Dirty": 564,
+              "Pss": 3614,
+              "Rss": 5352,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 7014528,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 3628,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 0,
+              "facts": {
+                "cachedFiles": 0,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 0,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 0,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 0
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 1,
+              "queued": 0,
+              "running": 2
+            }
+          },
+          "heap": {
+            "allocations": 1495023,
+            "bytesAllocatedTotal": 135857493,
+            "deallocations": 1411341,
+            "liveBytes": 34656216,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 3180
+          },
+          "languageServerProcess": {
+            "RssAnon": 439628,
+            "RssFile": 93968,
+            "RssShmem": 0,
+            "VmHWM": 533596,
+            "VmRSS": 533596,
+            "VmSize": 1738992,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 91676,
+              "Private_Dirty": 439792,
+              "Pss": 531559,
+              "Rss": 533760,
+              "Shared_Clean": 2292,
+              "Shared_Dirty": 0
+            },
+            "threads": 13
+          },
+          "phase": "workspaceIndexed",
+          "process": {
+            "RssAnon": 56500,
+            "RssFile": 7116,
+            "RssShmem": 0,
+            "VmHWM": 63616,
+            "VmRSS": 63616,
+            "VmSize": 552600,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5252,
+              "Private_Dirty": 56500,
+              "Pss": 61813,
+              "Rss": 63616,
+              "Shared_Clean": 1864,
+              "Shared_Dirty": 0
+            },
+            "threads": 9
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 7014528,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 7700,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 4010,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 1
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3191486,
+            "bytesAllocatedTotal": 475119017,
+            "deallocations": 2925950,
+            "liveBytes": 164964121,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 10137
+          },
+          "languageServerProcess": {
+            "RssAnon": 1070872,
+            "RssFile": 96060,
+            "RssShmem": 0,
+            "VmHWM": 1166932,
+            "VmRSS": 1166932,
+            "VmSize": 2328804,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 93692,
+              "Private_Dirty": 1070872,
+              "Pss": 1164674,
+              "Rss": 1166932,
+              "Shared_Clean": 2368,
+              "Shared_Dirty": 0
+            },
+            "threads": 12
+          },
+          "phase": "graphBuilt",
+          "process": {
+            "RssAnon": 160700,
+            "RssFile": 7116,
+            "RssShmem": 0,
+            "VmHWM": 183168,
+            "VmRSS": 167816,
+            "VmSize": 600992,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5252,
+              "Private_Dirty": 160700,
+              "Pss": 166013,
+              "Rss": 167816,
+              "Shared_Clean": 1864,
+              "Shared_Dirty": 0
+            },
+            "threads": 9
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6371824,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 8246,
+          "estimates": {
+            "documents": {
+              "open": 1,
+              "textBytes": 1048665,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 4010,
+                "localUpdateUs": {
+                  "max": 24562,
+                  "median": 24562,
+                  "p95": 24562
+                },
+                "localUpdates": 1,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 2
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 1
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 481146,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 1
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3504954,
+            "bytesAllocatedTotal": 511095245,
+            "deallocations": 3230094,
+            "liveBytes": 173710911,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 10394
+          },
+          "languageServerProcess": {
+            "RssAnon": 1132940,
+            "RssFile": 100284,
+            "RssShmem": 0,
+            "VmHWM": 1233224,
+            "VmRSS": 1233224,
+            "VmSize": 2328804,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 97916,
+              "Private_Dirty": 1133528,
+              "Pss": 1231554,
+              "Rss": 1233812,
+              "Shared_Clean": 2368,
+              "Shared_Dirty": 0
+            },
+            "threads": 12
+          },
+          "phase": "bigDocumentOpen",
+          "process": {
+            "RssAnon": 179400,
+            "RssFile": 7116,
+            "RssShmem": 0,
+            "VmHWM": 186940,
+            "VmRSS": 186516,
+            "VmSize": 671924,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5252,
+              "Private_Dirty": 179400,
+              "Pss": 184713,
+              "Rss": 186516,
+              "Shared_Clean": 1864,
+              "Shared_Dirty": 0
+            },
+            "threads": 9
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6371824,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 8269,
+          "estimates": {
+            "documents": {
+              "open": 1,
+              "textBytes": 1048665,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 4010,
+                "localUpdateUs": {
+                  "max": 24562,
+                  "median": 24562,
+                  "p95": 24562
+                },
+                "localUpdates": 1,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 2
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 1
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 481146,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 1
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3505800,
+            "bytesAllocatedTotal": 511156678,
+            "deallocations": 3230940,
+            "liveBytes": 173722153,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 10553
+          },
+          "languageServerProcess": {
+            "RssAnon": 1134300,
+            "RssFile": 100284,
+            "RssShmem": 0,
+            "VmHWM": 1234584,
+            "VmRSS": 1234584,
+            "VmSize": 2328804,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 97916,
+              "Private_Dirty": 1134952,
+              "Pss": 1232978,
+              "Rss": 1235236,
+              "Shared_Clean": 2368,
+              "Shared_Dirty": 0
+            },
+            "threads": 12
+          },
+          "phase": "languageServerReady",
+          "process": {
+            "RssAnon": 179400,
+            "RssFile": 7116,
+            "RssShmem": 0,
+            "VmHWM": 186940,
+            "VmRSS": 186516,
+            "VmSize": 671924,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5252,
+              "Private_Dirty": 179400,
+              "Pss": 184713,
+              "Rss": 186516,
+              "Shared_Clean": 1864,
+              "Shared_Dirty": 0
+            },
+            "threads": 9
+          },
+          "ready": true,
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6371824,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 8942,
+          "estimates": {
+            "documents": {
+              "open": 1,
+              "textBytes": 1051165,
+              "undoEntries": 2500,
+              "undoHistoryBytes": 2500
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 4010,
+                "localUpdateUs": {
+                  "max": 29205,
+                  "median": 24562,
+                  "p95": 24562
+                },
+                "localUpdates": 2,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 3
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 1
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 4,
+              "nodes": 481151,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 1
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 4646146,
+            "bytesAllocatedTotal": 657577991,
+            "deallocations": 4361541,
+            "liveBytes": 181006435,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 26250
+          },
+          "languageServerProcess": {
+            "RssAnon": 1205416,
+            "RssFile": 102268,
+            "RssShmem": 0,
+            "VmHWM": 1336940,
+            "VmRSS": 1307684,
+            "VmSize": 2393312,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 99900,
+              "Private_Dirty": 1205456,
+              "Pss": 1305466,
+              "Rss": 1307724,
+              "Shared_Clean": 2368,
+              "Shared_Dirty": 0
+            },
+            "threads": 12
+          },
+          "phase": "after2500Edits",
+          "process": {
+            "RssAnon": 181904,
+            "RssFile": 7196,
+            "RssShmem": 0,
+            "VmHWM": 189100,
+            "VmRSS": 189100,
+            "VmSize": 672344,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5332,
+              "Private_Dirty": 181904,
+              "Pss": 187297,
+              "Rss": 189100,
+              "Shared_Clean": 1864,
+              "Shared_Dirty": 0
+            },
+            "threads": 9
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6371824,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 8977,
+          "estimates": {
+            "documents": {
+              "open": 1,
+              "textBytes": 1051165,
+              "undoEntries": 2500,
+              "undoHistoryBytes": 2500
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 4010,
+                "localUpdateUs": {
+                  "max": 29205,
+                  "median": 24562,
+                  "p95": 24562
+                },
+                "localUpdates": 2,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 3
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 1
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 4,
+              "nodes": 481151,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 1
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 4646896,
+            "bytesAllocatedTotal": 657622524,
+            "deallocations": 4362291,
+            "liveBytes": 181017677,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 26409
+          },
+          "languageServerProcess": {
+            "RssAnon": 1205456,
+            "RssFile": 102268,
+            "RssShmem": 0,
+            "VmHWM": 1336940,
+            "VmRSS": 1307724,
+            "VmSize": 2393312,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 99900,
+              "Private_Dirty": 1205456,
+              "Pss": 1305466,
+              "Rss": 1307724,
+              "Shared_Clean": 2368,
+              "Shared_Dirty": 0
+            },
+            "threads": 12
+          },
+          "phase": "after2500EditsGraphSettled",
+          "process": {
+            "RssAnon": 181904,
+            "RssFile": 7196,
+            "RssShmem": 0,
+            "VmHWM": 189100,
+            "VmRSS": 189100,
+            "VmSize": 672344,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5332,
+              "Private_Dirty": 181904,
+              "Pss": 187297,
+              "Rss": 189100,
+              "Shared_Clean": 1864,
+              "Shared_Dirty": 0
+            },
+            "threads": 9
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6371824,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 10562,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 0,
+              "facts": {
+                "cachedFiles": 0,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 0,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 0,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 0
+            },
+            "index": {
+              "estimatedBytes": 0,
+              "files": 0,
+              "symbols": 0
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 4647580,
+            "bytesAllocatedTotal": 657662138,
+            "deallocations": 4645097,
+            "liveBytes": 68220029,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 26570
+          },
+          "languageServerProcess": null,
+          "phase": "workspaceClosed",
+          "process": {
+            "RssAnon": 133524,
+            "RssFile": 7196,
+            "RssShmem": 0,
+            "VmHWM": 188896,
+            "VmRSS": 140720,
+            "VmSize": 691552,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5332,
+              "Private_Dirty": 133524,
+              "Pss": 138917,
+              "Rss": 140720,
+              "Shared_Clean": 1864,
+              "Shared_Dirty": 0
+            },
+            "threads": 10
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 5696612,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        }
+      ],
+      "withLanguageServer": true
+    },
+    "memoryWithoutLanguageServer": {
+      "phases": [
+        {
+          "atMs": 0,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 0,
+              "facts": {
+                "cachedFiles": 0,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 0,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 0,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 0
+            },
+            "index": {
+              "estimatedBytes": 0,
+              "files": 0,
+              "symbols": 0
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 528,
+            "bytesAllocatedTotal": 61336,
+            "deallocations": 435,
+            "liveBytes": 46123,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 92
+          },
+          "languageServerProcess": null,
+          "phase": "started",
+          "process": {
+            "RssAnon": 568,
+            "RssFile": 4784,
+            "RssShmem": 0,
+            "VmHWM": 5352,
+            "VmRSS": 5352,
+            "VmSize": 281040,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 2984,
+              "Private_Dirty": 568,
+              "Pss": 3614,
+              "Rss": 5352,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6788420,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 2189,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 0,
+              "facts": {
+                "cachedFiles": 0,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 0,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 0,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 0
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 1,
+              "queued": 0,
+              "running": 1
+            }
+          },
+          "heap": {
+            "allocations": 1490590,
+            "bytesAllocatedTotal": 134184620,
+            "deallocations": 1408030,
+            "liveBytes": 33466829,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 3159
+          },
+          "languageServerProcess": null,
+          "phase": "workspaceIndexed",
+          "process": {
+            "RssAnon": 54324,
+            "RssFile": 6836,
+            "RssShmem": 0,
+            "VmHWM": 62764,
+            "VmRSS": 61160,
+            "VmSize": 282068,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5036,
+              "Private_Dirty": 54360,
+              "Pss": 59458,
+              "Rss": 61196,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6788420,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 4610,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 2376,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 1
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3183000,
+            "bytesAllocatedTotal": 473626352,
+            "deallocations": 2917794,
+            "liveBytes": 164551771,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 9964
+          },
+          "languageServerProcess": null,
+          "phase": "graphBuilt",
+          "process": {
+            "RssAnon": 160360,
+            "RssFile": 6900,
+            "RssShmem": 0,
+            "VmHWM": 182484,
+            "VmRSS": 167260,
+            "VmSize": 330460,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5100,
+              "Private_Dirty": 160360,
+              "Pss": 165522,
+              "Rss": 167260,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6788420,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 4952,
+          "estimates": {
+            "documents": {
+              "open": 1,
+              "textBytes": 1048665,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 2376,
+                "localUpdateUs": {
+                  "max": 18426,
+                  "median": 18426,
+                  "p95": 18426
+                },
+                "localUpdates": 1,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 2
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 481146,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 1
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3496155,
+            "bytesAllocatedTotal": 505391982,
+            "deallocations": 3221626,
+            "liveBytes": 171197663,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 10128
+          },
+          "languageServerProcess": null,
+          "phase": "bigDocumentOpen",
+          "process": {
+            "RssAnon": 179064,
+            "RssFile": 6900,
+            "RssShmem": 0,
+            "VmHWM": 186000,
+            "VmRSS": 185964,
+            "VmSize": 400944,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5100,
+              "Private_Dirty": 179064,
+              "Pss": 184226,
+              "Rss": 185964,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6788420,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 5608,
+          "estimates": {
+            "documents": {
+              "open": 1,
+              "textBytes": 1051165,
+              "undoEntries": 2500,
+              "undoHistoryBytes": 2500
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 2376,
+                "localUpdateUs": {
+                  "max": 19064,
+                  "median": 18426,
+                  "p95": 18426
+                },
+                "localUpdates": 2,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 3
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 4,
+              "nodes": 481151,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 1
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3982650,
+            "bytesAllocatedTotal": 575438298,
+            "deallocations": 3700605,
+            "liveBytes": 177474666,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 16227
+          },
+          "languageServerProcess": null,
+          "phase": "after2500Edits",
+          "process": {
+            "RssAnon": 188264,
+            "RssFile": 6980,
+            "RssShmem": 0,
+            "VmHWM": 195244,
+            "VmRSS": 195244,
+            "VmSize": 401272,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5180,
+              "Private_Dirty": 188264,
+              "Pss": 193506,
+              "Rss": 195244,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6832608,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 5617,
+          "estimates": {
+            "documents": {
+              "open": 1,
+              "textBytes": 1051165,
+              "undoEntries": 2500,
+              "undoHistoryBytes": 2500
+            },
+            "graph": {
+              "estimatedBytes": 84463814,
+              "facts": {
+                "cachedFiles": 152,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 2376,
+                "localUpdateUs": {
+                  "max": 19064,
+                  "median": 18426,
+                  "p95": 18426
+                },
+                "localUpdates": 2,
+                "parsedLastBuild": 152,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 3
+            },
+            "index": {
+              "estimatedBytes": 11475570,
+              "files": 152,
+              "symbols": 81956
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 4,
+              "nodes": 481151,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 1
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3983147,
+            "bytesAllocatedTotal": 575474369,
+            "deallocations": 3701102,
+            "liveBytes": 177482215,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 16311
+          },
+          "languageServerProcess": null,
+          "phase": "after2500EditsGraphSettled",
+          "process": {
+            "RssAnon": 188264,
+            "RssFile": 6980,
+            "RssShmem": 0,
+            "VmHWM": 195244,
+            "VmRSS": 195244,
+            "VmSize": 401272,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5180,
+              "Private_Dirty": 188264,
+              "Pss": 193506,
+              "Rss": 195244,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6832608,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        },
+        {
+          "atMs": 7172,
+          "estimates": {
+            "documents": {
+              "open": 0,
+              "textBytes": 0,
+              "undoEntries": 0,
+              "undoHistoryBytes": 0
+            },
+            "graph": {
+              "estimatedBytes": 0,
+              "facts": {
+                "cachedFiles": 0,
+                "coalescedUpdates": 0,
+                "lastBuildMs": 0,
+                "localUpdateUs": {
+                  "max": null,
+                  "median": null,
+                  "p95": null
+                },
+                "localUpdates": 0,
+                "parsedLastBuild": 0,
+                "pendingLocalUpdates": 0,
+                "reusedLastBuild": 0
+              },
+              "generation": 0
+            },
+            "index": {
+              "estimatedBytes": 0,
+              "files": 0,
+              "symbols": 0
+            },
+            "journals": {
+              "active": 0,
+              "bytesOnDisk": 0
+            },
+            "languageServer": {
+              "pendingRequests": 0,
+              "storedDiagnostics": 0,
+              "syncedDocuments": 0
+            },
+            "note": "computed from TITAN data structures; lower bounds, not allocator measurements",
+            "replacedVersionsWatched": 0,
+            "syntaxTrees": {
+              "diagnostics": 0,
+              "nodes": 0,
+              "note": "tree-sitter allocates in C; node counts only",
+              "trees": 0
+            },
+            "tasks": {
+              "pending": 0,
+              "queued": 0,
+              "running": 0
+            }
+          },
+          "heap": {
+            "allocations": 3983561,
+            "bytesAllocatedTotal": 575501849,
+            "deallocations": 3983463,
+            "liveBytes": 64724776,
+            "note": "Rust global allocator only; tree-sitter (C) allocations and allocator overhead are not included",
+            "reallocations": 16390
+          },
+          "languageServerProcess": null,
+          "phase": "workspaceClosed",
+          "process": {
+            "RssAnon": 139872,
+            "RssFile": 6980,
+            "RssShmem": 0,
+            "VmHWM": 195068,
+            "VmRSS": 146852,
+            "VmSize": 352880,
+            "VmSwap": 0,
+            "smaps": {
+              "Private_Clean": 5180,
+              "Private_Dirty": 139872,
+              "Pss": 145114,
+              "Rss": 146852,
+              "Shared_Clean": 1800,
+              "Shared_Dirty": 0
+            },
+            "threads": 5
+          },
+          "resources": {
+            "cgroup": null,
+            "graphPaused": null,
+            "memAvailableKib": 6832608,
+            "memTotalKib": 8122100,
+            "policy": {
+              "critical": "also release the project graph",
+              "high": "pause graph rebuilds; drop cached facts of files that are not open",
+              "neverShed": [
+                "editing",
+                "recovery journals",
+                "parsing of open documents",
+                "language server"
+              ]
+            },
+            "pressure": "normal",
+            "queueCapacity": 1024,
+            "sheds": 0,
+            "simulated": false,
+            "workers": 2
+          }
+        }
+      ],
+      "withLanguageServer": false
+    },
+    "twin": {
+      "changes50Files": {
+        "applyMs": 211.881078,
+        "outcome": "applied",
+        "proposeAndPreviewMs": 13.681158,
+        "restoreMs": 161.013509,
+        "restored": true,
+        "validated": "validated"
+      },
+      "graph": {
+        "edges": {
+          "contains": 305,
+          "defines": 81958,
+          "dependsOn": 0,
+          "imports": 0,
+          "tests": 0
+        },
+        "estimatedBytes": 84466276,
+        "fullBuildMs": 3948,
+        "localUpdateUs": {
+          "max": 2010,
+          "median": 1728,
+          "p95": 1982
+        },
+        "localUpdates": 14,
+        "nodes": {
+          "dependency": 0,
+          "file": 152,
+          "function": 81806,
+          "module": 152,
+          "package": 1,
+          "symbol": 0,
+          "test": 0,
+          "type": 0,
+          "workspace": 1
+        },
+        "reusedFactsOnRebuild": 0,
+        "structuralRebuildMs": 477.953411
+      },
+      "openToGraphReadyMs": 7581.836609,
+      "semantic": {
+        "impactAffectedFiles": 2,
+        "impactCallers": 1,
+        "impactReferences": 2,
+        "impactUs": [
+          3003921,
+          50554,
+          51057,
+          50962,
+          51971,
+          58491,
+          55912,
+          52255,
+          52260,
+          52333
+        ],
+        "renameFiles": 2,
+        "renamePreviewMs": 26.564162,
+        "renameStatus": "validated"
+      }
+    }
+  },
+  "results": [
+    {
+      "allocationsPerOp": 1163.0,
+      "bytesAllocatedPerOp": 1190912.0,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 1028771,
+      "median": 688104,
+      "min": 660252,
+      "p95": 1028771,
+      "p99": null,
+      "samples": 5,
+      "scenario": "open",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.455,
+      "bytesAllocatedPerOp": 752.528,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 39049,
+      "median": 1242,
+      "min": 741,
+      "p95": 3315,
+      "p99": 5308,
+      "samples": 2000,
+      "scenario": "random_insert",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.005,
+      "bytesAllocatedPerOp": 250.728,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 32730,
+      "median": 1302,
+      "min": 881,
+      "p95": 1542,
+      "p99": 3184,
+      "samples": 2000,
+      "scenario": "undo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.006,
+      "bytesAllocatedPerOp": 183.144,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 10546,
+      "median": 1182,
+      "min": 841,
+      "p95": 1392,
+      "p99": 1542,
+      "samples": 2000,
+      "scenario": "redo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 5.0145,
+      "bytesAllocatedPerOp": 299.102,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 23986,
+      "median": 1282,
+      "min": 962,
+      "p95": 1802,
+      "p99": 3305,
+      "samples": 2000,
+      "scenario": "random_delete",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.0075,
+      "bytesAllocatedPerOp": 294.288,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 39920,
+      "median": 961,
+      "min": 791,
+      "p95": 1352,
+      "p99": 2894,
+      "samples": 2000,
+      "scenario": "sequential_typing",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 15.05,
+      "bytesAllocatedPerOp": 1987.36,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 25258,
+      "median": 6640,
+      "min": 6320,
+      "p95": 8994,
+      "p99": 14252,
+      "samples": 200,
+      "scenario": "multi_cursor_10",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 31,
+      "median": 30,
+      "min": 20,
+      "p95": 30,
+      "p99": 31,
+      "samples": 2000,
+      "scenario": "snapshot",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 9444,
+      "median": 731,
+      "min": 471,
+      "p95": 861,
+      "p99": 941,
+      "samples": 2000,
+      "scenario": "byte_to_utf16_point",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 9184,
+      "median": 421,
+      "min": 200,
+      "p95": 530,
+      "p99": 641,
+      "samples": 2000,
+      "scenario": "utf16_to_byte",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 1.0415,
+      "bytesAllocatedPerOp": 45.426,
+      "dataset": "code_1mb",
+      "datasetBytes": 1048579,
+      "max": 10175,
+      "median": 1111,
+      "min": 621,
+      "p95": 1362,
+      "p99": 1582,
+      "samples": 2000,
+      "scenario": "line_lookup",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 11626.0,
+      "bytesAllocatedPerOp": 11905024.0,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 7440741,
+      "median": 7315401,
+      "min": 7263321,
+      "p95": 7440741,
+      "p99": null,
+      "samples": 5,
+      "scenario": "open",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.916,
+      "bytesAllocatedPerOp": 1224.592,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 35735,
+      "median": 1612,
+      "min": 971,
+      "p95": 3575,
+      "p99": 6259,
+      "samples": 2000,
+      "scenario": "random_insert",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.005,
+      "bytesAllocatedPerOp": 250.728,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 19690,
+      "median": 1592,
+      "min": 1122,
+      "p95": 1943,
+      "p99": 3535,
+      "samples": 2000,
+      "scenario": "undo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.0,
+      "bytesAllocatedPerOp": 177.0,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 15042,
+      "median": 1342,
+      "min": 832,
+      "p95": 1622,
+      "p99": 1753,
+      "samples": 2000,
+      "scenario": "redo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 5.009,
+      "bytesAllocatedPerOp": 298.75,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 48734,
+      "median": 1392,
+      "min": 1011,
+      "p95": 1683,
+      "p99": 3285,
+      "samples": 2000,
+      "scenario": "random_delete",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.0075,
+      "bytesAllocatedPerOp": 294.288,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 32218,
+      "median": 851,
+      "min": 691,
+      "p95": 1061,
+      "p99": 2784,
+      "samples": 2000,
+      "scenario": "sequential_typing",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 15.05,
+      "bytesAllocatedPerOp": 1987.36,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 60532,
+      "median": 7180,
+      "min": 7000,
+      "p95": 9224,
+      "p99": 16735,
+      "samples": 200,
+      "scenario": "multi_cursor_10",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 31,
+      "median": 30,
+      "min": 20,
+      "p95": 30,
+      "p99": 31,
+      "samples": 2000,
+      "scenario": "snapshot",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 9985,
+      "median": 791,
+      "min": 541,
+      "p95": 922,
+      "p99": 1031,
+      "samples": 2000,
+      "scenario": "byte_to_utf16_point",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 11688,
+      "median": 671,
+      "min": 320,
+      "p95": 912,
+      "p99": 1031,
+      "samples": 2000,
+      "scenario": "utf16_to_byte",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 1.0415,
+      "bytesAllocatedPerOp": 44.8675,
+      "dataset": "code_10mb",
+      "datasetBytes": 10485800,
+      "max": 10967,
+      "median": 1413,
+      "min": 892,
+      "p95": 1762,
+      "p99": 2073,
+      "samples": 2000,
+      "scenario": "line_lookup",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 1163.0,
+      "bytesAllocatedPerOp": 1190912.0,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 554191,
+      "median": 293946,
+      "min": 288128,
+      "p95": 554191,
+      "p99": null,
+      "samples": 5,
+      "scenario": "open",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.4565,
+      "bytesAllocatedPerOp": 754.064,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 11727,
+      "median": 1231,
+      "min": 761,
+      "p95": 1732,
+      "p99": 1913,
+      "samples": 2000,
+      "scenario": "random_insert",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.005,
+      "bytesAllocatedPerOp": 250.728,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 12319,
+      "median": 1292,
+      "min": 902,
+      "p95": 1502,
+      "p99": 1652,
+      "samples": 2000,
+      "scenario": "undo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.012,
+      "bytesAllocatedPerOp": 189.288,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 19971,
+      "median": 1191,
+      "min": 801,
+      "p95": 1402,
+      "p99": 1693,
+      "samples": 2000,
+      "scenario": "redo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 5.0165,
+      "bytesAllocatedPerOp": 299.23,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 11517,
+      "median": 1272,
+      "min": 962,
+      "p95": 1493,
+      "p99": 1843,
+      "samples": 2000,
+      "scenario": "random_delete",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.0075,
+      "bytesAllocatedPerOp": 294.288,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 21863,
+      "median": 951,
+      "min": 791,
+      "p95": 1062,
+      "p99": 1512,
+      "samples": 2000,
+      "scenario": "sequential_typing",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 15.05,
+      "bytesAllocatedPerOp": 1987.36,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 19960,
+      "median": 6560,
+      "min": 6349,
+      "p95": 7191,
+      "p99": 13330,
+      "samples": 200,
+      "scenario": "multi_cursor_10",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 7321,
+      "median": 30,
+      "min": 20,
+      "p95": 30,
+      "p99": 31,
+      "samples": 2000,
+      "scenario": "snapshot",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 9063,
+      "median": 481,
+      "min": 280,
+      "p95": 561,
+      "p99": 601,
+      "samples": 2000,
+      "scenario": "byte_to_utf16_point",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 9174,
+      "median": 421,
+      "min": 200,
+      "p95": 511,
+      "p99": 571,
+      "samples": 2000,
+      "scenario": "utf16_to_byte",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 2.0,
+      "bytesAllocatedPerOp": 1054640.0,
+      "dataset": "single_line_1mb",
+      "datasetBytes": 1048576,
+      "max": 59010,
+      "median": 32990,
+      "min": 32489,
+      "p95": 35724,
+      "p99": 43817,
+      "samples": 2000,
+      "scenario": "line_lookup",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 1164.0,
+      "bytesAllocatedPerOp": 1191936.0,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 582534,
+      "median": 318894,
+      "min": 299314,
+      "p95": 582534,
+      "p99": null,
+      "samples": 5,
+      "scenario": "open",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.342,
+      "bytesAllocatedPerOp": 636.816,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 14181,
+      "median": 1222,
+      "min": 702,
+      "p95": 1783,
+      "p99": 1973,
+      "samples": 2000,
+      "scenario": "random_insert",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.005,
+      "bytesAllocatedPerOp": 250.728,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 11197,
+      "median": 1332,
+      "min": 852,
+      "p95": 1563,
+      "p99": 1692,
+      "samples": 2000,
+      "scenario": "undo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.0,
+      "bytesAllocatedPerOp": 177.0,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 10536,
+      "median": 1212,
+      "min": 761,
+      "p95": 1442,
+      "p99": 1542,
+      "samples": 2000,
+      "scenario": "redo",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4.912,
+      "bytesAllocatedPerOp": 297.972,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 11667,
+      "median": 1282,
+      "min": 581,
+      "p95": 1542,
+      "p99": 1953,
+      "samples": 2000,
+      "scenario": "random_delete",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 6.0075,
+      "bytesAllocatedPerOp": 294.288,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 10265,
+      "median": 941,
+      "min": 771,
+      "p95": 1032,
+      "p99": 1142,
+      "samples": 2000,
+      "scenario": "sequential_typing",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 15.05,
+      "bytesAllocatedPerOp": 1987.36,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 15373,
+      "median": 6890,
+      "min": 6660,
+      "p95": 7321,
+      "p99": 14492,
+      "samples": 200,
+      "scenario": "multi_cursor_10",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 170,
+      "median": 30,
+      "min": 20,
+      "p95": 30,
+      "p99": 31,
+      "samples": 2000,
+      "scenario": "snapshot",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 9224,
+      "median": 771,
+      "min": 421,
+      "p95": 912,
+      "p99": 981,
+      "samples": 2000,
+      "scenario": "byte_to_utf16_point",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 8773,
+      "median": 441,
+      "min": 181,
+      "p95": 551,
+      "p99": 631,
+      "samples": 2000,
+      "scenario": "utf16_to_byte",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 1.072,
+      "bytesAllocatedPerOp": 74.8535,
+      "dataset": "unicode_mixed_1mb",
+      "datasetBytes": 1048661,
+      "max": 10026,
+      "median": 1162,
+      "min": 651,
+      "p95": 1482,
+      "p99": 1632,
+      "samples": 2000,
+      "scenario": "line_lookup",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_rust_100kb",
+      "datasetBytes": 102486,
+      "max": 13432172,
+      "median": 13352031,
+      "min": 13296737,
+      "p95": 13432172,
+      "p99": null,
+      "samples": 5,
+      "scenario": "parse_full",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 1.0,
+      "bytesAllocatedPerOp": 72.0,
+      "dataset": "code_rust_100kb",
+      "datasetBytes": 102486,
+      "max": 2098855,
+      "median": 1113009,
+      "min": 935821,
+      "p95": 1242906,
+      "p99": 1580889,
+      "samples": 200,
+      "scenario": "parse_incremental_after_edit",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "code_rust_1mb",
+      "datasetBytes": 1048665,
+      "max": 162474351,
+      "median": 134510090,
+      "min": 132568086,
+      "p95": 162474351,
+      "p99": null,
+      "samples": 5,
+      "scenario": "parse_full",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 1.0,
+      "bytesAllocatedPerOp": 72.0,
+      "dataset": "code_rust_1mb",
+      "datasetBytes": 1048665,
+      "max": 26746747,
+      "median": 21665145,
+      "min": 11478126,
+      "p95": 25783992,
+      "p99": 26473090,
+      "samples": 200,
+      "scenario": "parse_incremental_after_edit",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 859.0,
+      "bytesAllocatedPerOp": 10298628.0,
+      "dataset": "workspace_100x100kb",
+      "datasetBytes": 10248600,
+      "max": 41222546,
+      "median": 25916230,
+      "min": 25622561,
+      "p95": 40733570,
+      "p99": null,
+      "samples": 20,
+      "scenario": "workspace_search",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 557.0,
+      "bytesAllocatedPerOp": 35172.0,
+      "dataset": "workspace_100x100kb",
+      "datasetBytes": 10248600,
+      "max": 201718,
+      "median": 135978,
+      "min": 134315,
+      "p95": 155728,
+      "p99": null,
+      "samples": 20,
+      "scenario": "workspace_list_files",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "bytes_1mb",
+      "datasetBytes": 1048600,
+      "max": 1390684,
+      "median": 1143596,
+      "min": 1142125,
+      "p95": 1157728,
+      "p99": 1170297,
+      "samples": 500,
+      "scenario": "hash_fnv1a",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "bytes_1mb",
+      "datasetBytes": 1048600,
+      "max": 216430,
+      "median": 159543,
+      "min": 157050,
+      "p95": 168577,
+      "p99": 174256,
+      "samples": 500,
+      "scenario": "hash_blake3",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "bytes_10mb",
+      "datasetBytes": 10485766,
+      "max": 11673649,
+      "median": 11465090,
+      "min": 11440862,
+      "p95": 11540425,
+      "p99": 11632906,
+      "samples": 100,
+      "scenario": "hash_fnv1a",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 0.0,
+      "bytesAllocatedPerOp": 0.0,
+      "dataset": "bytes_10mb",
+      "datasetBytes": 10485766,
+      "max": 2142602,
+      "median": 1784576,
+      "min": 1678804,
+      "p95": 1951471,
+      "p99": 2093097,
+      "samples": 100,
+      "scenario": "hash_blake3",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 9.0,
+      "bytesAllocatedPerOp": 1179932.5,
+      "dataset": "code_rust_1mb",
+      "datasetBytes": 1048665,
+      "max": 209935878,
+      "median": 8002802,
+      "min": 6287053,
+      "p95": 25561762,
+      "p99": 123933902,
+      "samples": 100,
+      "scenario": "document_save_safe",
+      "strategy": "exchange",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 5.0,
+      "bytesAllocatedPerOp": 300.7895,
+      "dataset": "code_rust_1mb",
+      "datasetBytes": 1048665,
+      "max": 16906,
+      "median": 1472,
+      "min": 1402,
+      "p95": 2433,
+      "p99": 4177,
+      "samples": 2000,
+      "scenario": "journal_append",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 5.0,
+      "bytesAllocatedPerOp": 301.93,
+      "dataset": "code_rust_1mb",
+      "datasetBytes": 1048665,
+      "max": 217284633,
+      "median": 191214,
+      "min": 160797,
+      "p95": 689580,
+      "p99": 833511,
+      "samples": 200,
+      "scenario": "journal_append_fsync",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 19.0,
+      "bytesAllocatedPerOp": 2260.45,
+      "dataset": "titand_stdio",
+      "datasetBytes": 0,
+      "max": 65451,
+      "median": 36827,
+      "min": 33842,
+      "p95": 41234,
+      "p99": 48054,
+      "samples": 500,
+      "scenario": "rpc_health_roundtrip",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 39.0,
+      "bytesAllocatedPerOp": 7850.572,
+      "dataset": "titand_stdio_1mb",
+      "datasetBytes": 1048621,
+      "max": 332912,
+      "median": 45480,
+      "min": 37658,
+      "p95": 59572,
+      "p99": 73052,
+      "samples": 500,
+      "scenario": "rpc_apply_edit_roundtrip",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 57.0,
+      "bytesAllocatedPerOp": 11113.368,
+      "dataset": "ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 2595279,
+      "median": 48525,
+      "min": 40062,
+      "p95": 1998452,
+      "p99": 2001095,
+      "samples": 500,
+      "scenario": "edit_idle",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 57.0,
+      "bytesAllocatedPerOp": 11111.934,
+      "dataset": "ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 4283162,
+      "median": 44338,
+      "min": 35874,
+      "p95": 73181,
+      "p99": 1038377,
+      "rounds": 10,
+      "roundsWithScanActive": 10,
+      "samples": 500,
+      "scenario": "edit_during_scan",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 57.245,
+      "bytesAllocatedPerOp": 11146.89,
+      "dataset": "ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 5845906,
+      "median": 46070,
+      "min": 38398,
+      "p95": 179003,
+      "p99": 2005324,
+      "samples": 200,
+      "scenario": "edit_during_search_storm",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 23.0,
+      "bytesAllocatedPerOp": 3483.0,
+      "dataset": "ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 7900845,
+      "median": 3154172,
+      "min": 1300909,
+      "p95": 7595183,
+      "p99": null,
+      "samples": 25,
+      "scenario": "cancel_search_latency",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 4354.608,
+      "bytesAllocatedPerOp": 1007779.192,
+      "dataset": "ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 8639694,
+      "median": 3251773,
+      "min": 2904904,
+      "p95": 5840587,
+      "p99": 7809196,
+      "samples": 125,
+      "scenario": "syntax_symbol_query",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 25836.28,
+      "bytesAllocatedPerOp": 3078699.04,
+      "dataset": "single_file_write",
+      "datasetBytes": 0,
+      "max": 50374520,
+      "median": 50307897,
+      "min": 50272484,
+      "missed": 0,
+      "p95": 50338694,
+      "p99": null,
+      "samples": 25,
+      "scenario": "watcher_event_latency",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 43.0,
+      "bytesAllocatedPerOp": 8429.8,
+      "dataset": "single_file_write",
+      "datasetBytes": 0,
+      "foundImmediately": 25,
+      "max": 656099,
+      "median": 457597,
+      "min": 418578,
+      "p95": 517708,
+      "p99": null,
+      "rounds": 25,
+      "samples": 25,
+      "scenario": "search_after_external_change",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 57.0,
+      "batches": 150,
+      "bytesAllocatedPerOp": 11115.912,
+      "dataset": "cargo_ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 5999364,
+      "median": 94223,
+      "min": 53842,
+      "p95": 2123113,
+      "p99": 4005799,
+      "samples": 3000,
+      "scenario": "edit_during_lsp_indexing",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 57.0,
+      "bytesAllocatedPerOp": 11117.0,
+      "dataset": "cargo_ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 5268371,
+      "median": 75975,
+      "min": 51659,
+      "p95": 165512,
+      "p99": 2027416,
+      "samples": 500,
+      "scenario": "edit_with_lsp_active",
+      "unit": "ns"
+    },
+    {
+      "allocationsPerOp": 3054.32,
+      "bytesAllocatedPerOp": 808051.56,
+      "currentAnswers": 50,
+      "dataset": "cargo_ws_150x60kb",
+      "datasetBytes": 10264576,
+      "max": 12553029657,
+      "median": 4612391,
+      "min": 4396413,
+      "p95": 7195319,
+      "p99": null,
+      "samples": 50,
+      "scenario": "semantic_definition_query",
+      "unit": "ns"
+    }
+  ],
+  "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)",
+  "seeds": {
+    "code_10mb": 2,
+    "code_1mb": 1,
+    "journal": "0x10A",
+    "operations": "0xA11CE",
+    "parse": "0xBEEF",
+    "unicode_mixed_1mb": 3
+  },
+  "system": {
+    "lspRestart": {
+      "editsKeptWorking": true,
+      "killed": true,
+      "readyAgainMs": 1735
+    },
+    "pipelinedHealthThroughput": {
+      "answered": 1000,
+      "requests": 1000,
+      "requestsPerSecond": 88707.54700745978,
+      "seconds": 0.011272998
+    },
+    "processesWithLsp": {
+      "rustAnalyzer": {
+        "cpuSeconds": 12.63,
+        "peakRssKib": 1060516,
+        "pid": 5794,
+        "rssKib": 1060516
+      },
+      "titand": {
+        "cpuSeconds": 9.04,
+        "peakRssKib": 225528,
+        "pid": 5788,
+        "rssKib": 219220
+      }
+    },
+    "rustAnalyzerReadyMs": 1727,
+    "searchStorm": {
+      "busyRejections": 0,
+      "cancelled": 80,
+      "maxQueueDepthAfter": 17,
+      "maxQueueDepthBefore": 4
+    },
+    "shutdownWithLspMs": 67,
+    "sustainedEditing": {
+      "edits": 2500,
+      "titandAfter": {
+        "cpuSeconds": 48.24,
+        "peakRssKib": 204892,
+        "pid": 5739,
+        "rssKib": 204892
+      },
+      "titandBefore": {
+        "cpuSeconds": 46.83,
+        "peakRssKib": 196964,
+        "pid": 5739,
+        "rssKib": 196964
+      }
+    },
+    "titandAfterEditingScenarios": {
+      "cpuSeconds": 48.24,
+      "peakRssKib": 204892,
+      "pid": 5739,
+      "rssKib": 204892
+    },
+    "watcher": {
+      "active": true,
+      "backend": {
+        "batches": 25,
+        "changes": 25,
+        "coalesced": 73,
+        "errors": 0,
+        "ignored": 0,
+        "outsideRoot": 0,
+        "overflows": 0,
+        "rawEvents": 928,
+        "rescans": 0
+      },
+      "batches": 25,
+      "changes": 25,
+      "error": null,
+      "errors": 0,
+      "rescans": 0
+    }
+  },
+  "tool": "titan-bench",
+  "version": "0.1.0"
+}

@@ -1,0 +1,151 @@
+Test project <TASK_WORKSPACE>/build-workspace/studio-build
+      Start  1: core.unit
+ 1/26 Test  #1: core.unit ........................   Passed    1.31 sec
+      Start  2: core.assets
+ 2/26 Test  #2: core.assets ......................   Passed    0.54 sec
+      Start  3: core.prefab
+ 3/26 Test  #3: core.prefab ......................   Passed    0.37 sec
+      Start  4: core.script
+ 4/26 Test  #4: core.script ......................   Passed    0.35 sec
+      Start  5: core.timeline
+ 5/26 Test  #5: core.timeline ....................   Passed    0.34 sec
+      Start  6: core.input
+ 6/26 Test  #6: core.input .......................   Passed    0.34 sec
+      Start  7: core.material
+ 7/26 Test  #7: core.material ....................   Passed    0.33 sec
+      Start  8: core.event-bus
+ 8/26 Test  #8: core.event-bus ...................   Passed    0.34 sec
+      Start  9: core.physics
+ 9/26 Test  #9: core.physics .....................   Passed    0.35 sec
+      Start 10: core.audio
+10/26 Test #10: core.audio .......................   Passed    0.34 sec
+      Start 11: core.spatial
+11/26 Test #11: core.spatial .....................   Passed    0.46 sec
+      Start 12: core.navigation
+12/26 Test #12: core.navigation ..................   Passed    0.69 sec
+      Start 13: core.behavior-tree
+13/26 Test #13: core.behavior-tree ...............   Passed    0.41 sec
+      Start 14: core.utility-ai
+14/26 Test #14: core.utility-ai ..................   Passed    0.38 sec
+      Start 15: core.perception
+15/26 Test #15: core.perception ..................   Passed    0.42 sec
+      Start 16: extensions.unit
+16/26 Test #16: extensions.unit ..................   Passed    1.17 sec
+      Start 17: host.integration
+17/26 Test #17: host.integration .................***Failed   52.53 sec
+[ FAIL ] host: negotiation is required and version mismatch is rejected
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:101
+[ FAIL ] host: end-to-end edit, events, undo/redo, pick, save, reopen
+         CHECK(a.connect(host.socket, 3000) && b.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:118
+[ FAIL ] host: world builder preview -> approve -> undo -> regenerate
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:185
+[ FAIL ] host: assets.refresh imports project assets incrementally; assets.list reports them
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:244
+[ FAIL ] host: prefab.create saves a hierarchy; prefab.instantiate places linked copies in one undo step
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:287
+[ FAIL ] host: duplicate, group and ungroup keep world positions and are single undo steps
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:329
+[ FAIL ] host: unsaved edits survive an engine crash and are recovered in one undo step
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:377
+[ FAIL ] host: scene templates: built-ins, save the current scene, create a project from it
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:429
+[ FAIL ] host: extensions can be disabled (persisted, never loaded), re-enabled and rescanned
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:474
+[ FAIL ] host: capability contract: versions in hello, unadvertised capabilities refused as unsupported
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:507
+[ FAIL ] host: multi-object edits are component-wise, atomic, one undo step, and persist
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:535
+[ FAIL ] host: reparenting keeps world transforms, refuses cycles and shear, is one undo step, and persists
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:581
+[ FAIL ] host: locked objects are not pickable or movable, the lock persists, unlocked scenes serialize unchanged
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:634
+[ FAIL ] host: camera bookmarks are validated and persist with the project
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:681
+[ FAIL ] host: copy/paste keeps relationships with fresh ids, is one undo step, persists, and pastes across projects
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:715
+[ FAIL ] host: undo history lists the existing stack and jumps several steps at once
+         CHECK(c.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:779
+[ FAIL ] host: survives malformed frames and abrupt client disconnects
+         CHECK(idle.connect(host.socket, 3000)) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_host_integration.cpp:818
+17 tests, 17 failed
+
+      Start 18: ue.coordinates
+18/26 Test #18: ue.coordinates ...................   Passed    0.02 sec
+      Start 19: host.protocol-conformance
+19/26 Test #19: host.protocol-conformance ........***Failed   10.10 sec
+2026-11-20T13:26:10 [error] engine: bind(/tmp/titan-conf-ipxkfcoq.sock): Operation not permitted
+[FAIL] connect                            10018.946 ms cannot connect to /tmp/titan-conf-ipxkfcoq.sock
+[FAIL] session.hello negotiates v1           0.397 ms no response to session.hello
+[FAIL] project.create + scene snapshot       0.014 ms no response to project.create
+[FAIL] selection.set                         0.012 ms no response to selection.set
+[FAIL] object.update transform + event       0.011 ms update failed
+[FAIL] object.get reflects edit              0.155 ms no response to object.get
+[FAIL] edit.undo / edit.redo                 0.015 ms no response to edit.undo
+[FAIL] project.save                          0.011 ms no response to project.save
+[FAIL] project.close                         0.011 ms no response to project.close
+[FAIL] project.open restores edit            0.012 ms no response to project.open
+[FAIL] engine.status metrics                 0.035 ms no response to engine.status
+[FAIL] engine.shutdown                       0.011 ms no response to engine.shutdown
+12 steps, 12 failed
+-- host/check exit codes: 1;1
+CMake Error at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/run_conformance.cmake:16 (message):
+  protocol conformance failed (1)
+
+
+
+      Start 20: tools.preflight
+20/26 Test #20: tools.preflight ..................   Passed    4.75 sec
+      Start 23: titan_unit
+21/26 Test #23: titan_unit .......................   Passed    0.00 sec
+      Start 24: titan_legacy_planner
+22/26 Test #24: titan_legacy_planner .............   Passed    0.00 sec
+      Start 25: titan_data
+23/26 Test #25: titan_data .......................   Passed    0.01 sec
+      Start 26: titan_telemetry
+24/26 Test #26: titan_telemetry ..................   Passed    0.00 sec
+      Start 27: studio.frame-channel
+25/26 Test #27: studio.frame-channel .............***Failed    0.03 sec
+[ FAIL ] reader rejects a channel with the wrong layout
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] reader returns the newest complete frame, once
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] a frame that is still being written is never returned
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] a slot overwritten during the copy is detected (seqlock)
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] a concurrent writer never produces an accepted torn frame
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] second seq check: a slot rewritten during the copy is rejected (deterministic)
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] slot geometry is taken from attach(), not re-read from shared memory
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] attach rejects geometry that does not fit the mapping, including overflow
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] frame size changes and re-attach bump the generation
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ FAIL ] frame carries the camera it was rendered with
+         CHECK(fd >= 0) failed at <TASK_WORKSPACE>/output/titan-ecosystem/TITAN-Studio/tests/test_frame_channel.cpp:29
+[ PASS ] repaint hook runs for each announced frame and can be removed
+11 tests, 10 failed
+
+      Start 28: studio.ui-smoke
+26/26 Test #28: studio.ui-smoke ..................Subprocess aborted***Exception:   0.81 sec
+PasteBoard: Error creating pasteboard: com.apple.pasteboard.clipboard [-4960]
+PasteBoard: Error creating pasteboard: com.apple.pasteboard.find [-4960]
+2026-11-20 13:26:25.353 TITAN Studio[59486:2161925] Connection Invalid error for service com.apple.hiservices-xpcservice.
+2026-11-20 13:26:25.353 TITAN Studio[59486:2161923] Error received in message reply handler: Connection invalid
+
+
+85% tests passed, 4 tests failed out of 26
+
+Label Time Summary:
+gui    =   0.81 sec*proc (1 test)
+
+Total Test time (real) =  76.48 sec
+
+The following tests FAILED:
+	 17 - host.integration (Failed)
+	 19 - host.protocol-conformance (Failed)
+	 27 - studio.frame-channel (Failed)
+	 28 - studio.ui-smoke (Subprocess aborted)              gui
+Errors while running CTest

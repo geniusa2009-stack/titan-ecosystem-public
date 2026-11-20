@@ -1,0 +1,17 @@
+{
+  "manifestVersion": 1,
+  "id": "titan.procedural.scatter",
+  "name": "Procedural Scatter",
+  "version": "0.1.0",
+  "publisher": "TITAN Engine",
+  "license": "LicenseRef-TITAN-Proprietary",
+  "category": "world-generation",
+  "apiVersion": 1,
+  "engine": { "min": "0.6.0", "maxExclusive": "1.0.0" },
+  "platforms": ["macos-arm64", "macos-x64", "linux-x64"],
+  "dependencies": [],
+  "capabilities": ["scene.propose"],
+  "entry": { "library": "@LIBRARY_NAME@" },
+  "build": { "system": "cmake", "target": "titan_ext_procedural_scatter" },
+  "commands": ["describe", "generate"]
+}

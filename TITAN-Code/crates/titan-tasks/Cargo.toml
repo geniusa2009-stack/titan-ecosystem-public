@@ -1,0 +1,13 @@
+[package]
+name = "titan-tasks"
+description = "TITAN Code task coordinator: bounded priority queue, worker threads, cooperative cancellation, deadlines, panic isolation, metrics."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+
+[lints]
+workspace = true

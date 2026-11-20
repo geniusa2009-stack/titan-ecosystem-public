@@ -1,0 +1,55 @@
+Test project <TASK_WORKSPACE>/build-workspace/studio-build
+      Start  1: core.unit
+ 1/25 Test  #1: core.unit ........................   Passed    0.85 sec
+      Start  2: core.assets
+ 2/25 Test  #2: core.assets ......................   Passed    0.16 sec
+      Start  3: core.prefab
+ 3/25 Test  #3: core.prefab ......................   Passed    0.01 sec
+      Start  4: core.script
+ 4/25 Test  #4: core.script ......................   Passed    0.00 sec
+      Start  5: core.timeline
+ 5/25 Test  #5: core.timeline ....................   Passed    0.00 sec
+      Start  6: core.input
+ 6/25 Test  #6: core.input .......................   Passed    0.00 sec
+      Start  7: core.material
+ 7/25 Test  #7: core.material ....................   Passed    0.00 sec
+      Start  8: core.event-bus
+ 8/25 Test  #8: core.event-bus ...................   Passed    0.00 sec
+      Start  9: core.physics
+ 9/25 Test  #9: core.physics .....................   Passed    0.01 sec
+      Start 10: core.audio
+10/25 Test #10: core.audio .......................   Passed    0.00 sec
+      Start 11: core.spatial
+11/25 Test #11: core.spatial .....................   Passed    0.12 sec
+      Start 12: core.navigation
+12/25 Test #12: core.navigation ..................   Passed    0.05 sec
+      Start 13: core.behavior-tree
+13/25 Test #13: core.behavior-tree ...............   Passed    0.01 sec
+      Start 14: core.utility-ai
+14/25 Test #14: core.utility-ai ..................   Passed    0.01 sec
+      Start 15: core.perception
+15/25 Test #15: core.perception ..................   Passed    0.01 sec
+      Start 16: extensions.unit
+16/25 Test #16: extensions.unit ..................   Passed    0.01 sec
+      Start 17: host.integration
+17/25 Test #17: host.integration .................   Passed    1.17 sec
+      Start 18: ue.coordinates
+18/25 Test #18: ue.coordinates ...................   Passed    0.36 sec
+      Start 19: host.protocol-conformance
+19/25 Test #19: host.protocol-conformance ........   Passed    0.40 sec
+      Start 20: tools.preflight
+20/25 Test #20: tools.preflight ..................   Passed    7.76 sec
+      Start 23: titan_unit
+21/25 Test #23: titan_unit .......................   Passed    0.53 sec
+      Start 24: titan_legacy_planner
+22/25 Test #24: titan_legacy_planner .............   Passed    0.37 sec
+      Start 25: titan_data
+23/25 Test #25: titan_data .......................   Passed    0.35 sec
+      Start 26: titan_telemetry
+24/25 Test #26: titan_telemetry ..................   Passed    0.44 sec
+      Start 27: studio.frame-channel
+25/25 Test #27: studio.frame-channel .............   Passed    0.91 sec
+
+100% tests passed out of 25
+
+Total Test time (real) =  13.57 sec

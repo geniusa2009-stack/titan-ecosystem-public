@@ -1,0 +1,14 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.2.0",
+  "FriendlyName": "TITAN Studio Bridge",
+  "Description": "Serves the TITAN editor protocol (titan.editor v1) from inside the Unreal Editor so TITAN Studio can open, edit, save and view Unreal levels. Dormant unless started with -TitanSocket. Build status: docs/TEST_REPORT.md.",
+  "Category": "TITAN",
+  "CreatedBy": "TITAN Engine",
+  "CanContainContent": false,
+  "EnabledByDefault": false,
+  "Modules": [
+    { "Name": "TitanStudioBridge", "Type": "Editor", "LoadingPhase": "PostEngineInit", "PlatformAllowList": ["Mac", "Linux"] }
+  ]
+}

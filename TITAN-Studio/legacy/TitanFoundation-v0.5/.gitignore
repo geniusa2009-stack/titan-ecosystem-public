@@ -1,0 +1,5 @@
+build/
+build-*/
+reports/*.html
+*.dSYM/
+.DS_Store

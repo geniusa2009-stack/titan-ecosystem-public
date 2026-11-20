@@ -1,0 +1,256 @@
+# TITAN CI. Original TITAN workflow.
+#
+#   core    macOS 15 runner, Core / SDK / Engine Host / extensions / legacy core built for the lowest macOS
+#           deployment target TITAN's own code supports (TITAN_MIN_MACOS), then run on a real older macOS.
+#   studio  macOS 26 runner (the reference OS), full project including the native Qt 6 Studio, every suite.
+#   report  accounts for each of the 15 baseline suites per platform (tools/ci/ctest_report.py).
+#
+# Both macOS jobs select Xcode 26.1.1 explicitly (UE 5.8.4's Apple_SDK.json MainVersion and the reference
+# machine's toolchain) and fail if a different Xcode is active. The private Unreal Engine source is never
+# downloaded, cached or uploaded here; its suites run only in titan-unreal.yml on a self-hosted Mac.
+name: TITAN CI
+
+on:
+  pull_request:
+    branches: [titan/integration]
+    paths-ignore: ["**/*.md", "docs/**"]
+  push:
+    branches: [titan/integration]
+    paths-ignore: ["**/*.md", "docs/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  CMAKE_BUILD_TYPE: RelWithDebInfo   # as scripts/build_and_test.sh
+  CTEST_OUTPUT_ON_FAILURE: "1"
+
+jobs:
+  core:
+    name: Core, SDK, Engine Host (macOS 15, target 13.3)
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      XCODE_VERSION: "26.1.1"
+      DEVELOPER_DIR: /Applications/Xcode_26.1.1.app/Contents/Developer
+      # Lowest target that compiles: std::to_chars(double) needs macOS 13.3. JSON number parsing uses the
+      # strtod_l("C") fallback below macOS 26.0 (core/include/titan/detail/json_number.h).
+      TITAN_MIN_MACOS: "13.3"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Verify toolchain
+        run: |
+          active=$(xcodebuild -version | awk 'NR==1 {print $2}')
+          echo "macOS $(sw_vers -productVersion); Xcode $active ($(xcodebuild -version | awk 'NR==2 {print $3}')); SDK $(xcrun --show-sdk-version)"
+          clang++ --version | head -1; cmake --version | head -1; echo "ninja $(ninja --version)"
+          if [ "$active" != "$XCODE_VERSION" ]; then echo "::error::Xcode $active is active, expected $XCODE_VERSION"; exit 1; fi
+          echo "- core: macOS $(sw_vers -productVersion), Xcode $active, deployment target $TITAN_MIN_MACOS" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Assert no Unreal source is present
+        # Standard CI must never see the private engine; CMake would register ue.source-contract /
+        # ue.plugin-sync if these sibling folders existed.
+        run: |
+          for p in ../vault ../engine; do
+            if [ -e "$p" ]; then echo "::error::unexpected $p next to the checkout"; exit 1; fi
+          done
+          if git ls-files | grep -qE '(^|/)Engine/(Source|Binaries)/'; then
+            echo "::error::Unreal Engine files are tracked in this repository"; exit 1
+          fi
+
+      - name: Configure
+        run: |
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE="$CMAKE_BUILD_TYPE" -DTITAN_BUILD_STUDIO=OFF \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET="$TITAN_MIN_MACOS"
+
+      - name: Build
+        run: |
+          cmake --build build -j "$(sysctl -n hw.ncpu)"
+          vtool -show-build build/bin/titan-engine-host | grep -E 'minos|sdk'
+          minos=$(vtool -show-build build/bin/titan-engine-host | awk '/minos/ {print $2}')
+          if [ "$minos" != "$TITAN_MIN_MACOS" ]; then echo "::error::built for macOS $minos, expected $TITAN_MIN_MACOS"; exit 1; fi
+
+      - name: Test
+        run: |
+          mkdir -p results
+          ctest --test-dir build --no-tests=error --output-junit "$GITHUB_WORKSPACE/results/junit-core.xml"
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: results-core
+          path: results/
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: logs-core
+          path: |
+            build/Testing/Temporary/LastTest*.log
+            build/conformance-report.json
+            build/CMakeFiles/CMakeConfigureLog.yaml
+          if-no-files-found: ignore
+          retention-days: 14
+
+  studio:
+    name: TITAN Studio and all suites (macOS 26)
+    needs: core   # no expensive Qt job when the core is already broken
+    runs-on: macos-26
+    timeout-minutes: 45
+    env:
+      XCODE_VERSION: "26.1.1"
+      DEVELOPER_DIR: /Applications/Xcode_26.1.1.app/Contents/Developer
+      QT_VERSION: "6.12.0"
+      AQT_VERSION: "3.3.0"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Verify toolchain
+        run: |
+          active=$(xcodebuild -version | awk 'NR==1 {print $2}')
+          echo "macOS $(sw_vers -productVersion); Xcode $active ($(xcodebuild -version | awk 'NR==2 {print $3}')); SDK $(xcrun --show-sdk-version)"
+          clang++ --version | head -1; cmake --version | head -1; echo "ninja $(ninja --version)"
+          if [ "$active" != "$XCODE_VERSION" ]; then echo "::error::Xcode $active is active, expected $XCODE_VERSION"; exit 1; fi
+          echo "- studio: macOS $(sw_vers -productVersion), Xcode $active, default deployment target" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Restore Qt
+        id: qt-cache
+        # Only the public open-source Qt binaries from download.qt.io are cached; nothing else.
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ runner.temp }}/Qt
+          key: qt-${{ env.QT_VERSION }}-clang_64-qtshadertools-aqt${{ env.AQT_VERSION }}-${{ runner.os }}-${{ runner.arch }}
+
+      - name: Install Qt
+        if: steps.qt-cache.outputs.cache-hit != 'true'
+        run: |
+          python3 -m venv "$RUNNER_TEMP/aqt-venv"
+          "$RUNNER_TEMP/aqt-venv/bin/pip" install --disable-pip-version-check --quiet "aqtinstall==$AQT_VERSION"
+          "$RUNNER_TEMP/aqt-venv/bin/aqt" install-qt mac desktop "$QT_VERSION" clang_64 -m qtshadertools \
+            --outputdir "$RUNNER_TEMP/Qt"
+
+      - name: Locate Qt
+        run: |
+          config=$(find "$RUNNER_TEMP/Qt/$QT_VERSION" -path '*/lib/cmake/Qt6/Qt6Config.cmake' | head -1)
+          prefix=${config%/lib/cmake/Qt6/Qt6Config.cmake}
+          test -n "$config" && test -f "$prefix/lib/cmake/Qt6/Qt6Config.cmake"
+          echo "QT_PREFIX=$prefix" >> "$GITHUB_ENV"
+          echo "Qt prefix: $prefix"
+
+      - name: Configure
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE="$CMAKE_BUILD_TYPE" -DCMAKE_PREFIX_PATH="$QT_PREFIX"
+
+      - name: Build
+        run: cmake --build build -j "$(sysctl -n hw.ncpu)"
+
+      - name: QML lint
+        run: |
+          mkdir -p results
+          cmake --build build --target all_qmllint_json
+          python3 -I tools/ci/qmllint_summary.py build/titan-studio_qmllint.json \
+            --summary "$GITHUB_STEP_SUMMARY" --json-out results/qmllint-studio.json
+
+      - name: Native dependencies
+        # Licence guard (docs/LICENSE_AND_RIGHTS_MATRIX.md): Studio links only LGPL Qt modules; Qt Shader
+        # Tools is build-time only and Qt Quick 3D is not used. Every Qt framework must come from $QT_PREFIX.
+        run: |
+          app="build/bin/TITAN Studio.app/Contents/MacOS/TITAN Studio"
+          otool -L "$app" | tee otool.txt
+          if grep -E 'QtQuick3D|QtShaderTools' otool.txt; then echo "::error::GPL/commercial-only Qt module linked"; exit 1; fi
+          if grep -E '/opt/homebrew|/usr/local/(opt|Cellar)' otool.txt; then echo "::error::links a Homebrew library"; exit 1; fi
+          qt_minos=$(vtool -show-build "$QT_PREFIX/lib/QtCore.framework/QtCore" | awk '/minos/ {print $2}' | sort -V | tail -1)
+          echo "QtCore $QT_VERSION minimum macOS: $qt_minos; TITAN Studio built for: $(vtool -show-build "$app" | awk '/minos/ {print $2}')"
+          {
+            echo "## Native dependencies"; echo
+            echo "Qt $QT_VERSION (download.qt.io) — QtCore minimum macOS: **$qt_minos**. Frameworks linked by TITAN Studio:"; echo
+            grep -oE 'Qt[A-Za-z0-9]+\.framework' otool.txt | sort -u | sed 's/^/- /'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Probe Metal
+        id: metal
+        run: |
+          if xcrun swift tools/ci/metal_probe.swift; then echo "available=true" >> "$GITHUB_OUTPUT"
+          else echo "available=false" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Test
+        env:
+          HAVE_METAL: ${{ steps.metal.outputs.available }}
+        run: |
+          mkdir -p results
+          exclude=()
+          if [ "$HAVE_METAL" != "true" ]; then
+            echo "::warning::No Metal device on this runner: studio.ui-smoke NOT RUN"
+            echo '{"studio.ui-smoke": "no Metal device on the GitHub-hosted runner"}' > results/notrun-studio.json
+            exclude=(-E '^studio\.ui-smoke$')
+          fi
+          ctest --test-dir build --no-tests=error "${exclude[@]}" --output-junit "$GITHUB_WORKSPACE/results/junit-studio.xml"
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: results-studio
+          path: results/
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload smoke-test screenshots and report
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: studio-smoke
+          path: |
+            build/smoke/*.png
+            build/smoke/smoke-report.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: logs-studio
+          path: |
+            build/Testing/Temporary/LastTest*.log
+            build/titan-studio_qmllint.json
+            build/CMakeFiles/CMakeConfigureLog.yaml
+            otool.txt
+          if-no-files-found: ignore
+          retention-days: 14
+
+  report:
+    name: Test report (15-suite baseline)
+    needs: [core, studio]
+    if: always()
+    runs-on: ubuntu-latest   # no toolchain needed: parses JUnit only
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: tools/ci
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: results-*
+          path: results
+          merge-multiple: true
+
+      - name: Account for every baseline suite
+        run: |
+          ls -la results || true
+          python3 -I tools/ci/ctest_report.py --baseline tools/ci/baseline-suites.json --results results \
+            --label "core=macOS 15 (target 13.3)" --label "studio=macOS 26" --summary "$GITHUB_STEP_SUMMARY"
